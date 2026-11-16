@@ -1,0 +1,43 @@
+{
+    "model_name": "RehabMotionNet",
+    "version": "1.1",
+    "input_dim": 237,
+    "temporal_frames": 96,
+    "architecture_signature": "rehab_motionnet_upper_limb_v2",
+    "class_mapping": {
+        "0": "Exercise_1",
+        "1": "Exercise_2",
+        "2": "Exercise_3",
+        "3": "Exercise_4"
+    },
+    "provenance": {
+        "fold_id": "fold_04",
+        "provenance_hash": "23c2471bad1c6f4a5272cc8ffd370b0b0155de32b8d370f19f63584e3d6acbcd",
+        "train_manifest_hash": "98f6752776cfebdadda989dedcf8fa9e14b37a7a1b957fb2c3555071b58815a8",
+        "normalization_hash": "6a2b3e14c4f5f89df7ef734f947268af77c2de2adb573b8dc9724cec2adc514d",
+        "checkpoint_metadata": {
+            "model_id": "RehabMotionNet",
+            "fold_id": "fold_04",
+            "protocol_version": "1.1",
+            "provenance_hash": "23c2471bad1c6f4a5272cc8ffd370b0b0155de32b8d370f19f63584e3d6acbcd",
+            "train_manifest_hash": "98f6752776cfebdadda989dedcf8fa9e14b37a7a1b957fb2c3555071b58815a8",
+            "normalization_hash": "6a2b3e14c4f5f89df7ef734f947268af77c2de2adb573b8dc9724cec2adc514d",
+            "class_mapping": {
+                "0": "Exercise_1",
+                "1": "Exercise_2",
+                "2": "Exercise_3",
+                "3": "Exercise_4"
+            },
+            "model_config": {
+                "use_hand": true,
+                "use_kinematic": true,
+                "use_contrastive": true,
+                "use_mstcn": true,
+                "use_attention": true,
+                "upper_limb_only": true
+            },
+            "architecture_signature": "rehab_motionnet_upper_limb_v2",
+            "checkpoint_role": "supervised_model"
+        }
+    }
+}

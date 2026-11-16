@@ -1,0 +1,65 @@
+# RehabAI CI
+#
+# Requires a GitHub (or compatible) repo with this folder at the repository
+# root. Locally there is no .git yet; once the repo is initialized this file
+# must be at <repo root>/.github/workflows/ci.yml.
+
+name: CI
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  backend-tests:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: .
+    env:
+      # Keep CI on a small, predictable artifact; never require the heavy
+      # model bundle to be present.
+      ARTIFACTS_DIR: artifacts/model_v2
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+
+      - name: Install CPU-only PyTorch
+        run: |
+          pip install torch==2.2.2 --extra-index-url https://download.pytorch.org/whl/cpu
+
+      - name: Install backend dependencies
+        run: pip install -r backend/requirements.txt
+
+      - name: Install test dependencies
+        run: pip install pandas pytest pytest-cov
+
+      - name: Run test suite
+        run: python -m pytest tests shared/tests -q -m "not slow and not integration"
+
+  frontend-build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+          cache-dependency-path: frontend/package-lock.json
+
+      - name: Install dependencies
+        working-directory: frontend
+        run: npm ci
+
+      - name: Build (tsc + vite)
+        working-directory: frontend
+        run: npm run build

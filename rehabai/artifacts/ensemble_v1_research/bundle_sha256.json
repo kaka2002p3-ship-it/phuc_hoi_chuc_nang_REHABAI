@@ -1,0 +1,11 @@
+{
+  "exercise_registry.json": "15aed6590bd590dee2e45273ec2ddaa63b992c0fc056e5c1aca1fd83b99f5d72",
+  "feature_schema.json": "d08f6d4e43e505c56e85a50383b7cabb4e7b28ccdf74a6f5d864a9765e4e298b",
+  "loso_ensemble_v1.json": "d37899b5aec85381f4c897a917cf561e034be5efbe79e48420862042021cbbe2",
+  "metrics.json": "d909afaf2aaf3022f093885462f2881a29236e2843e89c0105514a1e5f2c6ad2",
+  "model.pt": "372484bebff4b3037c3f63d6c3bc6b53095dd094c403ca4a0bc49fc80463f2bb",
+  "model_card.md": "b371e0b22e59b3bc4f48c22d758c091a4690f9425620d73dccfbd842ee071b0a",
+  "model_config.json": "db6fbbb62bfe02550b4a7742736735e591c550d9de504cf145961a50a220f025",
+  "normalization.json": "6a2b3e14c4f5f89df7ef734f947268af77c2de2adb573b8dc9724cec2adc514d",
+  "registry_sha256.txt": "34939a368354f5728bf9849a13728716275319d736731fdd8b19687daeb4aa04"
+}

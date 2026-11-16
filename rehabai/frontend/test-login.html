@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Test Login - RehabAI</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; max-width: 600px; margin: 0 auto; }
+        .test-box { border: 1px solid #ccc; padding: 15px; margin: 10px 0; border-radius: 8px; }
+        .success { border-color: green; background: #e8f5e9; }
+        .error { border-color: red; background: #ffebee; }
+        button { padding: 10px 20px; cursor: pointer; }
+        pre { background: #f5f5f5; padding: 10px; overflow-x: auto; }
+    </style>
+</head>
+<body>
+    <h1>🔬 Test Login - RehabAI</h1>
+
+    <div class="test-box">
+        <h3>1. Test Backend Connection</h3>
+        <button onclick="testHealth()">Test /api/health</button>
+        <pre id="health-result">Chưa test</pre>
+    </div>
+
+    <div class="test-box">
+        <h3>2. Test Login</h3>
+        <input type="email" id="test-email" value="user2385@test.com" style="width: 100%; padding: 8px;">
+        <input type="password" id="test-password" value="Password123" style="width: 100%; padding: 8px; margin-top: 5px;">
+        <button onclick="testLogin()" style="margin-top: 10px;">Đăng nhập</button>
+        <pre id="login-result">Chưa test</pre>
+    </div>
+
+    <div class="test-box">
+        <h3>3. Test LocalStorage</h3>
+        <button onclick="checkStorage()">Kiểm tra LocalStorage</button>
+        <pre id="storage-result">Chưa test</pre>
+    </div>
+
+    <div class="test-box">
+        <h3>4. Thông tin đăng nhập</h3>
+        <p><strong>Email:</strong> user2385@test.com</p>
+        <p><strong>Password:</strong> Password123</p>
+    </div>
+
+    <script>
+        async function testHealth() {
+            const result = document.getElementById('health-result');
+            try {
+                const response = await fetch('/api/health');
+                const data = await response.json();
+                result.textContent = JSON.stringify(data, null, 2);
+                result.parentElement.className = 'test-box success';
+            } catch (e) {
+                result.textContent = 'Lỗi: ' + e.message;
+                result.parentElement.className = 'test-box error';
+            }
+        }
+
+        async function testLogin() {
+            const result = document.getElementById('login-result');
+            const email = document.getElementById('test-email').value;
+            const password = document.getElementById('test-password').value;
+
+            try {
+                const response = await fetch('/api/auth/login', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ email, password })
+                });
+
+                const data = await response.json();
+
+                if (!response.ok) {
+                    result.textContent = 'HTTP Error: ' + response.status + '\n' + JSON.stringify(data, null, 2);
+                    result.parentElement.className = 'test-box error';
+                    return;
+                }
+
+                result.textContent = JSON.stringify(data, null, 2);
+
+                // Save to localStorage like frontend does
+                if (data.access_token && data.user) {
+                    localStorage.setItem('rehabai_token', data.access_token);
+                    localStorage.setItem('rehabai_user', JSON.stringify(data.user));
+                    result.textContent += '\n\n✅ Đã lưu vào localStorage!';
+                    result.parentElement.className = 'test-box success';
+
+                    // Check storage
+                    checkStorage();
+                } else {
+                    result.textContent += '\n\n❌ Thiếu access_token hoặc user!';
+                    result.parentElement.className = 'test-box error';
+                }
+            } catch (e) {
+                result.textContent = 'Lỗi: ' + e.message;
+                result.parentElement.className = 'test-box error';
+            }
+        }
+
+        function checkStorage() {
+            const result = document.getElementById('storage-result');
+            const token = localStorage.getItem('rehabai_token');
+            const user = localStorage.getItem('rehabai_user');
+
+            if (token && user) {
+                result.textContent = '✅ Đã đăng nhập!\n\nToken: ' + token.substring(0, 50) + '...\n\nUser: ' + user;
+                result.parentElement.className = 'test-box success';
+            } else {
+                result.textContent = '❌ Chưa đăng nhập\n\nToken: ' + (token ? 'Có' : 'Không') + '\nUser: ' + (user ? 'Có' : 'Không');
+                result.parentElement.className = 'test-box error';
+            }
+        }
+
+        // Auto-check storage on load
+        checkStorage();
+    </script>
+</body>
+</html>

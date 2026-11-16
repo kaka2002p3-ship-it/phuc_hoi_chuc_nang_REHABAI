@@ -1,0 +1,6 @@
+{
+  "python_target": "3.11.9",
+  "torch_target": "2.7.0",
+  "torch_cuda_runtime_target": "12.6",
+  "cuda_available_expected": true
+}

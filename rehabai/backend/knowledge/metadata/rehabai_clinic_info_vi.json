@@ -1,0 +1,16 @@
+{
+  "document_id": "rehabai-clinic-info-vi",
+  "title": "Thông tin phòng khám RehabAI",
+  "source": "RehabAI clinic administrative data",
+  "language": "vi",
+  "version": "1.0.0",
+  "scope": ["CLINIC_INFO", "SAFETY"],
+  "review_date": "2026-10-29",
+  "approval_status": "approved",
+  "review_status": "approved",
+  "reviewer_name": "RehabAI clinic profile",
+  "reviewer_role": "Non-clinical administrative content",
+  "reviewed_at": "2026-10-29T00:00:00+07:00",
+  "expires_at": null,
+  "content_hash": "662bffda1a949b5933611007361a3799ddcfc58dd15234b81e8386931fc2e33a"
+}

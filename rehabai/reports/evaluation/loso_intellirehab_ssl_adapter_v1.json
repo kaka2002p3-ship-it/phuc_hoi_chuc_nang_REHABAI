@@ -1,0 +1,1417 @@
+[
+    {
+        "fold_id": "fold_01",
+        "model_name": "OptimizedSSLAdapter",
+        "accuracy": 0.5476190476190477,
+        "precision_macro": 0.40104166666666663,
+        "recall_macro": 0.34134615384615385,
+        "f1_macro": 0.36833333333333335,
+        "f1_weighted": 0.594920634920635,
+        "per_class": {
+            "0": {
+                "precision": 0.9375,
+                "recall": 0.75,
+                "f1": 0.8333333333333334,
+                "support": 20
+            },
+            "1": {
+                "precision": 0.6666666666666666,
+                "recall": 0.6153846153846154,
+                "f1": 0.64,
+                "support": 13
+            },
+            "2": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "support": 0
+            },
+            "3": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "support": 9
+            }
+        },
+        "confusion_matrix": [
+            [
+                15,
+                1,
+                2,
+                2
+            ],
+            [
+                1,
+                8,
+                3,
+                1
+            ],
+            [
+                0,
+                0,
+                0,
+                0
+            ],
+            [
+                0,
+                3,
+                6,
+                0
+            ]
+        ],
+        "sample_count": 42,
+        "observed_classes": [
+            0,
+            1,
+            3
+        ],
+        "expected_classes": [
+            0,
+            1,
+            2,
+            3
+        ],
+        "class_coverage_complete": false,
+        "task_evaluated": "exercise_classification",
+        "task_omitted": null,
+        "completion_accuracy": 0.6190476190476191,
+        "completion_precision_macro": 0.6832844574780059,
+        "completion_recall_macro": 0.6430205949656751,
+        "completion_f1_macro": 0.6047058823529412,
+        "completion_sample_count": 42,
+        "completion_observed_classes": [
+            0,
+            1
+        ],
+        "completion_confusion_matrix": [
+            [
+                9,
+                14
+            ],
+            [
+                2,
+                17
+            ]
+        ],
+        "metadata": {
+            "model_id": "OptimizedSSLAdapter",
+            "fold_id": "fold_01",
+            "protocol_version": "1.1",
+            "provenance_hash": "23c2471bad1c6f4a5272cc8ffd370b0b0155de32b8d370f19f63584e3d6acbcd",
+            "train_manifest_hash": "40fdb6115a208392711bb80283184b96df3e6577d7335bc30414a86554dbec6c",
+            "normalization_hash": "78e2c50fe45643ff4515b575b0281be4bb5f37a0a690495f8c195a385da5dc9d",
+            "class_mapping": {
+                "0": "Exercise_1",
+                "1": "Exercise_2",
+                "2": "Exercise_3",
+                "3": "Exercise_4"
+            },
+            "model_config": {
+                "num_exercises": 4,
+                "adapter_dim": 64,
+                "adapter_dropout": 0.2
+            },
+            "architecture_signature": "optimized_v1_intellirehab_ssl_adapter_v1",
+            "checkpoint_role": "supervised_model",
+            "training_inputs": {
+                "seed": 42,
+                "external_encoder": {
+                    "artifact_sha256": "ebc63367d6417c4a150628c53a60752ebccc4cbe196f800d170b60cebe26ce4a",
+                    "manifest_sha256": "8964e6ed501001a7501aa36cb04d7ee6daf7f86f1f41a5fa705469b7dec88ef8",
+                    "architecture_signature": "intellirehab_ssl_encoder_v1",
+                    "input_contract": "common_upper_limb_237_v1",
+                    "source_datasets": [
+                        "IntelliRehabDS"
+                    ],
+                    "source_fold": 0,
+                    "ontology_mapping_to_product": null
+                },
+                "runtime": {
+                    "python": "3.11.9",
+                    "torch": "2.5.1+cu121",
+                    "torch_cuda_runtime": "12.1",
+                    "cuda_available": true,
+                    "cuda_device_index": 0,
+                    "cuda_device_name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+                    "gpu_vram_bytes": 8585216000,
+                    "cudnn_version": 90100,
+                    "amp_enabled": true,
+                    "environment_profile": "noncanonical_exploratory"
+                }
+            }
+        }
+    },
+    {
+        "fold_id": "fold_02",
+        "model_name": "OptimizedSSLAdapter",
+        "accuracy": 0.8431372549019608,
+        "precision_macro": 0.7485119047619048,
+        "recall_macro": 0.8236779560308971,
+        "f1_macro": 0.7446793516560958,
+        "f1_weighted": 0.8507123215741546,
+        "per_class": {
+            "0": {
+                "precision": 0.9523809523809523,
+                "recall": 0.9090909090909091,
+                "f1": 0.9302325581395349,
+                "support": 22
+            },
+            "1": {
+                "precision": 1.0,
+                "recall": 0.9411764705882353,
+                "f1": 0.9696969696969697,
+                "support": 17
+            },
+            "2": {
+                "precision": 0.375,
+                "recall": 1.0,
+                "f1": 0.5454545454545454,
+                "support": 3
+            },
+            "3": {
+                "precision": 0.6666666666666666,
+                "recall": 0.4444444444444444,
+                "f1": 0.5333333333333333,
+                "support": 9
+            }
+        },
+        "confusion_matrix": [
+            [
+                20,
+                0,
+                0,
+                2
+            ],
+            [
+                1,
+                16,
+                0,
+                0
+            ],
+            [
+                0,
+                0,
+                3,
+                0
+            ],
+            [
+                0,
+                0,
+                5,
+                4
+            ]
+        ],
+        "sample_count": 51,
+        "observed_classes": [
+            0,
+            1,
+            2,
+            3
+        ],
+        "expected_classes": [
+            0,
+            1,
+            2,
+            3
+        ],
+        "class_coverage_complete": true,
+        "task_evaluated": "exercise_classification",
+        "task_omitted": null,
+        "completion_accuracy": 0.5882352941176471,
+        "completion_precision_macro": 0.6105015673981191,
+        "completion_recall_macro": 0.6186868686868687,
+        "completion_f1_macro": 0.5856866537717602,
+        "completion_sample_count": 51,
+        "completion_observed_classes": [
+            0,
+            1
+        ],
+        "completion_confusion_matrix": [
+            [
+                17,
+                16
+            ],
+            [
+                5,
+                13
+            ]
+        ],
+        "metadata": {
+            "model_id": "OptimizedSSLAdapter",
+            "fold_id": "fold_02",
+            "protocol_version": "1.1",
+            "provenance_hash": "23c2471bad1c6f4a5272cc8ffd370b0b0155de32b8d370f19f63584e3d6acbcd",
+            "train_manifest_hash": "98f6752776cfebdadda989dedcf8fa9e14b37a7a1b957fb2c3555071b58815a8",
+            "normalization_hash": "97721444cef7f81de6e7e838c984933733915940ba4c9d31ec3a2da04e300867",
+            "class_mapping": {
+                "0": "Exercise_1",
+                "1": "Exercise_2",
+                "2": "Exercise_3",
+                "3": "Exercise_4"
+            },
+            "model_config": {
+                "num_exercises": 4,
+                "adapter_dim": 64,
+                "adapter_dropout": 0.2
+            },
+            "architecture_signature": "optimized_v1_intellirehab_ssl_adapter_v1",
+            "checkpoint_role": "supervised_model",
+            "training_inputs": {
+                "seed": 42,
+                "external_encoder": {
+                    "artifact_sha256": "ebc63367d6417c4a150628c53a60752ebccc4cbe196f800d170b60cebe26ce4a",
+                    "manifest_sha256": "8964e6ed501001a7501aa36cb04d7ee6daf7f86f1f41a5fa705469b7dec88ef8",
+                    "architecture_signature": "intellirehab_ssl_encoder_v1",
+                    "input_contract": "common_upper_limb_237_v1",
+                    "source_datasets": [
+                        "IntelliRehabDS"
+                    ],
+                    "source_fold": 0,
+                    "ontology_mapping_to_product": null
+                },
+                "runtime": {
+                    "python": "3.11.9",
+                    "torch": "2.5.1+cu121",
+                    "torch_cuda_runtime": "12.1",
+                    "cuda_available": true,
+                    "cuda_device_index": 0,
+                    "cuda_device_name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+                    "gpu_vram_bytes": 8585216000,
+                    "cudnn_version": 90100,
+                    "amp_enabled": true,
+                    "environment_profile": "noncanonical_exploratory"
+                }
+            }
+        }
+    },
+    {
+        "fold_id": "fold_03",
+        "model_name": "OptimizedSSLAdapter",
+        "accuracy": 0.8636363636363636,
+        "precision_macro": 0.9,
+        "recall_macro": 0.9,
+        "f1_macro": 0.875,
+        "f1_weighted": 0.8636363636363636,
+        "per_class": {
+            "0": {
+                "precision": 1.0,
+                "recall": 1.0,
+                "f1": 1.0,
+                "support": 19
+            },
+            "1": {
+                "precision": 1.0,
+                "recall": 1.0,
+                "f1": 1.0,
+                "support": 1
+            },
+            "2": {
+                "precision": 1.0,
+                "recall": 0.6,
+                "f1": 0.7499999999999999,
+                "support": 15
+            },
+            "3": {
+                "precision": 0.6,
+                "recall": 1.0,
+                "f1": 0.7499999999999999,
+                "support": 9
+            }
+        },
+        "confusion_matrix": [
+            [
+                19,
+                0,
+                0,
+                0
+            ],
+            [
+                0,
+                1,
+                0,
+                0
+            ],
+            [
+                0,
+                0,
+                9,
+                6
+            ],
+            [
+                0,
+                0,
+                0,
+                9
+            ]
+        ],
+        "sample_count": 44,
+        "observed_classes": [
+            0,
+            1,
+            2,
+            3
+        ],
+        "expected_classes": [
+            0,
+            1,
+            2,
+            3
+        ],
+        "class_coverage_complete": true,
+        "task_evaluated": "exercise_classification",
+        "task_omitted": null,
+        "completion_accuracy": 0.36363636363636365,
+        "completion_precision_macro": 0.43672456575682383,
+        "completion_recall_macro": 0.43672456575682383,
+        "completion_f1_macro": 0.36363636363636365,
+        "completion_sample_count": 44,
+        "completion_observed_classes": [
+            0,
+            1
+        ],
+        "completion_confusion_matrix": [
+            [
+                8,
+                5
+            ],
+            [
+                23,
+                8
+            ]
+        ],
+        "metadata": {
+            "model_id": "OptimizedSSLAdapter",
+            "fold_id": "fold_03",
+            "protocol_version": "1.1",
+            "provenance_hash": "23c2471bad1c6f4a5272cc8ffd370b0b0155de32b8d370f19f63584e3d6acbcd",
+            "train_manifest_hash": "01b10f7a4c76487122e6e0725dbba188b3a213f47aca09c5e0effbddb2fa5d01",
+            "normalization_hash": "92d28a5e3ba3926d581e3a43be47e04f160930c8133e4359a46548042efec90a",
+            "class_mapping": {
+                "0": "Exercise_1",
+                "1": "Exercise_2",
+                "2": "Exercise_3",
+                "3": "Exercise_4"
+            },
+            "model_config": {
+                "num_exercises": 4,
+                "adapter_dim": 64,
+                "adapter_dropout": 0.2
+            },
+            "architecture_signature": "optimized_v1_intellirehab_ssl_adapter_v1",
+            "checkpoint_role": "supervised_model",
+            "training_inputs": {
+                "seed": 42,
+                "external_encoder": {
+                    "artifact_sha256": "ebc63367d6417c4a150628c53a60752ebccc4cbe196f800d170b60cebe26ce4a",
+                    "manifest_sha256": "8964e6ed501001a7501aa36cb04d7ee6daf7f86f1f41a5fa705469b7dec88ef8",
+                    "architecture_signature": "intellirehab_ssl_encoder_v1",
+                    "input_contract": "common_upper_limb_237_v1",
+                    "source_datasets": [
+                        "IntelliRehabDS"
+                    ],
+                    "source_fold": 0,
+                    "ontology_mapping_to_product": null
+                },
+                "runtime": {
+                    "python": "3.11.9",
+                    "torch": "2.5.1+cu121",
+                    "torch_cuda_runtime": "12.1",
+                    "cuda_available": true,
+                    "cuda_device_index": 0,
+                    "cuda_device_name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+                    "gpu_vram_bytes": 8585216000,
+                    "cudnn_version": 90100,
+                    "amp_enabled": true,
+                    "environment_profile": "noncanonical_exploratory"
+                }
+            }
+        }
+    },
+    {
+        "fold_id": "fold_04",
+        "model_name": "OptimizedSSLAdapter",
+        "accuracy": 0.5084745762711864,
+        "precision_macro": 0.4936274509803921,
+        "recall_macro": 0.5748626373626373,
+        "f1_macro": 0.4686307113938692,
+        "f1_weighted": 0.48269941476899547,
+        "per_class": {
+            "0": {
+                "precision": 0.9411764705882353,
+                "recall": 0.7619047619047619,
+                "f1": 0.8421052631578947,
+                "support": 21
+            },
+            "1": {
+                "precision": 0.3,
+                "recall": 0.75,
+                "f1": 0.4285714285714285,
+                "support": 4
+            },
+            "2": {
+                "precision": 0.4,
+                "recall": 0.09523809523809523,
+                "f1": 0.15384615384615385,
+                "support": 21
+            },
+            "3": {
+                "precision": 0.3333333333333333,
+                "recall": 0.6923076923076923,
+                "f1": 0.45,
+                "support": 13
+            }
+        },
+        "confusion_matrix": [
+            [
+                16,
+                0,
+                2,
+                3
+            ],
+            [
+                0,
+                3,
+                0,
+                1
+            ],
+            [
+                0,
+                5,
+                2,
+                14
+            ],
+            [
+                1,
+                2,
+                1,
+                9
+            ]
+        ],
+        "sample_count": 59,
+        "observed_classes": [
+            0,
+            1,
+            2,
+            3
+        ],
+        "expected_classes": [
+            0,
+            1,
+            2,
+            3
+        ],
+        "class_coverage_complete": true,
+        "task_evaluated": "exercise_classification",
+        "task_omitted": null,
+        "completion_accuracy": 0.5932203389830508,
+        "completion_precision_macro": 0.5948717948717949,
+        "completion_recall_macro": 0.5852534562211982,
+        "completion_f1_macro": 0.5785714285714286,
+        "completion_sample_count": 59,
+        "completion_observed_classes": [
+            0,
+            1
+        ],
+        "completion_confusion_matrix": [
+            [
+                12,
+                16
+            ],
+            [
+                8,
+                23
+            ]
+        ],
+        "metadata": {
+            "model_id": "OptimizedSSLAdapter",
+            "fold_id": "fold_04",
+            "protocol_version": "1.1",
+            "provenance_hash": "23c2471bad1c6f4a5272cc8ffd370b0b0155de32b8d370f19f63584e3d6acbcd",
+            "train_manifest_hash": "98f6752776cfebdadda989dedcf8fa9e14b37a7a1b957fb2c3555071b58815a8",
+            "normalization_hash": "6a2b3e14c4f5f89df7ef734f947268af77c2de2adb573b8dc9724cec2adc514d",
+            "class_mapping": {
+                "0": "Exercise_1",
+                "1": "Exercise_2",
+                "2": "Exercise_3",
+                "3": "Exercise_4"
+            },
+            "model_config": {
+                "num_exercises": 4,
+                "adapter_dim": 64,
+                "adapter_dropout": 0.2
+            },
+            "architecture_signature": "optimized_v1_intellirehab_ssl_adapter_v1",
+            "checkpoint_role": "supervised_model",
+            "training_inputs": {
+                "seed": 42,
+                "external_encoder": {
+                    "artifact_sha256": "ebc63367d6417c4a150628c53a60752ebccc4cbe196f800d170b60cebe26ce4a",
+                    "manifest_sha256": "8964e6ed501001a7501aa36cb04d7ee6daf7f86f1f41a5fa705469b7dec88ef8",
+                    "architecture_signature": "intellirehab_ssl_encoder_v1",
+                    "input_contract": "common_upper_limb_237_v1",
+                    "source_datasets": [
+                        "IntelliRehabDS"
+                    ],
+                    "source_fold": 0,
+                    "ontology_mapping_to_product": null
+                },
+                "runtime": {
+                    "python": "3.11.9",
+                    "torch": "2.5.1+cu121",
+                    "torch_cuda_runtime": "12.1",
+                    "cuda_available": true,
+                    "cuda_device_index": 0,
+                    "cuda_device_name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+                    "gpu_vram_bytes": 8585216000,
+                    "cudnn_version": 90100,
+                    "amp_enabled": true,
+                    "environment_profile": "noncanonical_exploratory"
+                }
+            }
+        }
+    },
+    {
+        "fold_id": "fold_05",
+        "model_name": "OptimizedSSLAdapter",
+        "accuracy": 0.7605633802816901,
+        "precision_macro": 0.8426136363636363,
+        "recall_macro": 0.7886904761904762,
+        "f1_macro": 0.7765186378278877,
+        "f1_weighted": 0.7471594407679394,
+        "per_class": {
+            "0": {
+                "precision": 0.95,
+                "recall": 0.9047619047619048,
+                "f1": 0.9268292682926829,
+                "support": 21
+            },
+            "1": {
+                "precision": 1.0,
+                "recall": 1.0,
+                "f1": 1.0,
+                "support": 10
+            },
+            "2": {
+                "precision": 0.5454545454545454,
+                "recall": 0.9,
+                "f1": 0.679245283018868,
+                "support": 20
+            },
+            "3": {
+                "precision": 0.875,
+                "recall": 0.35,
+                "f1": 0.4999999999999999,
+                "support": 20
+            }
+        },
+        "confusion_matrix": [
+            [
+                19,
+                0,
+                2,
+                0
+            ],
+            [
+                0,
+                10,
+                0,
+                0
+            ],
+            [
+                1,
+                0,
+                18,
+                1
+            ],
+            [
+                0,
+                0,
+                13,
+                7
+            ]
+        ],
+        "sample_count": 71,
+        "observed_classes": [
+            0,
+            1,
+            2,
+            3
+        ],
+        "expected_classes": [
+            0,
+            1,
+            2,
+            3
+        ],
+        "class_coverage_complete": true,
+        "task_evaluated": "exercise_classification",
+        "task_omitted": null,
+        "completion_accuracy": 0.6197183098591549,
+        "completion_precision_macro": 0.690251572327044,
+        "completion_recall_macro": 0.6454326923076923,
+        "completion_f1_macro": 0.6043343653250773,
+        "completion_sample_count": 71,
+        "completion_observed_classes": [
+            0,
+            1
+        ],
+        "completion_confusion_matrix": [
+            [
+                15,
+                24
+            ],
+            [
+                3,
+                29
+            ]
+        ],
+        "metadata": {
+            "model_id": "OptimizedSSLAdapter",
+            "fold_id": "fold_05",
+            "protocol_version": "1.1",
+            "provenance_hash": "23c2471bad1c6f4a5272cc8ffd370b0b0155de32b8d370f19f63584e3d6acbcd",
+            "train_manifest_hash": "01b10f7a4c76487122e6e0725dbba188b3a213f47aca09c5e0effbddb2fa5d01",
+            "normalization_hash": "cdc237203fee6902085d1ac0f131a940b4b5854bed26899e0224b23f62336e4f",
+            "class_mapping": {
+                "0": "Exercise_1",
+                "1": "Exercise_2",
+                "2": "Exercise_3",
+                "3": "Exercise_4"
+            },
+            "model_config": {
+                "num_exercises": 4,
+                "adapter_dim": 64,
+                "adapter_dropout": 0.2
+            },
+            "architecture_signature": "optimized_v1_intellirehab_ssl_adapter_v1",
+            "checkpoint_role": "supervised_model",
+            "training_inputs": {
+                "seed": 42,
+                "external_encoder": {
+                    "artifact_sha256": "ebc63367d6417c4a150628c53a60752ebccc4cbe196f800d170b60cebe26ce4a",
+                    "manifest_sha256": "8964e6ed501001a7501aa36cb04d7ee6daf7f86f1f41a5fa705469b7dec88ef8",
+                    "architecture_signature": "intellirehab_ssl_encoder_v1",
+                    "input_contract": "common_upper_limb_237_v1",
+                    "source_datasets": [
+                        "IntelliRehabDS"
+                    ],
+                    "source_fold": 0,
+                    "ontology_mapping_to_product": null
+                },
+                "runtime": {
+                    "python": "3.11.9",
+                    "torch": "2.5.1+cu121",
+                    "torch_cuda_runtime": "12.1",
+                    "cuda_available": true,
+                    "cuda_device_index": 0,
+                    "cuda_device_name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+                    "gpu_vram_bytes": 8585216000,
+                    "cudnn_version": 90100,
+                    "amp_enabled": true,
+                    "environment_profile": "noncanonical_exploratory"
+                }
+            }
+        }
+    },
+    {
+        "fold_id": "fold_06",
+        "model_name": "OptimizedSSLAdapter",
+        "accuracy": 0.06818181818181818,
+        "precision_macro": 0.05,
+        "recall_macro": 0.039473684210526314,
+        "f1_macro": 0.04411764705882353,
+        "f1_weighted": 0.07620320855614973,
+        "per_class": {
+            "0": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "support": 0
+            },
+            "1": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "support": 0
+            },
+            "2": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "support": 25
+            },
+            "3": {
+                "precision": 0.2,
+                "recall": 0.15789473684210525,
+                "f1": 0.17647058823529413,
+                "support": 19
+            }
+        },
+        "confusion_matrix": [
+            [
+                0,
+                0,
+                0,
+                0
+            ],
+            [
+                0,
+                0,
+                0,
+                0
+            ],
+            [
+                10,
+                3,
+                0,
+                12
+            ],
+            [
+                16,
+                0,
+                0,
+                3
+            ]
+        ],
+        "sample_count": 44,
+        "observed_classes": [
+            2,
+            3
+        ],
+        "expected_classes": [
+            0,
+            1,
+            2,
+            3
+        ],
+        "class_coverage_complete": false,
+        "task_evaluated": "exercise_classification",
+        "task_omitted": null,
+        "completion_accuracy": 0.6818181818181818,
+        "completion_precision_macro": 0.6830357142857143,
+        "completion_recall_macro": 0.6708333333333334,
+        "completion_f1_macro": 0.670940170940171,
+        "completion_sample_count": 44,
+        "completion_observed_classes": [
+            0,
+            1
+        ],
+        "completion_confusion_matrix": [
+            [
+                19,
+                5
+            ],
+            [
+                9,
+                11
+            ]
+        ],
+        "metadata": {
+            "model_id": "OptimizedSSLAdapter",
+            "fold_id": "fold_06",
+            "protocol_version": "1.1",
+            "provenance_hash": "23c2471bad1c6f4a5272cc8ffd370b0b0155de32b8d370f19f63584e3d6acbcd",
+            "train_manifest_hash": "30e47be7fae301013667f6c22f9357aefe04ea0cb313cb38fe9fe859abdfba82",
+            "normalization_hash": "424f67988146bb66451634145d4a535551af02042c08cefbd037e24e365d78be",
+            "class_mapping": {
+                "0": "Exercise_1",
+                "1": "Exercise_2",
+                "2": "Exercise_3",
+                "3": "Exercise_4"
+            },
+            "model_config": {
+                "num_exercises": 4,
+                "adapter_dim": 64,
+                "adapter_dropout": 0.2
+            },
+            "architecture_signature": "optimized_v1_intellirehab_ssl_adapter_v1",
+            "checkpoint_role": "supervised_model",
+            "training_inputs": {
+                "seed": 42,
+                "external_encoder": {
+                    "artifact_sha256": "ebc63367d6417c4a150628c53a60752ebccc4cbe196f800d170b60cebe26ce4a",
+                    "manifest_sha256": "8964e6ed501001a7501aa36cb04d7ee6daf7f86f1f41a5fa705469b7dec88ef8",
+                    "architecture_signature": "intellirehab_ssl_encoder_v1",
+                    "input_contract": "common_upper_limb_237_v1",
+                    "source_datasets": [
+                        "IntelliRehabDS"
+                    ],
+                    "source_fold": 0,
+                    "ontology_mapping_to_product": null
+                },
+                "runtime": {
+                    "python": "3.11.9",
+                    "torch": "2.5.1+cu121",
+                    "torch_cuda_runtime": "12.1",
+                    "cuda_available": true,
+                    "cuda_device_index": 0,
+                    "cuda_device_name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+                    "gpu_vram_bytes": 8585216000,
+                    "cudnn_version": 90100,
+                    "amp_enabled": true,
+                    "environment_profile": "noncanonical_exploratory"
+                }
+            }
+        }
+    },
+    {
+        "fold_id": "fold_07",
+        "model_name": "OptimizedSSLAdapter",
+        "accuracy": 0.1,
+        "precision_macro": 0.25,
+        "recall_macro": 0.025,
+        "f1_macro": 0.045454545454545456,
+        "f1_weighted": 0.18181818181818182,
+        "per_class": {
+            "0": {
+                "precision": 1.0,
+                "recall": 0.1,
+                "f1": 0.18181818181818182,
+                "support": 20
+            },
+            "1": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "support": 0
+            },
+            "2": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "support": 0
+            },
+            "3": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "support": 0
+            }
+        },
+        "confusion_matrix": [
+            [
+                2,
+                18,
+                0,
+                0
+            ],
+            [
+                0,
+                0,
+                0,
+                0
+            ],
+            [
+                0,
+                0,
+                0,
+                0
+            ],
+            [
+                0,
+                0,
+                0,
+                0
+            ]
+        ],
+        "sample_count": 20,
+        "observed_classes": [
+            0
+        ],
+        "expected_classes": [
+            0,
+            1,
+            2,
+            3
+        ],
+        "class_coverage_complete": false,
+        "task_evaluated": "exercise_classification",
+        "task_omitted": null,
+        "completion_accuracy": 0.6,
+        "completion_precision_macro": 0.6190476190476191,
+        "completion_recall_macro": 0.6000000000000001,
+        "completion_f1_macro": 0.5833333333333333,
+        "completion_sample_count": 20,
+        "completion_observed_classes": [
+            0,
+            1
+        ],
+        "completion_confusion_matrix": [
+            [
+                4,
+                6
+            ],
+            [
+                2,
+                8
+            ]
+        ],
+        "metadata": {
+            "model_id": "OptimizedSSLAdapter",
+            "fold_id": "fold_07",
+            "protocol_version": "1.1",
+            "provenance_hash": "23c2471bad1c6f4a5272cc8ffd370b0b0155de32b8d370f19f63584e3d6acbcd",
+            "train_manifest_hash": "fd27d05d85014527fb88e851db843417528019b153dce2dbded0eb9a73e92600",
+            "normalization_hash": "8a176043911925f44b68bac6002715f623c971347d93be7688e107ca9e65c8a4",
+            "class_mapping": {
+                "0": "Exercise_1",
+                "1": "Exercise_2",
+                "2": "Exercise_3",
+                "3": "Exercise_4"
+            },
+            "model_config": {
+                "num_exercises": 4,
+                "adapter_dim": 64,
+                "adapter_dropout": 0.2
+            },
+            "architecture_signature": "optimized_v1_intellirehab_ssl_adapter_v1",
+            "checkpoint_role": "supervised_model",
+            "training_inputs": {
+                "seed": 42,
+                "external_encoder": {
+                    "artifact_sha256": "ebc63367d6417c4a150628c53a60752ebccc4cbe196f800d170b60cebe26ce4a",
+                    "manifest_sha256": "8964e6ed501001a7501aa36cb04d7ee6daf7f86f1f41a5fa705469b7dec88ef8",
+                    "architecture_signature": "intellirehab_ssl_encoder_v1",
+                    "input_contract": "common_upper_limb_237_v1",
+                    "source_datasets": [
+                        "IntelliRehabDS"
+                    ],
+                    "source_fold": 0,
+                    "ontology_mapping_to_product": null
+                },
+                "runtime": {
+                    "python": "3.11.9",
+                    "torch": "2.5.1+cu121",
+                    "torch_cuda_runtime": "12.1",
+                    "cuda_available": true,
+                    "cuda_device_index": 0,
+                    "cuda_device_name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+                    "gpu_vram_bytes": 8585216000,
+                    "cudnn_version": 90100,
+                    "amp_enabled": true,
+                    "environment_profile": "noncanonical_exploratory"
+                }
+            }
+        }
+    },
+    {
+        "fold_id": "fold_08",
+        "model_name": "OptimizedSSLAdapter",
+        "accuracy": 0.0,
+        "precision_macro": 0.0,
+        "recall_macro": 0.0,
+        "f1_macro": 0.0,
+        "f1_weighted": 0.0,
+        "per_class": {
+            "0": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "support": 0
+            },
+            "1": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "support": 20
+            },
+            "2": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "support": 0
+            },
+            "3": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "support": 0
+            }
+        },
+        "confusion_matrix": [
+            [
+                0,
+                0,
+                0,
+                0
+            ],
+            [
+                8,
+                0,
+                0,
+                12
+            ],
+            [
+                0,
+                0,
+                0,
+                0
+            ],
+            [
+                0,
+                0,
+                0,
+                0
+            ]
+        ],
+        "sample_count": 20,
+        "observed_classes": [
+            1
+        ],
+        "expected_classes": [
+            0,
+            1,
+            2,
+            3
+        ],
+        "class_coverage_complete": false,
+        "task_evaluated": "exercise_classification",
+        "task_omitted": null,
+        "completion_accuracy": 0.4,
+        "completion_precision_macro": 0.39583333333333337,
+        "completion_recall_macro": 0.4,
+        "completion_f1_macro": 0.3939393939393939,
+        "completion_sample_count": 20,
+        "completion_observed_classes": [
+            0,
+            1
+        ],
+        "completion_confusion_matrix": [
+            [
+                5,
+                5
+            ],
+            [
+                7,
+                3
+            ]
+        ],
+        "metadata": {
+            "model_id": "OptimizedSSLAdapter",
+            "fold_id": "fold_08",
+            "protocol_version": "1.1",
+            "provenance_hash": "23c2471bad1c6f4a5272cc8ffd370b0b0155de32b8d370f19f63584e3d6acbcd",
+            "train_manifest_hash": "a9b402d0f8da8ebc90537556e2bfec22a86fa1ee68c7fba1b44da9df5721f7f4",
+            "normalization_hash": "4632c661c822c133e31721ef6e8a5d7e8bc3c57793f65b6cab64f814c4ddebd1",
+            "class_mapping": {
+                "0": "Exercise_1",
+                "1": "Exercise_2",
+                "2": "Exercise_3",
+                "3": "Exercise_4"
+            },
+            "model_config": {
+                "num_exercises": 4,
+                "adapter_dim": 64,
+                "adapter_dropout": 0.2
+            },
+            "architecture_signature": "optimized_v1_intellirehab_ssl_adapter_v1",
+            "checkpoint_role": "supervised_model",
+            "training_inputs": {
+                "seed": 42,
+                "external_encoder": {
+                    "artifact_sha256": "ebc63367d6417c4a150628c53a60752ebccc4cbe196f800d170b60cebe26ce4a",
+                    "manifest_sha256": "8964e6ed501001a7501aa36cb04d7ee6daf7f86f1f41a5fa705469b7dec88ef8",
+                    "architecture_signature": "intellirehab_ssl_encoder_v1",
+                    "input_contract": "common_upper_limb_237_v1",
+                    "source_datasets": [
+                        "IntelliRehabDS"
+                    ],
+                    "source_fold": 0,
+                    "ontology_mapping_to_product": null
+                },
+                "runtime": {
+                    "python": "3.11.9",
+                    "torch": "2.5.1+cu121",
+                    "torch_cuda_runtime": "12.1",
+                    "cuda_available": true,
+                    "cuda_device_index": 0,
+                    "cuda_device_name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+                    "gpu_vram_bytes": 8585216000,
+                    "cudnn_version": 90100,
+                    "amp_enabled": true,
+                    "environment_profile": "noncanonical_exploratory"
+                }
+            }
+        }
+    },
+    {
+        "fold_id": "fold_09",
+        "model_name": "OptimizedSSLAdapter",
+        "accuracy": 0.1875,
+        "precision_macro": 0.25,
+        "recall_macro": 0.046875,
+        "f1_macro": 0.07894736842105263,
+        "f1_weighted": 0.3157894736842105,
+        "per_class": {
+            "0": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "support": 0
+            },
+            "1": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "support": 0
+            },
+            "2": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "support": 0
+            },
+            "3": {
+                "precision": 1.0,
+                "recall": 0.1875,
+                "f1": 0.3157894736842105,
+                "support": 16
+            }
+        },
+        "confusion_matrix": [
+            [
+                0,
+                0,
+                0,
+                0
+            ],
+            [
+                0,
+                0,
+                0,
+                0
+            ],
+            [
+                0,
+                0,
+                0,
+                0
+            ],
+            [
+                10,
+                0,
+                3,
+                3
+            ]
+        ],
+        "sample_count": 16,
+        "observed_classes": [
+            3
+        ],
+        "expected_classes": [
+            0,
+            1,
+            2,
+            3
+        ],
+        "class_coverage_complete": false,
+        "task_evaluated": "exercise_classification",
+        "task_omitted": null,
+        "completion_accuracy": 0.625,
+        "completion_precision_macro": 0.6,
+        "completion_recall_macro": 0.6,
+        "completion_f1_macro": 0.6,
+        "completion_sample_count": 16,
+        "completion_observed_classes": [
+            0,
+            1
+        ],
+        "completion_confusion_matrix": [
+            [
+                7,
+                3
+            ],
+            [
+                3,
+                3
+            ]
+        ],
+        "metadata": {
+            "model_id": "OptimizedSSLAdapter",
+            "fold_id": "fold_09",
+            "protocol_version": "1.1",
+            "provenance_hash": "23c2471bad1c6f4a5272cc8ffd370b0b0155de32b8d370f19f63584e3d6acbcd",
+            "train_manifest_hash": "944499c25ee30afd68ecbab3e0dd2b742a318e16531f2f21317215bf20ba3ba2",
+            "normalization_hash": "073f10e443d82d5da7a5cd8c046c7dfc17d176cd691cbe1c88a9667f3b791294",
+            "class_mapping": {
+                "0": "Exercise_1",
+                "1": "Exercise_2",
+                "2": "Exercise_3",
+                "3": "Exercise_4"
+            },
+            "model_config": {
+                "num_exercises": 4,
+                "adapter_dim": 64,
+                "adapter_dropout": 0.2
+            },
+            "architecture_signature": "optimized_v1_intellirehab_ssl_adapter_v1",
+            "checkpoint_role": "supervised_model",
+            "training_inputs": {
+                "seed": 42,
+                "external_encoder": {
+                    "artifact_sha256": "ebc63367d6417c4a150628c53a60752ebccc4cbe196f800d170b60cebe26ce4a",
+                    "manifest_sha256": "8964e6ed501001a7501aa36cb04d7ee6daf7f86f1f41a5fa705469b7dec88ef8",
+                    "architecture_signature": "intellirehab_ssl_encoder_v1",
+                    "input_contract": "common_upper_limb_237_v1",
+                    "source_datasets": [
+                        "IntelliRehabDS"
+                    ],
+                    "source_fold": 0,
+                    "ontology_mapping_to_product": null
+                },
+                "runtime": {
+                    "python": "3.11.9",
+                    "torch": "2.5.1+cu121",
+                    "torch_cuda_runtime": "12.1",
+                    "cuda_available": true,
+                    "cuda_device_index": 0,
+                    "cuda_device_name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+                    "gpu_vram_bytes": 8585216000,
+                    "cudnn_version": 90100,
+                    "amp_enabled": true,
+                    "environment_profile": "noncanonical_exploratory"
+                }
+            }
+        }
+    },
+    {
+        "fold_id": "fold_10",
+        "model_name": "OptimizedSSLAdapter",
+        "accuracy": 0.65,
+        "precision_macro": 0.25,
+        "recall_macro": 0.1625,
+        "f1_macro": 0.196969696969697,
+        "f1_weighted": 0.787878787878788,
+        "per_class": {
+            "0": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "support": 0
+            },
+            "1": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "support": 0
+            },
+            "2": {
+                "precision": 1.0,
+                "recall": 0.65,
+                "f1": 0.787878787878788,
+                "support": 20
+            },
+            "3": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "support": 0
+            }
+        },
+        "confusion_matrix": [
+            [
+                0,
+                0,
+                0,
+                0
+            ],
+            [
+                0,
+                0,
+                0,
+                0
+            ],
+            [
+                2,
+                0,
+                13,
+                5
+            ],
+            [
+                0,
+                0,
+                0,
+                0
+            ]
+        ],
+        "sample_count": 20,
+        "observed_classes": [
+            2
+        ],
+        "expected_classes": [
+            0,
+            1,
+            2,
+            3
+        ],
+        "class_coverage_complete": false,
+        "task_evaluated": "exercise_classification",
+        "task_omitted": null,
+        "completion_accuracy": 0.45,
+        "completion_precision_macro": 0.44505494505494503,
+        "completion_recall_macro": 0.44999999999999996,
+        "completion_f1_macro": 0.4373401534526854,
+        "completion_sample_count": 20,
+        "completion_observed_classes": [
+            0,
+            1
+        ],
+        "completion_confusion_matrix": [
+            [
+                3,
+                7
+            ],
+            [
+                4,
+                6
+            ]
+        ],
+        "metadata": {
+            "model_id": "OptimizedSSLAdapter",
+            "fold_id": "fold_10",
+            "protocol_version": "1.1",
+            "provenance_hash": "23c2471bad1c6f4a5272cc8ffd370b0b0155de32b8d370f19f63584e3d6acbcd",
+            "train_manifest_hash": "31b3edbdd79f9e037fc9c63927f04ecb2722236369971b7fab4674e87b8d31d9",
+            "normalization_hash": "edbfbd71e7722c34999767b8b44fe5ce9d6ca3170167639729e36caaa7f29b3d",
+            "class_mapping": {
+                "0": "Exercise_1",
+                "1": "Exercise_2",
+                "2": "Exercise_3",
+                "3": "Exercise_4"
+            },
+            "model_config": {
+                "num_exercises": 4,
+                "adapter_dim": 64,
+                "adapter_dropout": 0.2
+            },
+            "architecture_signature": "optimized_v1_intellirehab_ssl_adapter_v1",
+            "checkpoint_role": "supervised_model",
+            "training_inputs": {
+                "seed": 42,
+                "external_encoder": {
+                    "artifact_sha256": "ebc63367d6417c4a150628c53a60752ebccc4cbe196f800d170b60cebe26ce4a",
+                    "manifest_sha256": "8964e6ed501001a7501aa36cb04d7ee6daf7f86f1f41a5fa705469b7dec88ef8",
+                    "architecture_signature": "intellirehab_ssl_encoder_v1",
+                    "input_contract": "common_upper_limb_237_v1",
+                    "source_datasets": [
+                        "IntelliRehabDS"
+                    ],
+                    "source_fold": 0,
+                    "ontology_mapping_to_product": null
+                },
+                "runtime": {
+                    "python": "3.11.9",
+                    "torch": "2.5.1+cu121",
+                    "torch_cuda_runtime": "12.1",
+                    "cuda_available": true,
+                    "cuda_device_index": 0,
+                    "cuda_device_name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+                    "gpu_vram_bytes": 8585216000,
+                    "cudnn_version": 90100,
+                    "amp_enabled": true,
+                    "environment_profile": "noncanonical_exploratory"
+                }
+            }
+        }
+    }
+]

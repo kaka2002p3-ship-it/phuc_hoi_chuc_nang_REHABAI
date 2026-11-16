@@ -1,0 +1,18 @@
+fastapi==0.110.0
+uvicorn==0.29.0
+websockets==12.0
+sqlalchemy==2.0.29
+pydantic[email]==2.6.4
+psycopg[binary]==3.2.10
+alembic==1.13.1
+# MediaPipe 1.0.1 Linux wheels expose only the Tasks API and no longer ship
+# `mp.solutions.holistic`, which is the extractor contract used by this
+# production backend. Keep the Docker runtime on the latest legacy-solutions
+# release; the canonical training lock remains in training/requirements-lock.txt.
+mediapipe==0.10.21
+opencv-python-headless==4.9.0.80
+numpy<2
+# Keep the backend image CPU-only; the index option must be on its own line
+# (inline options are treated as part of the requirement by pip).
+--extra-index-url https://download.pytorch.org/whl/cpu
+torch==2.2.2+cpu

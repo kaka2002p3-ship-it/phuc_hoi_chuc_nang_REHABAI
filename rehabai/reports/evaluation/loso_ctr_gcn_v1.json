@@ -1,0 +1,527 @@
+[
+    {
+        "fold_id": "fold_01",
+        "model_name": "UpperLimbCTRGCN",
+        "accuracy": 0.6666666666666666,
+        "precision_macro": 0.4784919028340081,
+        "recall_macro": 0.4325854700854701,
+        "f1_macro": 0.4487179487179487,
+        "sample_count": 42,
+        "observed_classes": [
+            0,
+            1,
+            3
+        ],
+        "expected_classes": [
+            0,
+            1,
+            2,
+            3
+        ],
+        "class_coverage_complete": false,
+        "task_evaluated": "exercise_classification",
+        "task_omitted": null,
+        "completion_accuracy": 0.6428571428571429,
+        "completion_precision_macro": 0.6409090909090909,
+        "completion_recall_macro": 0.6418764302059496,
+        "completion_f1_macro": 0.641025641025641,
+        "completion_sample_count": 42,
+        "completion_observed_classes": [
+            0,
+            1
+        ],
+        "metadata": {
+            "model_id": "UpperLimbCTRGCN",
+            "fold_id": "fold_01",
+            "protocol_version": "1.1",
+            "provenance_hash": "23c2471bad1c6f4a5272cc8ffd370b0b0155de32b8d370f19f63584e3d6acbcd",
+            "train_manifest_hash": "40fdb6115a208392711bb80283184b96df3e6577d7335bc30414a86554dbec6c",
+            "normalization_hash": "78e2c50fe45643ff4515b575b0281be4bb5f37a0a690495f8c195a385da5dc9d",
+            "class_mapping": {
+                "0": "Exercise_1",
+                "1": "Exercise_2",
+                "2": "Exercise_3",
+                "3": "Exercise_4"
+            },
+            "model_config": {
+                "use_hand": true,
+                "use_kinematic": true,
+                "upper_limb_only": true
+            },
+            "architecture_signature": "upper_limb_ctr_gcn_v1",
+            "checkpoint_role": "supervised_model"
+        }
+    },
+    {
+        "fold_id": "fold_02",
+        "model_name": "UpperLimbCTRGCN",
+        "accuracy": 0.6274509803921569,
+        "precision_macro": 0.6183226495726495,
+        "recall_macro": 0.6719399881164587,
+        "f1_macro": 0.5845580808080808,
+        "sample_count": 51,
+        "observed_classes": [
+            0,
+            1,
+            2,
+            3
+        ],
+        "expected_classes": [
+            0,
+            1,
+            2,
+            3
+        ],
+        "class_coverage_complete": true,
+        "task_evaluated": "exercise_classification",
+        "task_omitted": null,
+        "completion_accuracy": 0.5294117647058824,
+        "completion_precision_macro": 0.5208333333333333,
+        "completion_recall_macro": 0.5227272727272727,
+        "completion_f1_macro": 0.5142857142857142,
+        "completion_sample_count": 51,
+        "completion_observed_classes": [
+            0,
+            1
+        ],
+        "metadata": {
+            "model_id": "UpperLimbCTRGCN",
+            "fold_id": "fold_02",
+            "protocol_version": "1.1",
+            "provenance_hash": "23c2471bad1c6f4a5272cc8ffd370b0b0155de32b8d370f19f63584e3d6acbcd",
+            "train_manifest_hash": "98f6752776cfebdadda989dedcf8fa9e14b37a7a1b957fb2c3555071b58815a8",
+            "normalization_hash": "97721444cef7f81de6e7e838c984933733915940ba4c9d31ec3a2da04e300867",
+            "class_mapping": {
+                "0": "Exercise_1",
+                "1": "Exercise_2",
+                "2": "Exercise_3",
+                "3": "Exercise_4"
+            },
+            "model_config": {
+                "use_hand": true,
+                "use_kinematic": true,
+                "upper_limb_only": true
+            },
+            "architecture_signature": "upper_limb_ctr_gcn_v1",
+            "checkpoint_role": "supervised_model"
+        }
+    },
+    {
+        "fold_id": "fold_03",
+        "model_name": "UpperLimbCTRGCN",
+        "accuracy": 0.8409090909090909,
+        "precision_macro": 0.890625,
+        "recall_macro": 0.893859649122807,
+        "f1_macro": 0.87010989010989,
+        "sample_count": 44,
+        "observed_classes": [
+            0,
+            1,
+            2,
+            3
+        ],
+        "expected_classes": [
+            0,
+            1,
+            2,
+            3
+        ],
+        "class_coverage_complete": true,
+        "task_evaluated": "exercise_classification",
+        "task_omitted": null,
+        "completion_accuracy": 0.5,
+        "completion_precision_macro": 0.5284210526315789,
+        "completion_recall_macro": 0.533498759305211,
+        "completion_f1_macro": 0.4905263157894737,
+        "completion_sample_count": 44,
+        "completion_observed_classes": [
+            0,
+            1
+        ],
+        "metadata": {
+            "model_id": "UpperLimbCTRGCN",
+            "fold_id": "fold_03",
+            "protocol_version": "1.1",
+            "provenance_hash": "23c2471bad1c6f4a5272cc8ffd370b0b0155de32b8d370f19f63584e3d6acbcd",
+            "train_manifest_hash": "01b10f7a4c76487122e6e0725dbba188b3a213f47aca09c5e0effbddb2fa5d01",
+            "normalization_hash": "92d28a5e3ba3926d581e3a43be47e04f160930c8133e4359a46548042efec90a",
+            "class_mapping": {
+                "0": "Exercise_1",
+                "1": "Exercise_2",
+                "2": "Exercise_3",
+                "3": "Exercise_4"
+            },
+            "model_config": {
+                "use_hand": true,
+                "use_kinematic": true,
+                "upper_limb_only": true
+            },
+            "architecture_signature": "upper_limb_ctr_gcn_v1",
+            "checkpoint_role": "supervised_model"
+        }
+    },
+    {
+        "fold_id": "fold_04",
+        "model_name": "UpperLimbCTRGCN",
+        "accuracy": 0.6271186440677966,
+        "precision_macro": 0.6933760683760684,
+        "recall_macro": 0.7161172161172161,
+        "f1_macro": 0.6111111111111112,
+        "sample_count": 59,
+        "observed_classes": [
+            0,
+            1,
+            2,
+            3
+        ],
+        "expected_classes": [
+            0,
+            1,
+            2,
+            3
+        ],
+        "class_coverage_complete": true,
+        "task_evaluated": "exercise_classification",
+        "task_omitted": null,
+        "completion_accuracy": 0.6779661016949152,
+        "completion_precision_macro": 0.6835664335664335,
+        "completion_recall_macro": 0.6814516129032258,
+        "completion_f1_macro": 0.6775956284153006,
+        "completion_sample_count": 59,
+        "completion_observed_classes": [
+            0,
+            1
+        ],
+        "metadata": {
+            "model_id": "UpperLimbCTRGCN",
+            "fold_id": "fold_04",
+            "protocol_version": "1.1",
+            "provenance_hash": "23c2471bad1c6f4a5272cc8ffd370b0b0155de32b8d370f19f63584e3d6acbcd",
+            "train_manifest_hash": "98f6752776cfebdadda989dedcf8fa9e14b37a7a1b957fb2c3555071b58815a8",
+            "normalization_hash": "6a2b3e14c4f5f89df7ef734f947268af77c2de2adb573b8dc9724cec2adc514d",
+            "class_mapping": {
+                "0": "Exercise_1",
+                "1": "Exercise_2",
+                "2": "Exercise_3",
+                "3": "Exercise_4"
+            },
+            "model_config": {
+                "use_hand": true,
+                "use_kinematic": true,
+                "upper_limb_only": true
+            },
+            "architecture_signature": "upper_limb_ctr_gcn_v1",
+            "checkpoint_role": "supervised_model"
+        }
+    },
+    {
+        "fold_id": "fold_05",
+        "model_name": "UpperLimbCTRGCN",
+        "accuracy": 0.6901408450704225,
+        "precision_macro": 0.7383333333333333,
+        "recall_macro": 0.7267857142857144,
+        "f1_macro": 0.6925752508361204,
+        "sample_count": 71,
+        "observed_classes": [
+            0,
+            1,
+            2,
+            3
+        ],
+        "expected_classes": [
+            0,
+            1,
+            2,
+            3
+        ],
+        "class_coverage_complete": true,
+        "task_evaluated": "exercise_classification",
+        "task_omitted": null,
+        "completion_accuracy": 0.676056338028169,
+        "completion_precision_macro": 0.7441176470588236,
+        "completion_recall_macro": 0.6995192307692308,
+        "completion_f1_macro": 0.666530528895242,
+        "completion_sample_count": 71,
+        "completion_observed_classes": [
+            0,
+            1
+        ],
+        "metadata": {
+            "model_id": "UpperLimbCTRGCN",
+            "fold_id": "fold_05",
+            "protocol_version": "1.1",
+            "provenance_hash": "23c2471bad1c6f4a5272cc8ffd370b0b0155de32b8d370f19f63584e3d6acbcd",
+            "train_manifest_hash": "01b10f7a4c76487122e6e0725dbba188b3a213f47aca09c5e0effbddb2fa5d01",
+            "normalization_hash": "cdc237203fee6902085d1ac0f131a940b4b5854bed26899e0224b23f62336e4f",
+            "class_mapping": {
+                "0": "Exercise_1",
+                "1": "Exercise_2",
+                "2": "Exercise_3",
+                "3": "Exercise_4"
+            },
+            "model_config": {
+                "use_hand": true,
+                "use_kinematic": true,
+                "upper_limb_only": true
+            },
+            "architecture_signature": "upper_limb_ctr_gcn_v1",
+            "checkpoint_role": "supervised_model"
+        }
+    },
+    {
+        "fold_id": "fold_06",
+        "model_name": "UpperLimbCTRGCN",
+        "accuracy": 0.29545454545454547,
+        "precision_macro": 0.3333333333333333,
+        "recall_macro": 0.14263157894736841,
+        "f1_macro": 0.19686907020872868,
+        "sample_count": 44,
+        "observed_classes": [
+            2,
+            3
+        ],
+        "expected_classes": [
+            0,
+            1,
+            2,
+            3
+        ],
+        "class_coverage_complete": false,
+        "task_evaluated": "exercise_classification",
+        "task_omitted": null,
+        "completion_accuracy": 0.75,
+        "completion_precision_macro": 0.8428571428571429,
+        "completion_recall_macro": 0.725,
+        "completion_f1_macro": 0.717124488603156,
+        "completion_sample_count": 44,
+        "completion_observed_classes": [
+            0,
+            1
+        ],
+        "metadata": {
+            "model_id": "UpperLimbCTRGCN",
+            "fold_id": "fold_06",
+            "protocol_version": "1.1",
+            "provenance_hash": "23c2471bad1c6f4a5272cc8ffd370b0b0155de32b8d370f19f63584e3d6acbcd",
+            "train_manifest_hash": "30e47be7fae301013667f6c22f9357aefe04ea0cb313cb38fe9fe859abdfba82",
+            "normalization_hash": "424f67988146bb66451634145d4a535551af02042c08cefbd037e24e365d78be",
+            "class_mapping": {
+                "0": "Exercise_1",
+                "1": "Exercise_2",
+                "2": "Exercise_3",
+                "3": "Exercise_4"
+            },
+            "model_config": {
+                "use_hand": true,
+                "use_kinematic": true,
+                "upper_limb_only": true
+            },
+            "architecture_signature": "upper_limb_ctr_gcn_v1",
+            "checkpoint_role": "supervised_model"
+        }
+    },
+    {
+        "fold_id": "fold_07",
+        "model_name": "UpperLimbCTRGCN",
+        "accuracy": 0.15,
+        "precision_macro": 0.25,
+        "recall_macro": 0.0375,
+        "f1_macro": 0.06521739130434782,
+        "sample_count": 20,
+        "observed_classes": [
+            0
+        ],
+        "expected_classes": [
+            0,
+            1,
+            2,
+            3
+        ],
+        "class_coverage_complete": false,
+        "task_evaluated": "exercise_classification",
+        "task_omitted": null,
+        "completion_accuracy": 0.45,
+        "completion_precision_macro": 0.4019607843137255,
+        "completion_recall_macro": 0.45,
+        "completion_f1_macro": 0.37321937321937326,
+        "completion_sample_count": 20,
+        "completion_observed_classes": [
+            0,
+            1
+        ],
+        "metadata": {
+            "model_id": "UpperLimbCTRGCN",
+            "fold_id": "fold_07",
+            "protocol_version": "1.1",
+            "provenance_hash": "23c2471bad1c6f4a5272cc8ffd370b0b0155de32b8d370f19f63584e3d6acbcd",
+            "train_manifest_hash": "fd27d05d85014527fb88e851db843417528019b153dce2dbded0eb9a73e92600",
+            "normalization_hash": "8a176043911925f44b68bac6002715f623c971347d93be7688e107ca9e65c8a4",
+            "class_mapping": {
+                "0": "Exercise_1",
+                "1": "Exercise_2",
+                "2": "Exercise_3",
+                "3": "Exercise_4"
+            },
+            "model_config": {
+                "use_hand": true,
+                "use_kinematic": true,
+                "upper_limb_only": true
+            },
+            "architecture_signature": "upper_limb_ctr_gcn_v1",
+            "checkpoint_role": "supervised_model"
+        }
+    },
+    {
+        "fold_id": "fold_08",
+        "model_name": "UpperLimbCTRGCN",
+        "accuracy": 0.0,
+        "precision_macro": 0.0,
+        "recall_macro": 0.0,
+        "f1_macro": 0.0,
+        "sample_count": 20,
+        "observed_classes": [
+            1
+        ],
+        "expected_classes": [
+            0,
+            1,
+            2,
+            3
+        ],
+        "class_coverage_complete": false,
+        "task_evaluated": "exercise_classification",
+        "task_omitted": null,
+        "completion_accuracy": 0.5,
+        "completion_precision_macro": 0.5,
+        "completion_recall_macro": 0.5,
+        "completion_f1_macro": 0.40476190476190477,
+        "completion_sample_count": 20,
+        "completion_observed_classes": [
+            0,
+            1
+        ],
+        "metadata": {
+            "model_id": "UpperLimbCTRGCN",
+            "fold_id": "fold_08",
+            "protocol_version": "1.1",
+            "provenance_hash": "23c2471bad1c6f4a5272cc8ffd370b0b0155de32b8d370f19f63584e3d6acbcd",
+            "train_manifest_hash": "a9b402d0f8da8ebc90537556e2bfec22a86fa1ee68c7fba1b44da9df5721f7f4",
+            "normalization_hash": "4632c661c822c133e31721ef6e8a5d7e8bc3c57793f65b6cab64f814c4ddebd1",
+            "class_mapping": {
+                "0": "Exercise_1",
+                "1": "Exercise_2",
+                "2": "Exercise_3",
+                "3": "Exercise_4"
+            },
+            "model_config": {
+                "use_hand": true,
+                "use_kinematic": true,
+                "upper_limb_only": true
+            },
+            "architecture_signature": "upper_limb_ctr_gcn_v1",
+            "checkpoint_role": "supervised_model"
+        }
+    },
+    {
+        "fold_id": "fold_09",
+        "model_name": "UpperLimbCTRGCN",
+        "accuracy": 0.1875,
+        "precision_macro": 0.25,
+        "recall_macro": 0.046875,
+        "f1_macro": 0.07894736842105263,
+        "sample_count": 16,
+        "observed_classes": [
+            3
+        ],
+        "expected_classes": [
+            0,
+            1,
+            2,
+            3
+        ],
+        "class_coverage_complete": false,
+        "task_evaluated": "exercise_classification",
+        "task_omitted": null,
+        "completion_accuracy": 0.375,
+        "completion_precision_macro": 0.25,
+        "completion_recall_macro": 0.3,
+        "completion_f1_macro": 0.2727272727272727,
+        "completion_sample_count": 16,
+        "completion_observed_classes": [
+            0,
+            1
+        ],
+        "metadata": {
+            "model_id": "UpperLimbCTRGCN",
+            "fold_id": "fold_09",
+            "protocol_version": "1.1",
+            "provenance_hash": "23c2471bad1c6f4a5272cc8ffd370b0b0155de32b8d370f19f63584e3d6acbcd",
+            "train_manifest_hash": "944499c25ee30afd68ecbab3e0dd2b742a318e16531f2f21317215bf20ba3ba2",
+            "normalization_hash": "073f10e443d82d5da7a5cd8c046c7dfc17d176cd691cbe1c88a9667f3b791294",
+            "class_mapping": {
+                "0": "Exercise_1",
+                "1": "Exercise_2",
+                "2": "Exercise_3",
+                "3": "Exercise_4"
+            },
+            "model_config": {
+                "use_hand": true,
+                "use_kinematic": true,
+                "upper_limb_only": true
+            },
+            "architecture_signature": "upper_limb_ctr_gcn_v1",
+            "checkpoint_role": "supervised_model"
+        }
+    },
+    {
+        "fold_id": "fold_10",
+        "model_name": "UpperLimbCTRGCN",
+        "accuracy": 0.25,
+        "precision_macro": 0.25,
+        "recall_macro": 0.0625,
+        "f1_macro": 0.1,
+        "sample_count": 20,
+        "observed_classes": [
+            2
+        ],
+        "expected_classes": [
+            0,
+            1,
+            2,
+            3
+        ],
+        "class_coverage_complete": false,
+        "task_evaluated": "exercise_classification",
+        "task_omitted": null,
+        "completion_accuracy": 0.5,
+        "completion_precision_macro": 0.5,
+        "completion_recall_macro": 0.5,
+        "completion_f1_macro": 0.47916666666666663,
+        "completion_sample_count": 20,
+        "completion_observed_classes": [
+            0,
+            1
+        ],
+        "metadata": {
+            "model_id": "UpperLimbCTRGCN",
+            "fold_id": "fold_10",
+            "protocol_version": "1.1",
+            "provenance_hash": "23c2471bad1c6f4a5272cc8ffd370b0b0155de32b8d370f19f63584e3d6acbcd",
+            "train_manifest_hash": "31b3edbdd79f9e037fc9c63927f04ecb2722236369971b7fab4674e87b8d31d9",
+            "normalization_hash": "edbfbd71e7722c34999767b8b44fe5ce9d6ca3170167639729e36caaa7f29b3d",
+            "class_mapping": {
+                "0": "Exercise_1",
+                "1": "Exercise_2",
+                "2": "Exercise_3",
+                "3": "Exercise_4"
+            },
+            "model_config": {
+                "use_hand": true,
+                "use_kinematic": true,
+                "upper_limb_only": true
+            },
+            "architecture_signature": "upper_limb_ctr_gcn_v1",
+            "checkpoint_role": "supervised_model"
+        }
+    }
+]

@@ -1,0 +1,225 @@
+{
+  "protocol": {
+    "design": "strict ten-fold subject-wise LOSO",
+    "seeds": [
+      42,
+      7,
+      2026
+    ],
+    "additional_seeds_predeclared": [
+      7,
+      2026
+    ],
+    "paired_unit": "identical seed and held-out-subject fold",
+    "checkpoint_selection": "validation only",
+    "independence_warning": "30 fold-seed rows reuse 10 subjects and are not 30 independent subjects",
+    "selection_warning": "Optimized-v1 architecture was selected after seed-42 ablation test inspection"
+  },
+  "per_seed": {
+    "42": {
+      "models": {
+        "full_v2": {
+          "exercise_macro_f1": {
+            "mean": 0.35439626628948495,
+            "std": 0.2704338173418803,
+            "min": 0.023809523809523808,
+            "max": 0.7392452412104841
+          },
+          "accuracy": {
+            "mean": 0.4379407539834007,
+            "std": 0.2334719063429783,
+            "min": 0.05,
+            "max": 0.7457627118644068
+          }
+        },
+        "optimized_v1": {
+          "exercise_macro_f1": {
+            "mean": 0.39447345363584396,
+            "std": 0.3477952098186064,
+            "min": 0.0,
+            "max": 0.9365079365079365
+          },
+          "accuracy": {
+            "mean": 0.48365566377813085,
+            "std": 0.33056392958185055,
+            "min": 0.0,
+            "max": 0.9318181818181818
+          }
+        }
+      },
+      "paired_macro_f1": {
+        "mean_delta": 0.04007718734635903,
+        "median_delta": -0.004734848484848508,
+        "wins": 4,
+        "ties": 1,
+        "losses": 5,
+        "per_fold_delta": {
+          "fold_01": 0.10085434173669466,
+          "fold_02": 0.18715426587776107,
+          "fold_03": 0.3414768806073154,
+          "fold_04": -0.09093396197248071,
+          "fold_05": 0.06253142163864667,
+          "fold_06": -0.10457135457135458,
+          "fold_07": 0.0,
+          "fold_08": -0.06521739130434782,
+          "fold_09": -0.02105263157894738,
+          "fold_10": -0.009469696969697017
+        }
+      }
+    },
+    "7": {
+      "models": {
+        "full_v2": {
+          "exercise_macro_f1": {
+            "mean": 0.32123703861676933,
+            "std": 0.2719686899123378,
+            "min": 0.0,
+            "max": 0.7320889894419306
+          },
+          "accuracy": {
+            "mean": 0.4188836625602736,
+            "std": 0.27870544610925724,
+            "min": 0.0,
+            "max": 0.7843137254901961
+          }
+        },
+        "optimized_v1": {
+          "exercise_macro_f1": {
+            "mean": 0.3779375107414549,
+            "std": 0.31432188612471396,
+            "min": 0.023809523809523808,
+            "max": 0.8807432432432433
+          },
+          "accuracy": {
+            "mean": 0.4680434797673925,
+            "std": 0.27997263360892183,
+            "min": 0.05,
+            "max": 0.8636363636363636
+          }
+        }
+      },
+      "paired_macro_f1": {
+        "mean_delta": 0.0567004721246856,
+        "median_delta": 0.029665379665379646,
+        "wins": 6,
+        "ties": 1,
+        "losses": 3,
+        "per_fold_delta": {
+          "fold_01": 0.03782482223658701,
+          "fold_02": -0.10377087898096293,
+          "fold_03": 0.46690360435823236,
+          "fold_04": -0.06478337274708246,
+          "fold_05": 0.14788867593821153,
+          "fold_06": 0.035521235521235484,
+          "fold_07": 0.0,
+          "fold_08": 0.023809523809523808,
+          "fold_09": 0.04444444444444445,
+          "fold_10": -0.020833333333333315
+        }
+      }
+    },
+    "2026": {
+      "models": {
+        "full_v2": {
+          "exercise_macro_f1": {
+            "mean": 0.2952908058530961,
+            "std": 0.24495851395196253,
+            "min": 0.0,
+            "max": 0.6395833333333333
+          },
+          "accuracy": {
+            "mean": 0.353774799086066,
+            "std": 0.2364882747696385,
+            "min": 0.0,
+            "max": 0.647887323943662
+          }
+        },
+        "optimized_v1": {
+          "exercise_macro_f1": {
+            "mean": 0.38685867948747016,
+            "std": 0.33193942438034,
+            "min": 0.0,
+            "max": 0.8131987577639751
+          },
+          "accuracy": {
+            "mean": 0.477748570792713,
+            "std": 0.3111224945165873,
+            "min": 0.0,
+            "max": 0.7966101694915254
+          }
+        }
+      },
+      "paired_macro_f1": {
+        "mean_delta": 0.09156787363437405,
+        "median_delta": 0.05171692081936448,
+        "wins": 7,
+        "ties": 2,
+        "losses": 1,
+        "per_fold_delta": {
+          "fold_01": 0.09605721076309309,
+          "fold_02": 0.1546600629192968,
+          "fold_03": 0.2844108789760964,
+          "fold_04": 0.27044726107226125,
+          "fold_05": 0.04601757369614523,
+          "fold_06": -0.012880861156723253,
+          "fold_07": 0.0,
+          "fold_08": 0.0,
+          "fold_09": 0.057416267942583726,
+          "fold_10": 0.019550342130987303
+        }
+      }
+    }
+  },
+  "aggregate_descriptive": {
+    "models": {
+      "full_v2": {
+        "exercise_macro_f1": {
+          "mean": 0.3236413702531168,
+          "std": 0.2547147703051699,
+          "min": 0.0,
+          "max": 0.7392452412104841
+        },
+        "accuracy": {
+          "mean": 0.4035330718765801,
+          "std": 0.2443829101866165,
+          "min": 0.0,
+          "max": 0.7843137254901961
+        }
+      },
+      "optimized_v1": {
+        "exercise_macro_f1": {
+          "mean": 0.3864232146215897,
+          "std": 0.32006798142287124,
+          "min": 0.0,
+          "max": 0.9365079365079365
+        },
+        "accuracy": {
+          "mean": 0.4764825714460788,
+          "std": 0.29718984331427395,
+          "min": 0.0,
+          "max": 0.9318181818181818
+        }
+      }
+    },
+    "paired_macro_f1": {
+      "mean_delta": 0.0627818443684729,
+      "median_delta": 0.029665379665379646,
+      "wins": 17,
+      "ties": 4,
+      "losses": 9,
+      "positive_mean_delta_all_seeds": true,
+      "folds_positive_after_averaging_seeds": 6,
+      "folds_total": 10
+    }
+  },
+  "descriptive_variability": {
+    "between_subject_std_of_seed_averaged_paired_delta": 0.11359525913893952,
+    "between_seed_std_of_overall_paired_delta": 0.02627850851700538,
+    "mean_within_subject_std_across_seeds": 0.0724183618541816
+  },
+  "robustness_decision": "directionally_consistent_across_seeds",
+  "promotion_allowed": false,
+  "production_changed": false,
+  "scientific_decision": "E_DATASET_TOO_SMALL_OR_INSUFFICIENT_FOR_STRONG_CONCLUSION",
+  "recommendation": "Optimized-v1 is a promising research candidate, but validate the frozen architecture on fresh subjects before any production promotion."
+}

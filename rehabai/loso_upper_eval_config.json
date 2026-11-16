@@ -1,0 +1,245 @@
+{
+    "jobs":  [
+                 {
+                     "fold_id":  "fold_01",
+                     "model_name":  "RehabMotionNet",
+                     "data_dir":  "D:\\PhucHoiChucNangTay\\rehabai\\data\\stage3_upper_limb\\processed\\keypoints",
+                     "source_dir":  "D:\\PhucHoiChucNangTay\\RehabAI_Datasets_FULL_VERIFIED\\01_Upper_Limb_Stroke",
+                     "split_manifest":  "D:\\PhucHoiChucNangTay\\rehabai\\data\\stage3_upper_limb\\loso\\fold_01\\test_manifest.csv",
+                     "normalization_json":  "D:\\PhucHoiChucNangTay\\rehabai\\data\\stage3_upper_limb\\loso\\fold_01\\normalization.json",
+                     "checkpoint_path":  "D:\\PhucHoiChucNangTay\\rehabai\\training\\checkpoints\\fold_01\\RehabMotionNet_fold_01_supervised_model.pth",
+                     "fold_metadata_path":  "D:\\PhucHoiChucNangTay\\rehabai\\data\\stage3_upper_limb\\loso\\fold_01\\metadata.json",
+                     "expected_model_config":  {
+                                                   "use_hand":  true,
+                                                   "use_kinematic":  true,
+                                                   "use_contrastive":  true,
+                                                   "use_mstcn":  true,
+                                                   "use_attention":  true
+                                               },
+                     "expected_architecture_signature":  "rehab_motionnet_v1",
+                     "expected_class_mapping":  {
+                                                    "0":  "Exercise_1",
+                                                    "1":  "Exercise_2",
+                                                    "2":  "Exercise_3",
+                                                    "3":  "Exercise_4"
+                                                }
+                 },
+                 {
+                     "fold_id":  "fold_02",
+                     "model_name":  "RehabMotionNet",
+                     "data_dir":  "D:\\PhucHoiChucNangTay\\rehabai\\data\\stage3_upper_limb\\processed\\keypoints",
+                     "source_dir":  "D:\\PhucHoiChucNangTay\\RehabAI_Datasets_FULL_VERIFIED\\01_Upper_Limb_Stroke",
+                     "split_manifest":  "D:\\PhucHoiChucNangTay\\rehabai\\data\\stage3_upper_limb\\loso\\fold_02\\test_manifest.csv",
+                     "normalization_json":  "D:\\PhucHoiChucNangTay\\rehabai\\data\\stage3_upper_limb\\loso\\fold_02\\normalization.json",
+                     "checkpoint_path":  "D:\\PhucHoiChucNangTay\\rehabai\\training\\checkpoints\\fold_02\\RehabMotionNet_fold_02_supervised_model.pth",
+                     "fold_metadata_path":  "D:\\PhucHoiChucNangTay\\rehabai\\data\\stage3_upper_limb\\loso\\fold_02\\metadata.json",
+                     "expected_model_config":  {
+                                                   "use_hand":  true,
+                                                   "use_kinematic":  true,
+                                                   "use_contrastive":  true,
+                                                   "use_mstcn":  true,
+                                                   "use_attention":  true
+                                               },
+                     "expected_architecture_signature":  "rehab_motionnet_v1",
+                     "expected_class_mapping":  {
+                                                    "0":  "Exercise_1",
+                                                    "1":  "Exercise_2",
+                                                    "2":  "Exercise_3",
+                                                    "3":  "Exercise_4"
+                                                }
+                 },
+                 {
+                     "fold_id":  "fold_03",
+                     "model_name":  "RehabMotionNet",
+                     "data_dir":  "D:\\PhucHoiChucNangTay\\rehabai\\data\\stage3_upper_limb\\processed\\keypoints",
+                     "source_dir":  "D:\\PhucHoiChucNangTay\\RehabAI_Datasets_FULL_VERIFIED\\01_Upper_Limb_Stroke",
+                     "split_manifest":  "D:\\PhucHoiChucNangTay\\rehabai\\data\\stage3_upper_limb\\loso\\fold_03\\test_manifest.csv",
+                     "normalization_json":  "D:\\PhucHoiChucNangTay\\rehabai\\data\\stage3_upper_limb\\loso\\fold_03\\normalization.json",
+                     "checkpoint_path":  "D:\\PhucHoiChucNangTay\\rehabai\\training\\checkpoints\\fold_03\\RehabMotionNet_fold_03_supervised_model.pth",
+                     "fold_metadata_path":  "D:\\PhucHoiChucNangTay\\rehabai\\data\\stage3_upper_limb\\loso\\fold_03\\metadata.json",
+                     "expected_model_config":  {
+                                                   "use_hand":  true,
+                                                   "use_kinematic":  true,
+                                                   "use_contrastive":  true,
+                                                   "use_mstcn":  true,
+                                                   "use_attention":  true
+                                               },
+                     "expected_architecture_signature":  "rehab_motionnet_v1",
+                     "expected_class_mapping":  {
+                                                    "0":  "Exercise_1",
+                                                    "1":  "Exercise_2",
+                                                    "2":  "Exercise_3",
+                                                    "3":  "Exercise_4"
+                                                }
+                 },
+                 {
+                     "fold_id":  "fold_04",
+                     "model_name":  "RehabMotionNet",
+                     "data_dir":  "D:\\PhucHoiChucNangTay\\rehabai\\data\\stage3_upper_limb\\processed\\keypoints",
+                     "source_dir":  "D:\\PhucHoiChucNangTay\\RehabAI_Datasets_FULL_VERIFIED\\01_Upper_Limb_Stroke",
+                     "split_manifest":  "D:\\PhucHoiChucNangTay\\rehabai\\data\\stage3_upper_limb\\loso\\fold_04\\test_manifest.csv",
+                     "normalization_json":  "D:\\PhucHoiChucNangTay\\rehabai\\data\\stage3_upper_limb\\loso\\fold_04\\normalization.json",
+                     "checkpoint_path":  "D:\\PhucHoiChucNangTay\\rehabai\\training\\checkpoints\\fold_04\\RehabMotionNet_fold_04_supervised_model.pth",
+                     "fold_metadata_path":  "D:\\PhucHoiChucNangTay\\rehabai\\data\\stage3_upper_limb\\loso\\fold_04\\metadata.json",
+                     "expected_model_config":  {
+                                                   "use_hand":  true,
+                                                   "use_kinematic":  true,
+                                                   "use_contrastive":  true,
+                                                   "use_mstcn":  true,
+                                                   "use_attention":  true
+                                               },
+                     "expected_architecture_signature":  "rehab_motionnet_v1",
+                     "expected_class_mapping":  {
+                                                    "0":  "Exercise_1",
+                                                    "1":  "Exercise_2",
+                                                    "2":  "Exercise_3",
+                                                    "3":  "Exercise_4"
+                                                }
+                 },
+                 {
+                     "fold_id":  "fold_05",
+                     "model_name":  "RehabMotionNet",
+                     "data_dir":  "D:\\PhucHoiChucNangTay\\rehabai\\data\\stage3_upper_limb\\processed\\keypoints",
+                     "source_dir":  "D:\\PhucHoiChucNangTay\\RehabAI_Datasets_FULL_VERIFIED\\01_Upper_Limb_Stroke",
+                     "split_manifest":  "D:\\PhucHoiChucNangTay\\rehabai\\data\\stage3_upper_limb\\loso\\fold_05\\test_manifest.csv",
+                     "normalization_json":  "D:\\PhucHoiChucNangTay\\rehabai\\data\\stage3_upper_limb\\loso\\fold_05\\normalization.json",
+                     "checkpoint_path":  "D:\\PhucHoiChucNangTay\\rehabai\\training\\checkpoints\\fold_05\\RehabMotionNet_fold_05_supervised_model.pth",
+                     "fold_metadata_path":  "D:\\PhucHoiChucNangTay\\rehabai\\data\\stage3_upper_limb\\loso\\fold_05\\metadata.json",
+                     "expected_model_config":  {
+                                                   "use_hand":  true,
+                                                   "use_kinematic":  true,
+                                                   "use_contrastive":  true,
+                                                   "use_mstcn":  true,
+                                                   "use_attention":  true
+                                               },
+                     "expected_architecture_signature":  "rehab_motionnet_v1",
+                     "expected_class_mapping":  {
+                                                    "0":  "Exercise_1",
+                                                    "1":  "Exercise_2",
+                                                    "2":  "Exercise_3",
+                                                    "3":  "Exercise_4"
+                                                }
+                 },
+                 {
+                     "fold_id":  "fold_06",
+                     "model_name":  "RehabMotionNet",
+                     "data_dir":  "D:\\PhucHoiChucNangTay\\rehabai\\data\\stage3_upper_limb\\processed\\keypoints",
+                     "source_dir":  "D:\\PhucHoiChucNangTay\\RehabAI_Datasets_FULL_VERIFIED\\01_Upper_Limb_Stroke",
+                     "split_manifest":  "D:\\PhucHoiChucNangTay\\rehabai\\data\\stage3_upper_limb\\loso\\fold_06\\test_manifest.csv",
+                     "normalization_json":  "D:\\PhucHoiChucNangTay\\rehabai\\data\\stage3_upper_limb\\loso\\fold_06\\normalization.json",
+                     "checkpoint_path":  "D:\\PhucHoiChucNangTay\\rehabai\\training\\checkpoints\\fold_06\\RehabMotionNet_fold_06_supervised_model.pth",
+                     "fold_metadata_path":  "D:\\PhucHoiChucNangTay\\rehabai\\data\\stage3_upper_limb\\loso\\fold_06\\metadata.json",
+                     "expected_model_config":  {
+                                                   "use_hand":  true,
+                                                   "use_kinematic":  true,
+                                                   "use_contrastive":  true,
+                                                   "use_mstcn":  true,
+                                                   "use_attention":  true
+                                               },
+                     "expected_architecture_signature":  "rehab_motionnet_v1",
+                     "expected_class_mapping":  {
+                                                    "0":  "Exercise_1",
+                                                    "1":  "Exercise_2",
+                                                    "2":  "Exercise_3",
+                                                    "3":  "Exercise_4"
+                                                }
+                 },
+                 {
+                     "fold_id":  "fold_07",
+                     "model_name":  "RehabMotionNet",
+                     "data_dir":  "D:\\PhucHoiChucNangTay\\rehabai\\data\\stage3_upper_limb\\processed\\keypoints",
+                     "source_dir":  "D:\\PhucHoiChucNangTay\\RehabAI_Datasets_FULL_VERIFIED\\01_Upper_Limb_Stroke",
+                     "split_manifest":  "D:\\PhucHoiChucNangTay\\rehabai\\data\\stage3_upper_limb\\loso\\fold_07\\test_manifest.csv",
+                     "normalization_json":  "D:\\PhucHoiChucNangTay\\rehabai\\data\\stage3_upper_limb\\loso\\fold_07\\normalization.json",
+                     "checkpoint_path":  "D:\\PhucHoiChucNangTay\\rehabai\\training\\checkpoints\\fold_07\\RehabMotionNet_fold_07_supervised_model.pth",
+                     "fold_metadata_path":  "D:\\PhucHoiChucNangTay\\rehabai\\data\\stage3_upper_limb\\loso\\fold_07\\metadata.json",
+                     "expected_model_config":  {
+                                                   "use_hand":  true,
+                                                   "use_kinematic":  true,
+                                                   "use_contrastive":  true,
+                                                   "use_mstcn":  true,
+                                                   "use_attention":  true
+                                               },
+                     "expected_architecture_signature":  "rehab_motionnet_v1",
+                     "expected_class_mapping":  {
+                                                    "0":  "Exercise_1",
+                                                    "1":  "Exercise_2",
+                                                    "2":  "Exercise_3",
+                                                    "3":  "Exercise_4"
+                                                }
+                 },
+                 {
+                     "fold_id":  "fold_08",
+                     "model_name":  "RehabMotionNet",
+                     "data_dir":  "D:\\PhucHoiChucNangTay\\rehabai\\data\\stage3_upper_limb\\processed\\keypoints",
+                     "source_dir":  "D:\\PhucHoiChucNangTay\\RehabAI_Datasets_FULL_VERIFIED\\01_Upper_Limb_Stroke",
+                     "split_manifest":  "D:\\PhucHoiChucNangTay\\rehabai\\data\\stage3_upper_limb\\loso\\fold_08\\test_manifest.csv",
+                     "normalization_json":  "D:\\PhucHoiChucNangTay\\rehabai\\data\\stage3_upper_limb\\loso\\fold_08\\normalization.json",
+                     "checkpoint_path":  "D:\\PhucHoiChucNangTay\\rehabai\\training\\checkpoints\\fold_08\\RehabMotionNet_fold_08_supervised_model.pth",
+                     "fold_metadata_path":  "D:\\PhucHoiChucNangTay\\rehabai\\data\\stage3_upper_limb\\loso\\fold_08\\metadata.json",
+                     "expected_model_config":  {
+                                                   "use_hand":  true,
+                                                   "use_kinematic":  true,
+                                                   "use_contrastive":  true,
+                                                   "use_mstcn":  true,
+                                                   "use_attention":  true
+                                               },
+                     "expected_architecture_signature":  "rehab_motionnet_v1",
+                     "expected_class_mapping":  {
+                                                    "0":  "Exercise_1",
+                                                    "1":  "Exercise_2",
+                                                    "2":  "Exercise_3",
+                                                    "3":  "Exercise_4"
+                                                }
+                 },
+                 {
+                     "fold_id":  "fold_09",
+                     "model_name":  "RehabMotionNet",
+                     "data_dir":  "D:\\PhucHoiChucNangTay\\rehabai\\data\\stage3_upper_limb\\processed\\keypoints",
+                     "source_dir":  "D:\\PhucHoiChucNangTay\\RehabAI_Datasets_FULL_VERIFIED\\01_Upper_Limb_Stroke",
+                     "split_manifest":  "D:\\PhucHoiChucNangTay\\rehabai\\data\\stage3_upper_limb\\loso\\fold_09\\test_manifest.csv",
+                     "normalization_json":  "D:\\PhucHoiChucNangTay\\rehabai\\data\\stage3_upper_limb\\loso\\fold_09\\normalization.json",
+                     "checkpoint_path":  "D:\\PhucHoiChucNangTay\\rehabai\\training\\checkpoints\\fold_09\\RehabMotionNet_fold_09_supervised_model.pth",
+                     "fold_metadata_path":  "D:\\PhucHoiChucNangTay\\rehabai\\data\\stage3_upper_limb\\loso\\fold_09\\metadata.json",
+                     "expected_model_config":  {
+                                                   "use_hand":  true,
+                                                   "use_kinematic":  true,
+                                                   "use_contrastive":  true,
+                                                   "use_mstcn":  true,
+                                                   "use_attention":  true
+                                               },
+                     "expected_architecture_signature":  "rehab_motionnet_v1",
+                     "expected_class_mapping":  {
+                                                    "0":  "Exercise_1",
+                                                    "1":  "Exercise_2",
+                                                    "2":  "Exercise_3",
+                                                    "3":  "Exercise_4"
+                                                }
+                 },
+                 {
+                     "fold_id":  "fold_10",
+                     "model_name":  "RehabMotionNet",
+                     "data_dir":  "D:\\PhucHoiChucNangTay\\rehabai\\data\\stage3_upper_limb\\processed\\keypoints",
+                     "source_dir":  "D:\\PhucHoiChucNangTay\\RehabAI_Datasets_FULL_VERIFIED\\01_Upper_Limb_Stroke",
+                     "split_manifest":  "D:\\PhucHoiChucNangTay\\rehabai\\data\\stage3_upper_limb\\loso\\fold_10\\test_manifest.csv",
+                     "normalization_json":  "D:\\PhucHoiChucNangTay\\rehabai\\data\\stage3_upper_limb\\loso\\fold_10\\normalization.json",
+                     "checkpoint_path":  "D:\\PhucHoiChucNangTay\\rehabai\\training\\checkpoints\\fold_10\\RehabMotionNet_fold_10_supervised_model.pth",
+                     "fold_metadata_path":  "D:\\PhucHoiChucNangTay\\rehabai\\data\\stage3_upper_limb\\loso\\fold_10\\metadata.json",
+                     "expected_model_config":  {
+                                                   "use_hand":  true,
+                                                   "use_kinematic":  true,
+                                                   "use_contrastive":  true,
+                                                   "use_mstcn":  true,
+                                                   "use_attention":  true
+                                               },
+                     "expected_architecture_signature":  "rehab_motionnet_v1",
+                     "expected_class_mapping":  {
+                                                    "0":  "Exercise_1",
+                                                    "1":  "Exercise_2",
+                                                    "2":  "Exercise_3",
+                                                    "3":  "Exercise_4"
+                                                }
+                 }
+             ],
+    "output_file":  "D:\\PhucHoiChucNangTay\\rehabai\\reports\\evaluation\\loso_upper_limb_rehabmotionnet.json"
+}

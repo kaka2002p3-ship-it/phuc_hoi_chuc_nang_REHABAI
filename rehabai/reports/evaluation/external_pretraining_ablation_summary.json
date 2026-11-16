@@ -1,0 +1,241 @@
+{
+  "protocol": "paired strict ten-fold subject-wise LOSO",
+  "models": {
+    "rehab24_only": {
+      "label": "REHAB24-6 only (02)",
+      "exercise_macro_f1": {
+        "mean": 0.34576290722664904,
+        "std": 0.3153637256630223,
+        "min": 0.0,
+        "max": 0.8589743589743589
+      },
+      "accuracy": {
+        "mean": 0.4228587356186425,
+        "std": 0.3103829873467655,
+        "min": 0.0,
+        "max": 0.8409090909090909
+      },
+      "completion_macro_f1": {
+        "mean": 0.4664724653783964,
+        "std": 0.060339266836358846,
+        "min": 0.375,
+        "max": 0.5602397602397602
+      },
+      "completion_accuracy": {
+        "mean": 0.4915791878069833,
+        "std": 0.06621179083722603,
+        "min": 0.4,
+        "max": 0.5681818181818182
+      }
+    },
+    "mobiphysio_only": {
+      "label": "MobiPhysio only (03)",
+      "exercise_macro_f1": {
+        "mean": 0.3397557551299731,
+        "std": 0.2872634686896418,
+        "min": 0.0,
+        "max": 0.8341694537346711
+      },
+      "accuracy": {
+        "mean": 0.416138862009788,
+        "std": 0.2701010317364321,
+        "min": 0.0,
+        "max": 0.8181818181818182
+      },
+      "completion_macro_f1": {
+        "mean": 0.5289669536329118,
+        "std": 0.10360862979004132,
+        "min": 0.4000000000000001,
+        "max": 0.7410008779631256
+      },
+      "completion_accuracy": {
+        "mean": 0.5463794835085014,
+        "std": 0.10570453471408828,
+        "min": 0.4,
+        "max": 0.7457627118644068
+      }
+    },
+    "combined": {
+      "label": "02 + 03",
+      "exercise_macro_f1": {
+        "mean": 0.3002502599020413,
+        "std": 0.2723352842637632,
+        "min": 0.0,
+        "max": 0.6707317073170732
+      },
+      "accuracy": {
+        "mean": 0.3768050819038525,
+        "std": 0.2954205097670045,
+        "min": 0.0,
+        "max": 0.7954545454545454
+      },
+      "completion_macro_f1": {
+        "mean": 0.4925790266592673,
+        "std": 0.0965117964073784,
+        "min": 0.3483709273182958,
+        "max": 0.6178660049627791
+      },
+      "completion_accuracy": {
+        "mean": 0.5144569028266703,
+        "std": 0.10279050664065718,
+        "min": 0.35,
+        "max": 0.6818181818181818
+      }
+    },
+    "v2": {
+      "label": "Existing RehabMotionNet v2",
+      "exercise_macro_f1": {
+        "mean": 0.35439626628948495,
+        "std": 0.2704338173418803,
+        "min": 0.023809523809523808,
+        "max": 0.7392452412104841
+      },
+      "accuracy": {
+        "mean": 0.4379407539834007,
+        "std": 0.2334719063429783,
+        "min": 0.05,
+        "max": 0.7457627118644068
+      },
+      "completion_macro_f1": {
+        "mean": 0.4828134089667702,
+        "std": 0.10828638433024639,
+        "min": 0.29292929292929293,
+        "max": 0.6636155606407322
+      },
+      "completion_accuracy": {
+        "mean": 0.5024325609386097,
+        "std": 0.10323768562608149,
+        "min": 0.3,
+        "max": 0.6666666666666666
+      }
+    },
+    "ensemble": {
+      "label": "Existing validation-selected ensemble",
+      "exercise_macro_f1": {
+        "mean": 0.3743620476430682,
+        "std": 0.3318913485698361,
+        "min": 0.0,
+        "max": 0.8882936507936507
+      },
+      "accuracy": {
+        "mean": 0.43454170079238535,
+        "std": 0.3038181446485412,
+        "min": 0.0,
+        "max": 0.8636363636363636
+      },
+      "completion_macro_f1": null,
+      "completion_accuracy": null
+    },
+    "teacher_student": {
+      "label": "Existing teacher-student",
+      "exercise_macro_f1": {
+        "mean": 0.3351064235508002,
+        "std": 0.23360794964033202,
+        "min": 0.023809523809523808,
+        "max": 0.6182457786116322
+      },
+      "accuracy": {
+        "mean": 0.4673293834884591,
+        "std": 0.2680547823604775,
+        "min": 0.05,
+        "max": 0.8409090909090909
+      },
+      "completion_macro_f1": {
+        "mean": 0.49883493608300356,
+        "std": 0.10697516019273053,
+        "min": 0.3333333333333333,
+        "max": 0.6656925774400935
+      },
+      "completion_accuracy": {
+        "mean": 0.5439792732345006,
+        "std": 0.09278691586315232,
+        "min": 0.375,
+        "max": 0.7045454545454546
+      }
+    }
+  },
+  "folds": {
+    "fold_01": {
+      "rehab24_only": 0.3583333333333333,
+      "mobiphysio_only": 0.3502262443438914,
+      "combined": 0.2710526315789474,
+      "v2": 0.2574789915966387,
+      "ensemble": 0.4306661080854629,
+      "teacher_student": 0.3635989010989011
+    },
+    "fold_02": {
+      "rehab24_only": 0.5609397753276472,
+      "mobiphysio_only": 0.5356837606837607,
+      "combined": 0.5829118250170882,
+      "v2": 0.5652097902097902,
+      "ensemble": 0.5571678321678322,
+      "teacher_student": 0.5109056248762132
+    },
+    "fold_03": {
+      "rehab24_only": 0.8589743589743589,
+      "mobiphysio_only": 0.8341694537346711,
+      "combined": 0.5839743589743589,
+      "v2": 0.5950310559006211,
+      "ensemble": 0.8882936507936507,
+      "teacher_student": 0.6182457786116322
+    },
+    "fold_04": {
+      "rehab24_only": 0.6410466410466411,
+      "mobiphysio_only": 0.5620915032679739,
+      "combined": 0.6707317073170732,
+      "v2": 0.7392452412104841,
+      "ensemble": 0.7542390405293631,
+      "teacher_student": 0.5703395703395703
+    },
+    "fold_05": {
+      "rehab24_only": 0.6696428571428571,
+      "mobiphysio_only": 0.6251043420692831,
+      "combined": 0.5647889750215331,
+      "v2": 0.6918841627769377,
+      "ensemble": 0.6925752508361204,
+      "teacher_student": 0.5858956916099773
+    },
+    "fold_06": {
+      "rehab24_only": 0.06896551724137932,
+      "mobiphysio_only": 0.2323529411764706,
+      "combined": 0.1567741935483871,
+      "v2": 0.3091168091168091,
+      "ensemble": 0.19686907020872868,
+      "teacher_student": 0.33958151700087186
+    },
+    "fold_07": {
+      "rehab24_only": 0.023809523809523808,
+      "mobiphysio_only": 0.023809523809523808,
+      "combined": 0.0,
+      "v2": 0.023809523809523808,
+      "ensemble": 0.023809523809523808,
+      "teacher_student": 0.023809523809523808
+    },
+    "fold_08": {
+      "rehab24_only": 0.0,
+      "mobiphysio_only": 0.0,
+      "combined": 0.0,
+      "v2": 0.06521739130434782,
+      "ensemble": 0.0,
+      "teacher_student": 0.045454545454545456
+    },
+    "fold_09": {
+      "rehab24_only": 0.07894736842105263,
+      "mobiphysio_only": 0.07894736842105263,
+      "combined": 0.029411764705882353,
+      "v2": 0.1,
+      "ensemble": 0.1,
+      "teacher_student": 0.07894736842105263
+    },
+    "fold_10": {
+      "rehab24_only": 0.196969696969697,
+      "mobiphysio_only": 0.15517241379310345,
+      "combined": 0.14285714285714288,
+      "v2": 0.196969696969697,
+      "ensemble": 0.1,
+      "teacher_student": 0.21428571428571427
+    }
+  },
+  "recommendation": "keep_existing_ensemble_for_research; do_not_promote_external_pretraining",
+  "reason": "Combined 02+03 and each single-source ablation are below existing v2/ensemble on mean exercise Macro-F1 and accuracy."
+}

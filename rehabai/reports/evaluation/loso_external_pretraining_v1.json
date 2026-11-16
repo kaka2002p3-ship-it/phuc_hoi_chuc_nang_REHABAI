@@ -1,0 +1,677 @@
+[
+    {
+        "fold_id": "fold_01",
+        "model_name": "RehabMotionNet",
+        "accuracy": 0.42857142857142855,
+        "precision_macro": 0.38,
+        "recall_macro": 0.3125,
+        "f1_macro": 0.2710526315789474,
+        "sample_count": 42,
+        "observed_classes": [
+            0,
+            1,
+            3
+        ],
+        "expected_classes": [
+            0,
+            1,
+            2,
+            3
+        ],
+        "class_coverage_complete": false,
+        "task_evaluated": "exercise_classification",
+        "task_omitted": null,
+        "completion_accuracy": 0.5238095238095238,
+        "completion_precision_macro": 0.5194508009153318,
+        "completion_recall_macro": 0.5194508009153318,
+        "completion_f1_macro": 0.5194508009153318,
+        "completion_sample_count": 42,
+        "completion_observed_classes": [
+            0,
+            1
+        ],
+        "metadata": {
+            "model_id": "RehabMotionNet",
+            "fold_id": "fold_01",
+            "protocol_version": "1.1",
+            "provenance_hash": "23c2471bad1c6f4a5272cc8ffd370b0b0155de32b8d370f19f63584e3d6acbcd",
+            "train_manifest_hash": "40fdb6115a208392711bb80283184b96df3e6577d7335bc30414a86554dbec6c",
+            "normalization_hash": "78e2c50fe45643ff4515b575b0281be4bb5f37a0a690495f8c195a385da5dc9d",
+            "class_mapping": {
+                "0": "Exercise_1",
+                "1": "Exercise_2",
+                "2": "Exercise_3",
+                "3": "Exercise_4"
+            },
+            "model_config": {
+                "use_hand": true,
+                "use_kinematic": true,
+                "use_contrastive": true,
+                "use_mstcn": true,
+                "use_attention": true,
+                "upper_limb_only": true
+            },
+            "architecture_signature": "rehab_motionnet_upper_limb_v2",
+            "checkpoint_role": "supervised_model",
+            "training_inputs": {
+                "external_encoder": {
+                    "artifact_sha256": "0e74e5b83f0a16a4ff670b6782673807ebdc9b88d487cfef61c491692f6397ca",
+                    "manifest_sha256": "5f4d1cb5a730d1e223ff26e636644781fc7f501469e8fc379020f9d899079859",
+                    "architecture_signature": "external_multisource_encoder_v1",
+                    "source_datasets": [
+                        "REHAB24-6",
+                        "MobiPhysio"
+                    ],
+                    "ontology_mapping_to_product": null
+                }
+            }
+        }
+    },
+    {
+        "fold_id": "fold_02",
+        "model_name": "RehabMotionNet",
+        "accuracy": 0.6666666666666666,
+        "precision_macro": 0.5870535714285714,
+        "recall_macro": 0.6296791443850267,
+        "f1_macro": 0.5829118250170882,
+        "sample_count": 51,
+        "observed_classes": [
+            0,
+            1,
+            2,
+            3
+        ],
+        "expected_classes": [
+            0,
+            1,
+            2,
+            3
+        ],
+        "class_coverage_complete": true,
+        "task_evaluated": "exercise_classification",
+        "task_omitted": null,
+        "completion_accuracy": 0.5294117647058824,
+        "completion_precision_macro": 0.5323076923076924,
+        "completion_recall_macro": 0.5353535353535354,
+        "completion_f1_macro": 0.5203761755485894,
+        "completion_sample_count": 51,
+        "completion_observed_classes": [
+            0,
+            1
+        ],
+        "metadata": {
+            "model_id": "RehabMotionNet",
+            "fold_id": "fold_02",
+            "protocol_version": "1.1",
+            "provenance_hash": "23c2471bad1c6f4a5272cc8ffd370b0b0155de32b8d370f19f63584e3d6acbcd",
+            "train_manifest_hash": "98f6752776cfebdadda989dedcf8fa9e14b37a7a1b957fb2c3555071b58815a8",
+            "normalization_hash": "97721444cef7f81de6e7e838c984933733915940ba4c9d31ec3a2da04e300867",
+            "class_mapping": {
+                "0": "Exercise_1",
+                "1": "Exercise_2",
+                "2": "Exercise_3",
+                "3": "Exercise_4"
+            },
+            "model_config": {
+                "use_hand": true,
+                "use_kinematic": true,
+                "use_contrastive": true,
+                "use_mstcn": true,
+                "use_attention": true,
+                "upper_limb_only": true
+            },
+            "architecture_signature": "rehab_motionnet_upper_limb_v2",
+            "checkpoint_role": "supervised_model",
+            "training_inputs": {
+                "external_encoder": {
+                    "artifact_sha256": "0e74e5b83f0a16a4ff670b6782673807ebdc9b88d487cfef61c491692f6397ca",
+                    "manifest_sha256": "5f4d1cb5a730d1e223ff26e636644781fc7f501469e8fc379020f9d899079859",
+                    "architecture_signature": "external_multisource_encoder_v1",
+                    "source_datasets": [
+                        "REHAB24-6",
+                        "MobiPhysio"
+                    ],
+                    "ontology_mapping_to_product": null
+                }
+            }
+        }
+    },
+    {
+        "fold_id": "fold_03",
+        "model_name": "RehabMotionNet",
+        "accuracy": 0.7954545454545454,
+        "precision_macro": 0.5873917748917749,
+        "recall_macro": 0.597953216374269,
+        "f1_macro": 0.5839743589743589,
+        "sample_count": 44,
+        "observed_classes": [
+            0,
+            1,
+            2,
+            3
+        ],
+        "expected_classes": [
+            0,
+            1,
+            2,
+            3
+        ],
+        "class_coverage_complete": true,
+        "task_evaluated": "exercise_classification",
+        "task_omitted": null,
+        "completion_accuracy": 0.4090909090909091,
+        "completion_precision_macro": 0.47126436781609193,
+        "completion_recall_macro": 0.46898263027295284,
+        "completion_f1_macro": 0.4078674948240165,
+        "completion_sample_count": 44,
+        "completion_observed_classes": [
+            0,
+            1
+        ],
+        "metadata": {
+            "model_id": "RehabMotionNet",
+            "fold_id": "fold_03",
+            "protocol_version": "1.1",
+            "provenance_hash": "23c2471bad1c6f4a5272cc8ffd370b0b0155de32b8d370f19f63584e3d6acbcd",
+            "train_manifest_hash": "01b10f7a4c76487122e6e0725dbba188b3a213f47aca09c5e0effbddb2fa5d01",
+            "normalization_hash": "92d28a5e3ba3926d581e3a43be47e04f160930c8133e4359a46548042efec90a",
+            "class_mapping": {
+                "0": "Exercise_1",
+                "1": "Exercise_2",
+                "2": "Exercise_3",
+                "3": "Exercise_4"
+            },
+            "model_config": {
+                "use_hand": true,
+                "use_kinematic": true,
+                "use_contrastive": true,
+                "use_mstcn": true,
+                "use_attention": true,
+                "upper_limb_only": true
+            },
+            "architecture_signature": "rehab_motionnet_upper_limb_v2",
+            "checkpoint_role": "supervised_model",
+            "training_inputs": {
+                "external_encoder": {
+                    "artifact_sha256": "0e74e5b83f0a16a4ff670b6782673807ebdc9b88d487cfef61c491692f6397ca",
+                    "manifest_sha256": "5f4d1cb5a730d1e223ff26e636644781fc7f501469e8fc379020f9d899079859",
+                    "architecture_signature": "external_multisource_encoder_v1",
+                    "source_datasets": [
+                        "REHAB24-6",
+                        "MobiPhysio"
+                    ],
+                    "ontology_mapping_to_product": null
+                }
+            }
+        }
+    },
+    {
+        "fold_id": "fold_04",
+        "model_name": "RehabMotionNet",
+        "accuracy": 0.6610169491525424,
+        "precision_macro": 0.6803571428571429,
+        "recall_macro": 0.7326007326007327,
+        "f1_macro": 0.6707317073170732,
+        "sample_count": 59,
+        "observed_classes": [
+            0,
+            1,
+            2,
+            3
+        ],
+        "expected_classes": [
+            0,
+            1,
+            2,
+            3
+        ],
+        "class_coverage_complete": true,
+        "task_evaluated": "exercise_classification",
+        "task_omitted": null,
+        "completion_accuracy": 0.5932203389830508,
+        "completion_precision_macro": 0.5916666666666667,
+        "completion_recall_macro": 0.5887096774193548,
+        "completion_f1_macro": 0.5874125874125874,
+        "completion_sample_count": 59,
+        "completion_observed_classes": [
+            0,
+            1
+        ],
+        "metadata": {
+            "model_id": "RehabMotionNet",
+            "fold_id": "fold_04",
+            "protocol_version": "1.1",
+            "provenance_hash": "23c2471bad1c6f4a5272cc8ffd370b0b0155de32b8d370f19f63584e3d6acbcd",
+            "train_manifest_hash": "98f6752776cfebdadda989dedcf8fa9e14b37a7a1b957fb2c3555071b58815a8",
+            "normalization_hash": "6a2b3e14c4f5f89df7ef734f947268af77c2de2adb573b8dc9724cec2adc514d",
+            "class_mapping": {
+                "0": "Exercise_1",
+                "1": "Exercise_2",
+                "2": "Exercise_3",
+                "3": "Exercise_4"
+            },
+            "model_config": {
+                "use_hand": true,
+                "use_kinematic": true,
+                "use_contrastive": true,
+                "use_mstcn": true,
+                "use_attention": true,
+                "upper_limb_only": true
+            },
+            "architecture_signature": "rehab_motionnet_upper_limb_v2",
+            "checkpoint_role": "supervised_model",
+            "training_inputs": {
+                "external_encoder": {
+                    "artifact_sha256": "0e74e5b83f0a16a4ff670b6782673807ebdc9b88d487cfef61c491692f6397ca",
+                    "manifest_sha256": "5f4d1cb5a730d1e223ff26e636644781fc7f501469e8fc379020f9d899079859",
+                    "architecture_signature": "external_multisource_encoder_v1",
+                    "source_datasets": [
+                        "REHAB24-6",
+                        "MobiPhysio"
+                    ],
+                    "ontology_mapping_to_product": null
+                }
+            }
+        }
+    },
+    {
+        "fold_id": "fold_05",
+        "model_name": "RehabMotionNet",
+        "accuracy": 0.5492957746478874,
+        "precision_macro": 0.5660427807486631,
+        "recall_macro": 0.6035714285714285,
+        "f1_macro": 0.5647889750215331,
+        "sample_count": 71,
+        "observed_classes": [
+            0,
+            1,
+            2,
+            3
+        ],
+        "expected_classes": [
+            0,
+            1,
+            2,
+            3
+        ],
+        "class_coverage_complete": true,
+        "task_evaluated": "exercise_classification",
+        "task_omitted": null,
+        "completion_accuracy": 0.6197183098591549,
+        "completion_precision_macro": 0.661873840445269,
+        "completion_recall_macro": 0.639823717948718,
+        "completion_f1_macro": 0.6120218579234973,
+        "completion_sample_count": 71,
+        "completion_observed_classes": [
+            0,
+            1
+        ],
+        "metadata": {
+            "model_id": "RehabMotionNet",
+            "fold_id": "fold_05",
+            "protocol_version": "1.1",
+            "provenance_hash": "23c2471bad1c6f4a5272cc8ffd370b0b0155de32b8d370f19f63584e3d6acbcd",
+            "train_manifest_hash": "01b10f7a4c76487122e6e0725dbba188b3a213f47aca09c5e0effbddb2fa5d01",
+            "normalization_hash": "cdc237203fee6902085d1ac0f131a940b4b5854bed26899e0224b23f62336e4f",
+            "class_mapping": {
+                "0": "Exercise_1",
+                "1": "Exercise_2",
+                "2": "Exercise_3",
+                "3": "Exercise_4"
+            },
+            "model_config": {
+                "use_hand": true,
+                "use_kinematic": true,
+                "use_contrastive": true,
+                "use_mstcn": true,
+                "use_attention": true,
+                "upper_limb_only": true
+            },
+            "architecture_signature": "rehab_motionnet_upper_limb_v2",
+            "checkpoint_role": "supervised_model",
+            "training_inputs": {
+                "external_encoder": {
+                    "artifact_sha256": "0e74e5b83f0a16a4ff670b6782673807ebdc9b88d487cfef61c491692f6397ca",
+                    "manifest_sha256": "5f4d1cb5a730d1e223ff26e636644781fc7f501469e8fc379020f9d899079859",
+                    "architecture_signature": "external_multisource_encoder_v1",
+                    "source_datasets": [
+                        "REHAB24-6",
+                        "MobiPhysio"
+                    ],
+                    "ontology_mapping_to_product": null
+                }
+            }
+        }
+    },
+    {
+        "fold_id": "fold_06",
+        "model_name": "RehabMotionNet",
+        "accuracy": 0.20454545454545456,
+        "precision_macro": 0.375,
+        "recall_macro": 0.09947368421052631,
+        "f1_macro": 0.1567741935483871,
+        "sample_count": 44,
+        "observed_classes": [
+            2,
+            3
+        ],
+        "expected_classes": [
+            0,
+            1,
+            2,
+            3
+        ],
+        "class_coverage_complete": false,
+        "task_evaluated": "exercise_classification",
+        "task_omitted": null,
+        "completion_accuracy": 0.6818181818181818,
+        "completion_precision_macro": 0.8157894736842105,
+        "completion_recall_macro": 0.65,
+        "completion_f1_macro": 0.6178660049627791,
+        "completion_sample_count": 44,
+        "completion_observed_classes": [
+            0,
+            1
+        ],
+        "metadata": {
+            "model_id": "RehabMotionNet",
+            "fold_id": "fold_06",
+            "protocol_version": "1.1",
+            "provenance_hash": "23c2471bad1c6f4a5272cc8ffd370b0b0155de32b8d370f19f63584e3d6acbcd",
+            "train_manifest_hash": "30e47be7fae301013667f6c22f9357aefe04ea0cb313cb38fe9fe859abdfba82",
+            "normalization_hash": "424f67988146bb66451634145d4a535551af02042c08cefbd037e24e365d78be",
+            "class_mapping": {
+                "0": "Exercise_1",
+                "1": "Exercise_2",
+                "2": "Exercise_3",
+                "3": "Exercise_4"
+            },
+            "model_config": {
+                "use_hand": true,
+                "use_kinematic": true,
+                "use_contrastive": true,
+                "use_mstcn": true,
+                "use_attention": true,
+                "upper_limb_only": true
+            },
+            "architecture_signature": "rehab_motionnet_upper_limb_v2",
+            "checkpoint_role": "supervised_model",
+            "training_inputs": {
+                "external_encoder": {
+                    "artifact_sha256": "0e74e5b83f0a16a4ff670b6782673807ebdc9b88d487cfef61c491692f6397ca",
+                    "manifest_sha256": "5f4d1cb5a730d1e223ff26e636644781fc7f501469e8fc379020f9d899079859",
+                    "architecture_signature": "external_multisource_encoder_v1",
+                    "source_datasets": [
+                        "REHAB24-6",
+                        "MobiPhysio"
+                    ],
+                    "ontology_mapping_to_product": null
+                }
+            }
+        }
+    },
+    {
+        "fold_id": "fold_07",
+        "model_name": "RehabMotionNet",
+        "accuracy": 0.0,
+        "precision_macro": 0.0,
+        "recall_macro": 0.0,
+        "f1_macro": 0.0,
+        "sample_count": 20,
+        "observed_classes": [
+            0
+        ],
+        "expected_classes": [
+            0,
+            1,
+            2,
+            3
+        ],
+        "class_coverage_complete": false,
+        "task_evaluated": "exercise_classification",
+        "task_omitted": null,
+        "completion_accuracy": 0.55,
+        "completion_precision_macro": 0.5980392156862745,
+        "completion_recall_macro": 0.55,
+        "completion_f1_macro": 0.4871794871794872,
+        "completion_sample_count": 20,
+        "completion_observed_classes": [
+            0,
+            1
+        ],
+        "metadata": {
+            "model_id": "RehabMotionNet",
+            "fold_id": "fold_07",
+            "protocol_version": "1.1",
+            "provenance_hash": "23c2471bad1c6f4a5272cc8ffd370b0b0155de32b8d370f19f63584e3d6acbcd",
+            "train_manifest_hash": "fd27d05d85014527fb88e851db843417528019b153dce2dbded0eb9a73e92600",
+            "normalization_hash": "8a176043911925f44b68bac6002715f623c971347d93be7688e107ca9e65c8a4",
+            "class_mapping": {
+                "0": "Exercise_1",
+                "1": "Exercise_2",
+                "2": "Exercise_3",
+                "3": "Exercise_4"
+            },
+            "model_config": {
+                "use_hand": true,
+                "use_kinematic": true,
+                "use_contrastive": true,
+                "use_mstcn": true,
+                "use_attention": true,
+                "upper_limb_only": true
+            },
+            "architecture_signature": "rehab_motionnet_upper_limb_v2",
+            "checkpoint_role": "supervised_model",
+            "training_inputs": {
+                "external_encoder": {
+                    "artifact_sha256": "0e74e5b83f0a16a4ff670b6782673807ebdc9b88d487cfef61c491692f6397ca",
+                    "manifest_sha256": "5f4d1cb5a730d1e223ff26e636644781fc7f501469e8fc379020f9d899079859",
+                    "architecture_signature": "external_multisource_encoder_v1",
+                    "source_datasets": [
+                        "REHAB24-6",
+                        "MobiPhysio"
+                    ],
+                    "ontology_mapping_to_product": null
+                }
+            }
+        }
+    },
+    {
+        "fold_id": "fold_08",
+        "model_name": "RehabMotionNet",
+        "accuracy": 0.0,
+        "precision_macro": 0.0,
+        "recall_macro": 0.0,
+        "f1_macro": 0.0,
+        "sample_count": 20,
+        "observed_classes": [
+            1
+        ],
+        "expected_classes": [
+            0,
+            1,
+            2,
+            3
+        ],
+        "class_coverage_complete": false,
+        "task_evaluated": "exercise_classification",
+        "task_omitted": null,
+        "completion_accuracy": 0.35,
+        "completion_precision_macro": 0.3484848484848485,
+        "completion_recall_macro": 0.35,
+        "completion_f1_macro": 0.3483709273182958,
+        "completion_sample_count": 20,
+        "completion_observed_classes": [
+            0,
+            1
+        ],
+        "metadata": {
+            "model_id": "RehabMotionNet",
+            "fold_id": "fold_08",
+            "protocol_version": "1.1",
+            "provenance_hash": "23c2471bad1c6f4a5272cc8ffd370b0b0155de32b8d370f19f63584e3d6acbcd",
+            "train_manifest_hash": "a9b402d0f8da8ebc90537556e2bfec22a86fa1ee68c7fba1b44da9df5721f7f4",
+            "normalization_hash": "4632c661c822c133e31721ef6e8a5d7e8bc3c57793f65b6cab64f814c4ddebd1",
+            "class_mapping": {
+                "0": "Exercise_1",
+                "1": "Exercise_2",
+                "2": "Exercise_3",
+                "3": "Exercise_4"
+            },
+            "model_config": {
+                "use_hand": true,
+                "use_kinematic": true,
+                "use_contrastive": true,
+                "use_mstcn": true,
+                "use_attention": true,
+                "upper_limb_only": true
+            },
+            "architecture_signature": "rehab_motionnet_upper_limb_v2",
+            "checkpoint_role": "supervised_model",
+            "training_inputs": {
+                "external_encoder": {
+                    "artifact_sha256": "0e74e5b83f0a16a4ff670b6782673807ebdc9b88d487cfef61c491692f6397ca",
+                    "manifest_sha256": "5f4d1cb5a730d1e223ff26e636644781fc7f501469e8fc379020f9d899079859",
+                    "architecture_signature": "external_multisource_encoder_v1",
+                    "source_datasets": [
+                        "REHAB24-6",
+                        "MobiPhysio"
+                    ],
+                    "ontology_mapping_to_product": null
+                }
+            }
+        }
+    },
+    {
+        "fold_id": "fold_09",
+        "model_name": "RehabMotionNet",
+        "accuracy": 0.0625,
+        "precision_macro": 0.25,
+        "recall_macro": 0.015625,
+        "f1_macro": 0.029411764705882353,
+        "sample_count": 16,
+        "observed_classes": [
+            3
+        ],
+        "expected_classes": [
+            0,
+            1,
+            2,
+            3
+        ],
+        "class_coverage_complete": false,
+        "task_evaluated": "exercise_classification",
+        "task_omitted": null,
+        "completion_accuracy": 0.4375,
+        "completion_precision_macro": 0.3727272727272727,
+        "completion_recall_macro": 0.3833333333333333,
+        "completion_f1_macro": 0.3766233766233765,
+        "completion_sample_count": 16,
+        "completion_observed_classes": [
+            0,
+            1
+        ],
+        "metadata": {
+            "model_id": "RehabMotionNet",
+            "fold_id": "fold_09",
+            "protocol_version": "1.1",
+            "provenance_hash": "23c2471bad1c6f4a5272cc8ffd370b0b0155de32b8d370f19f63584e3d6acbcd",
+            "train_manifest_hash": "944499c25ee30afd68ecbab3e0dd2b742a318e16531f2f21317215bf20ba3ba2",
+            "normalization_hash": "073f10e443d82d5da7a5cd8c046c7dfc17d176cd691cbe1c88a9667f3b791294",
+            "class_mapping": {
+                "0": "Exercise_1",
+                "1": "Exercise_2",
+                "2": "Exercise_3",
+                "3": "Exercise_4"
+            },
+            "model_config": {
+                "use_hand": true,
+                "use_kinematic": true,
+                "use_contrastive": true,
+                "use_mstcn": true,
+                "use_attention": true,
+                "upper_limb_only": true
+            },
+            "architecture_signature": "rehab_motionnet_upper_limb_v2",
+            "checkpoint_role": "supervised_model",
+            "training_inputs": {
+                "external_encoder": {
+                    "artifact_sha256": "0e74e5b83f0a16a4ff670b6782673807ebdc9b88d487cfef61c491692f6397ca",
+                    "manifest_sha256": "5f4d1cb5a730d1e223ff26e636644781fc7f501469e8fc379020f9d899079859",
+                    "architecture_signature": "external_multisource_encoder_v1",
+                    "source_datasets": [
+                        "REHAB24-6",
+                        "MobiPhysio"
+                    ],
+                    "ontology_mapping_to_product": null
+                }
+            }
+        }
+    },
+    {
+        "fold_id": "fold_10",
+        "model_name": "RehabMotionNet",
+        "accuracy": 0.4,
+        "precision_macro": 0.25,
+        "recall_macro": 0.1,
+        "f1_macro": 0.14285714285714288,
+        "sample_count": 20,
+        "observed_classes": [
+            2
+        ],
+        "expected_classes": [
+            0,
+            1,
+            2,
+            3
+        ],
+        "class_coverage_complete": false,
+        "task_evaluated": "exercise_classification",
+        "task_omitted": null,
+        "completion_accuracy": 0.45,
+        "completion_precision_macro": 0.4494949494949495,
+        "completion_recall_macro": 0.45,
+        "completion_f1_macro": 0.4486215538847118,
+        "completion_sample_count": 20,
+        "completion_observed_classes": [
+            0,
+            1
+        ],
+        "metadata": {
+            "model_id": "RehabMotionNet",
+            "fold_id": "fold_10",
+            "protocol_version": "1.1",
+            "provenance_hash": "23c2471bad1c6f4a5272cc8ffd370b0b0155de32b8d370f19f63584e3d6acbcd",
+            "train_manifest_hash": "31b3edbdd79f9e037fc9c63927f04ecb2722236369971b7fab4674e87b8d31d9",
+            "normalization_hash": "edbfbd71e7722c34999767b8b44fe5ce9d6ca3170167639729e36caaa7f29b3d",
+            "class_mapping": {
+                "0": "Exercise_1",
+                "1": "Exercise_2",
+                "2": "Exercise_3",
+                "3": "Exercise_4"
+            },
+            "model_config": {
+                "use_hand": true,
+                "use_kinematic": true,
+                "use_contrastive": true,
+                "use_mstcn": true,
+                "use_attention": true,
+                "upper_limb_only": true
+            },
+            "architecture_signature": "rehab_motionnet_upper_limb_v2",
+            "checkpoint_role": "supervised_model",
+            "training_inputs": {
+                "external_encoder": {
+                    "artifact_sha256": "0e74e5b83f0a16a4ff670b6782673807ebdc9b88d487cfef61c491692f6397ca",
+                    "manifest_sha256": "5f4d1cb5a730d1e223ff26e636644781fc7f501469e8fc379020f9d899079859",
+                    "architecture_signature": "external_multisource_encoder_v1",
+                    "source_datasets": [
+                        "REHAB24-6",
+                        "MobiPhysio"
+                    ],
+                    "ontology_mapping_to_product": null
+                }
+            }
+        }
+    }
+]

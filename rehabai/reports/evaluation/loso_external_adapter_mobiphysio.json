@@ -1,0 +1,1387 @@
+[
+    {
+        "fold_id": "fold_01",
+        "model_name": "ExternalEncoderAdapter",
+        "accuracy": 0.16666666666666666,
+        "precision_macro": 0.29375,
+        "recall_macro": 0.11442307692307693,
+        "f1_macro": 0.16468253968253965,
+        "f1_weighted": 0.23960695389266817,
+        "per_class": {
+            "0": {
+                "precision": 0.375,
+                "recall": 0.15,
+                "f1": 0.21428571428571425,
+                "support": 20
+            },
+            "1": {
+                "precision": 0.8,
+                "recall": 0.3076923076923077,
+                "f1": 0.4444444444444444,
+                "support": 13
+            },
+            "2": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "support": 0
+            },
+            "3": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "support": 9
+            }
+        },
+        "confusion_matrix": [
+            [
+                3,
+                0,
+                13,
+                4
+            ],
+            [
+                3,
+                4,
+                6,
+                0
+            ],
+            [
+                0,
+                0,
+                0,
+                0
+            ],
+            [
+                2,
+                1,
+                6,
+                0
+            ]
+        ],
+        "sample_count": 42,
+        "observed_classes": [
+            0,
+            1,
+            3
+        ],
+        "expected_classes": [
+            0,
+            1,
+            2,
+            3
+        ],
+        "class_coverage_complete": false,
+        "task_evaluated": "exercise_classification",
+        "task_omitted": null,
+        "completion_accuracy": 0.38095238095238093,
+        "completion_precision_macro": 0.3851851851851852,
+        "completion_recall_macro": 0.3935926773455377,
+        "completion_f1_macro": 0.37528604118993136,
+        "completion_sample_count": 42,
+        "completion_observed_classes": [
+            0,
+            1
+        ],
+        "completion_confusion_matrix": [
+            [
+                6,
+                17
+            ],
+            [
+                9,
+                10
+            ]
+        ],
+        "metadata": {
+            "model_id": "ExternalEncoderAdapter",
+            "fold_id": "fold_01",
+            "protocol_version": "1.1",
+            "provenance_hash": "23c2471bad1c6f4a5272cc8ffd370b0b0155de32b8d370f19f63584e3d6acbcd",
+            "train_manifest_hash": "40fdb6115a208392711bb80283184b96df3e6577d7335bc30414a86554dbec6c",
+            "normalization_hash": "78e2c50fe45643ff4515b575b0281be4bb5f37a0a690495f8c195a385da5dc9d",
+            "class_mapping": {
+                "0": "Exercise_1",
+                "1": "Exercise_2",
+                "2": "Exercise_3",
+                "3": "Exercise_4"
+            },
+            "model_config": {
+                "num_exercises": 4,
+                "adapter_dim": 64,
+                "adapter_dropout": 0.2
+            },
+            "architecture_signature": "external_encoder_adapter_v1",
+            "checkpoint_role": "supervised_model",
+            "training_inputs": {
+                "external_encoder": {
+                    "artifact_sha256": "2461c26f98498ef356131cafdf2fbc765815c6c5f2266f00fb037e214817f0fe",
+                    "manifest_sha256": "964977a241f906e488da0536cdeca5849f905caeeb8c4db5353b86d39e5d8d5e",
+                    "architecture_signature": "external_multisource_encoder_v1",
+                    "source_datasets": [
+                        "MobiPhysio"
+                    ],
+                    "ontology_mapping_to_product": null
+                },
+                "runtime": {
+                    "python": "3.11.9",
+                    "torch": "2.5.1+cu121",
+                    "torch_cuda_runtime": "12.1",
+                    "cuda_available": true,
+                    "cuda_device_index": 0,
+                    "cuda_device_name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+                    "gpu_vram_bytes": 8585216000,
+                    "cudnn_version": 90100,
+                    "amp_enabled": true,
+                    "environment_profile": "noncanonical_exploratory"
+                }
+            }
+        }
+    },
+    {
+        "fold_id": "fold_02",
+        "model_name": "ExternalEncoderAdapter",
+        "accuracy": 0.7254901960784313,
+        "precision_macro": 0.6021929824561403,
+        "recall_macro": 0.6540404040404041,
+        "f1_macro": 0.5927409988385598,
+        "f1_weighted": 0.7305185488829677,
+        "per_class": {
+            "0": {
+                "precision": 0.8421052631578947,
+                "recall": 0.7272727272727273,
+                "f1": 0.7804878048780488,
+                "support": 22
+            },
+            "1": {
+                "precision": 0.9444444444444444,
+                "recall": 1.0,
+                "f1": 0.9714285714285714,
+                "support": 17
+            },
+            "2": {
+                "precision": 0.2222222222222222,
+                "recall": 0.6666666666666666,
+                "f1": 0.3333333333333333,
+                "support": 3
+            },
+            "3": {
+                "precision": 0.4,
+                "recall": 0.2222222222222222,
+                "f1": 0.2857142857142857,
+                "support": 9
+            }
+        },
+        "confusion_matrix": [
+            [
+                16,
+                0,
+                3,
+                3
+            ],
+            [
+                0,
+                17,
+                0,
+                0
+            ],
+            [
+                1,
+                0,
+                2,
+                0
+            ],
+            [
+                2,
+                1,
+                4,
+                2
+            ]
+        ],
+        "sample_count": 51,
+        "observed_classes": [
+            0,
+            1,
+            2,
+            3
+        ],
+        "expected_classes": [
+            0,
+            1,
+            2,
+            3
+        ],
+        "class_coverage_complete": true,
+        "task_evaluated": "exercise_classification",
+        "task_omitted": null,
+        "completion_accuracy": 0.5686274509803921,
+        "completion_precision_macro": 0.5976190476190476,
+        "completion_recall_macro": 0.6035353535353536,
+        "completion_f1_macro": 0.5671296296296295,
+        "completion_sample_count": 51,
+        "completion_observed_classes": [
+            0,
+            1
+        ],
+        "completion_confusion_matrix": [
+            [
+                16,
+                17
+            ],
+            [
+                5,
+                13
+            ]
+        ],
+        "metadata": {
+            "model_id": "ExternalEncoderAdapter",
+            "fold_id": "fold_02",
+            "protocol_version": "1.1",
+            "provenance_hash": "23c2471bad1c6f4a5272cc8ffd370b0b0155de32b8d370f19f63584e3d6acbcd",
+            "train_manifest_hash": "98f6752776cfebdadda989dedcf8fa9e14b37a7a1b957fb2c3555071b58815a8",
+            "normalization_hash": "97721444cef7f81de6e7e838c984933733915940ba4c9d31ec3a2da04e300867",
+            "class_mapping": {
+                "0": "Exercise_1",
+                "1": "Exercise_2",
+                "2": "Exercise_3",
+                "3": "Exercise_4"
+            },
+            "model_config": {
+                "num_exercises": 4,
+                "adapter_dim": 64,
+                "adapter_dropout": 0.2
+            },
+            "architecture_signature": "external_encoder_adapter_v1",
+            "checkpoint_role": "supervised_model",
+            "training_inputs": {
+                "external_encoder": {
+                    "artifact_sha256": "2461c26f98498ef356131cafdf2fbc765815c6c5f2266f00fb037e214817f0fe",
+                    "manifest_sha256": "964977a241f906e488da0536cdeca5849f905caeeb8c4db5353b86d39e5d8d5e",
+                    "architecture_signature": "external_multisource_encoder_v1",
+                    "source_datasets": [
+                        "MobiPhysio"
+                    ],
+                    "ontology_mapping_to_product": null
+                },
+                "runtime": {
+                    "python": "3.11.9",
+                    "torch": "2.5.1+cu121",
+                    "torch_cuda_runtime": "12.1",
+                    "cuda_available": true,
+                    "cuda_device_index": 0,
+                    "cuda_device_name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+                    "gpu_vram_bytes": 8585216000,
+                    "cudnn_version": 90100,
+                    "amp_enabled": true,
+                    "environment_profile": "noncanonical_exploratory"
+                }
+            }
+        }
+    },
+    {
+        "fold_id": "fold_03",
+        "model_name": "ExternalEncoderAdapter",
+        "accuracy": 0.45454545454545453,
+        "precision_macro": 0.6277143908722855,
+        "recall_macro": 0.5538011695906433,
+        "f1_macro": 0.5765796703296703,
+        "f1_weighted": 0.5054008491508492,
+        "per_class": {
+            "0": {
+                "precision": 0.7692307692307693,
+                "recall": 0.5263157894736842,
+                "f1": 0.625,
+                "support": 19
+            },
+            "1": {
+                "precision": 1.0,
+                "recall": 1.0,
+                "f1": 1.0,
+                "support": 1
+            },
+            "2": {
+                "precision": 0.6363636363636364,
+                "recall": 0.4666666666666667,
+                "f1": 0.5384615384615385,
+                "support": 15
+            },
+            "3": {
+                "precision": 0.10526315789473684,
+                "recall": 0.2222222222222222,
+                "f1": 0.14285714285714285,
+                "support": 9
+            }
+        },
+        "confusion_matrix": [
+            [
+                10,
+                0,
+                0,
+                9
+            ],
+            [
+                0,
+                1,
+                0,
+                0
+            ],
+            [
+                0,
+                0,
+                7,
+                8
+            ],
+            [
+                3,
+                0,
+                4,
+                2
+            ]
+        ],
+        "sample_count": 44,
+        "observed_classes": [
+            0,
+            1,
+            2,
+            3
+        ],
+        "expected_classes": [
+            0,
+            1,
+            2,
+            3
+        ],
+        "class_coverage_complete": true,
+        "task_evaluated": "exercise_classification",
+        "task_omitted": null,
+        "completion_accuracy": 0.4318181818181818,
+        "completion_precision_macro": 0.391025641025641,
+        "completion_recall_macro": 0.37344913151364767,
+        "completion_f1_macro": 0.377475947934352,
+        "completion_sample_count": 44,
+        "completion_observed_classes": [
+            0,
+            1
+        ],
+        "completion_confusion_matrix": [
+            [
+                3,
+                10
+            ],
+            [
+                15,
+                16
+            ]
+        ],
+        "metadata": {
+            "model_id": "ExternalEncoderAdapter",
+            "fold_id": "fold_03",
+            "protocol_version": "1.1",
+            "provenance_hash": "23c2471bad1c6f4a5272cc8ffd370b0b0155de32b8d370f19f63584e3d6acbcd",
+            "train_manifest_hash": "01b10f7a4c76487122e6e0725dbba188b3a213f47aca09c5e0effbddb2fa5d01",
+            "normalization_hash": "92d28a5e3ba3926d581e3a43be47e04f160930c8133e4359a46548042efec90a",
+            "class_mapping": {
+                "0": "Exercise_1",
+                "1": "Exercise_2",
+                "2": "Exercise_3",
+                "3": "Exercise_4"
+            },
+            "model_config": {
+                "num_exercises": 4,
+                "adapter_dim": 64,
+                "adapter_dropout": 0.2
+            },
+            "architecture_signature": "external_encoder_adapter_v1",
+            "checkpoint_role": "supervised_model",
+            "training_inputs": {
+                "external_encoder": {
+                    "artifact_sha256": "2461c26f98498ef356131cafdf2fbc765815c6c5f2266f00fb037e214817f0fe",
+                    "manifest_sha256": "964977a241f906e488da0536cdeca5849f905caeeb8c4db5353b86d39e5d8d5e",
+                    "architecture_signature": "external_multisource_encoder_v1",
+                    "source_datasets": [
+                        "MobiPhysio"
+                    ],
+                    "ontology_mapping_to_product": null
+                },
+                "runtime": {
+                    "python": "3.11.9",
+                    "torch": "2.5.1+cu121",
+                    "torch_cuda_runtime": "12.1",
+                    "cuda_available": true,
+                    "cuda_device_index": 0,
+                    "cuda_device_name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+                    "gpu_vram_bytes": 8585216000,
+                    "cudnn_version": 90100,
+                    "amp_enabled": true,
+                    "environment_profile": "noncanonical_exploratory"
+                }
+            }
+        }
+    },
+    {
+        "fold_id": "fold_04",
+        "model_name": "ExternalEncoderAdapter",
+        "accuracy": 0.4745762711864407,
+        "precision_macro": 0.5475589225589225,
+        "recall_macro": 0.5723443223443224,
+        "f1_macro": 0.5355489417989417,
+        "f1_weighted": 0.43559994619316655,
+        "per_class": {
+            "0": {
+                "precision": 0.3333333333333333,
+                "recall": 0.09523809523809523,
+                "f1": 0.14814814814814814,
+                "support": 21
+            },
+            "1": {
+                "precision": 1.0,
+                "recall": 1.0,
+                "f1": 1.0,
+                "support": 4
+            },
+            "2": {
+                "precision": 0.6296296296296297,
+                "recall": 0.8095238095238095,
+                "f1": 0.7083333333333334,
+                "support": 21
+            },
+            "3": {
+                "precision": 0.22727272727272727,
+                "recall": 0.38461538461538464,
+                "f1": 0.2857142857142857,
+                "support": 13
+            }
+        },
+        "confusion_matrix": [
+            [
+                2,
+                0,
+                6,
+                13
+            ],
+            [
+                0,
+                4,
+                0,
+                0
+            ],
+            [
+                0,
+                0,
+                17,
+                4
+            ],
+            [
+                4,
+                0,
+                4,
+                5
+            ]
+        ],
+        "sample_count": 59,
+        "observed_classes": [
+            0,
+            1,
+            2,
+            3
+        ],
+        "expected_classes": [
+            0,
+            1,
+            2,
+            3
+        ],
+        "class_coverage_complete": true,
+        "task_evaluated": "exercise_classification",
+        "task_omitted": null,
+        "completion_accuracy": 0.576271186440678,
+        "completion_precision_macro": 0.5742753623188406,
+        "completion_recall_macro": 0.570852534562212,
+        "completion_f1_macro": 0.5683347966052092,
+        "completion_sample_count": 59,
+        "completion_observed_classes": [
+            0,
+            1
+        ],
+        "completion_confusion_matrix": [
+            [
+                13,
+                15
+            ],
+            [
+                10,
+                21
+            ]
+        ],
+        "metadata": {
+            "model_id": "ExternalEncoderAdapter",
+            "fold_id": "fold_04",
+            "protocol_version": "1.1",
+            "provenance_hash": "23c2471bad1c6f4a5272cc8ffd370b0b0155de32b8d370f19f63584e3d6acbcd",
+            "train_manifest_hash": "98f6752776cfebdadda989dedcf8fa9e14b37a7a1b957fb2c3555071b58815a8",
+            "normalization_hash": "6a2b3e14c4f5f89df7ef734f947268af77c2de2adb573b8dc9724cec2adc514d",
+            "class_mapping": {
+                "0": "Exercise_1",
+                "1": "Exercise_2",
+                "2": "Exercise_3",
+                "3": "Exercise_4"
+            },
+            "model_config": {
+                "num_exercises": 4,
+                "adapter_dim": 64,
+                "adapter_dropout": 0.2
+            },
+            "architecture_signature": "external_encoder_adapter_v1",
+            "checkpoint_role": "supervised_model",
+            "training_inputs": {
+                "external_encoder": {
+                    "artifact_sha256": "2461c26f98498ef356131cafdf2fbc765815c6c5f2266f00fb037e214817f0fe",
+                    "manifest_sha256": "964977a241f906e488da0536cdeca5849f905caeeb8c4db5353b86d39e5d8d5e",
+                    "architecture_signature": "external_multisource_encoder_v1",
+                    "source_datasets": [
+                        "MobiPhysio"
+                    ],
+                    "ontology_mapping_to_product": null
+                },
+                "runtime": {
+                    "python": "3.11.9",
+                    "torch": "2.5.1+cu121",
+                    "torch_cuda_runtime": "12.1",
+                    "cuda_available": true,
+                    "cuda_device_index": 0,
+                    "cuda_device_name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+                    "gpu_vram_bytes": 8585216000,
+                    "cudnn_version": 90100,
+                    "amp_enabled": true,
+                    "environment_profile": "noncanonical_exploratory"
+                }
+            }
+        }
+    },
+    {
+        "fold_id": "fold_05",
+        "model_name": "ExternalEncoderAdapter",
+        "accuracy": 0.5915492957746479,
+        "precision_macro": 0.5729813664596274,
+        "recall_macro": 0.6428571428571428,
+        "f1_macro": 0.572943722943723,
+        "f1_weighted": 0.5143832693128467,
+        "per_class": {
+            "0": {
+                "precision": 0.8571428571428571,
+                "recall": 0.5714285714285714,
+                "f1": 0.6857142857142857,
+                "support": 21
+            },
+            "1": {
+                "precision": 1.0,
+                "recall": 1.0,
+                "f1": 1.0,
+                "support": 10
+            },
+            "2": {
+                "precision": 0.43478260869565216,
+                "recall": 1.0,
+                "f1": 0.6060606060606061,
+                "support": 20
+            },
+            "3": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "support": 20
+            }
+        },
+        "confusion_matrix": [
+            [
+                12,
+                0,
+                8,
+                1
+            ],
+            [
+                0,
+                10,
+                0,
+                0
+            ],
+            [
+                0,
+                0,
+                20,
+                0
+            ],
+            [
+                2,
+                0,
+                18,
+                0
+            ]
+        ],
+        "sample_count": 71,
+        "observed_classes": [
+            0,
+            1,
+            2,
+            3
+        ],
+        "expected_classes": [
+            0,
+            1,
+            2,
+            3
+        ],
+        "class_coverage_complete": true,
+        "task_evaluated": "exercise_classification",
+        "task_omitted": null,
+        "completion_accuracy": 0.6197183098591549,
+        "completion_precision_macro": 0.6234817813765182,
+        "completion_recall_macro": 0.5977564102564102,
+        "completion_f1_macro": 0.5869424692954105,
+        "completion_sample_count": 71,
+        "completion_observed_classes": [
+            0,
+            1
+        ],
+        "completion_confusion_matrix": [
+            [
+                32,
+                7
+            ],
+            [
+                20,
+                12
+            ]
+        ],
+        "metadata": {
+            "model_id": "ExternalEncoderAdapter",
+            "fold_id": "fold_05",
+            "protocol_version": "1.1",
+            "provenance_hash": "23c2471bad1c6f4a5272cc8ffd370b0b0155de32b8d370f19f63584e3d6acbcd",
+            "train_manifest_hash": "01b10f7a4c76487122e6e0725dbba188b3a213f47aca09c5e0effbddb2fa5d01",
+            "normalization_hash": "cdc237203fee6902085d1ac0f131a940b4b5854bed26899e0224b23f62336e4f",
+            "class_mapping": {
+                "0": "Exercise_1",
+                "1": "Exercise_2",
+                "2": "Exercise_3",
+                "3": "Exercise_4"
+            },
+            "model_config": {
+                "num_exercises": 4,
+                "adapter_dim": 64,
+                "adapter_dropout": 0.2
+            },
+            "architecture_signature": "external_encoder_adapter_v1",
+            "checkpoint_role": "supervised_model",
+            "training_inputs": {
+                "external_encoder": {
+                    "artifact_sha256": "2461c26f98498ef356131cafdf2fbc765815c6c5f2266f00fb037e214817f0fe",
+                    "manifest_sha256": "964977a241f906e488da0536cdeca5849f905caeeb8c4db5353b86d39e5d8d5e",
+                    "architecture_signature": "external_multisource_encoder_v1",
+                    "source_datasets": [
+                        "MobiPhysio"
+                    ],
+                    "ontology_mapping_to_product": null
+                },
+                "runtime": {
+                    "python": "3.11.9",
+                    "torch": "2.5.1+cu121",
+                    "torch_cuda_runtime": "12.1",
+                    "cuda_available": true,
+                    "cuda_device_index": 0,
+                    "cuda_device_name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+                    "gpu_vram_bytes": 8585216000,
+                    "cudnn_version": 90100,
+                    "amp_enabled": true,
+                    "environment_profile": "noncanonical_exploratory"
+                }
+            }
+        }
+    },
+    {
+        "fold_id": "fold_06",
+        "model_name": "ExternalEncoderAdapter",
+        "accuracy": 0.6363636363636364,
+        "precision_macro": 0.42424242424242425,
+        "recall_macro": 0.29578947368421055,
+        "f1_macro": 0.30244252873563215,
+        "f1_weighted": 0.6305512016718913,
+        "per_class": {
+            "0": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "support": 0
+            },
+            "1": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "support": 0
+            },
+            "2": {
+                "precision": 0.696969696969697,
+                "recall": 0.92,
+                "f1": 0.793103448275862,
+                "support": 25
+            },
+            "3": {
+                "precision": 1.0,
+                "recall": 0.2631578947368421,
+                "f1": 0.4166666666666667,
+                "support": 19
+            }
+        },
+        "confusion_matrix": [
+            [
+                0,
+                0,
+                0,
+                0
+            ],
+            [
+                0,
+                0,
+                0,
+                0
+            ],
+            [
+                2,
+                0,
+                23,
+                0
+            ],
+            [
+                4,
+                0,
+                10,
+                5
+            ]
+        ],
+        "sample_count": 44,
+        "observed_classes": [
+            2,
+            3
+        ],
+        "expected_classes": [
+            0,
+            1,
+            2,
+            3
+        ],
+        "class_coverage_complete": false,
+        "task_evaluated": "exercise_classification",
+        "task_omitted": null,
+        "completion_accuracy": 0.6590909090909091,
+        "completion_precision_macro": 0.7133995037220844,
+        "completion_recall_macro": 0.6791666666666667,
+        "completion_f1_macro": 0.6502384737678855,
+        "completion_sample_count": 44,
+        "completion_observed_classes": [
+            0,
+            1
+        ],
+        "completion_confusion_matrix": [
+            [
+                11,
+                13
+            ],
+            [
+                2,
+                18
+            ]
+        ],
+        "metadata": {
+            "model_id": "ExternalEncoderAdapter",
+            "fold_id": "fold_06",
+            "protocol_version": "1.1",
+            "provenance_hash": "23c2471bad1c6f4a5272cc8ffd370b0b0155de32b8d370f19f63584e3d6acbcd",
+            "train_manifest_hash": "30e47be7fae301013667f6c22f9357aefe04ea0cb313cb38fe9fe859abdfba82",
+            "normalization_hash": "424f67988146bb66451634145d4a535551af02042c08cefbd037e24e365d78be",
+            "class_mapping": {
+                "0": "Exercise_1",
+                "1": "Exercise_2",
+                "2": "Exercise_3",
+                "3": "Exercise_4"
+            },
+            "model_config": {
+                "num_exercises": 4,
+                "adapter_dim": 64,
+                "adapter_dropout": 0.2
+            },
+            "architecture_signature": "external_encoder_adapter_v1",
+            "checkpoint_role": "supervised_model",
+            "training_inputs": {
+                "external_encoder": {
+                    "artifact_sha256": "2461c26f98498ef356131cafdf2fbc765815c6c5f2266f00fb037e214817f0fe",
+                    "manifest_sha256": "964977a241f906e488da0536cdeca5849f905caeeb8c4db5353b86d39e5d8d5e",
+                    "architecture_signature": "external_multisource_encoder_v1",
+                    "source_datasets": [
+                        "MobiPhysio"
+                    ],
+                    "ontology_mapping_to_product": null
+                },
+                "runtime": {
+                    "python": "3.11.9",
+                    "torch": "2.5.1+cu121",
+                    "torch_cuda_runtime": "12.1",
+                    "cuda_available": true,
+                    "cuda_device_index": 0,
+                    "cuda_device_name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+                    "gpu_vram_bytes": 8585216000,
+                    "cudnn_version": 90100,
+                    "amp_enabled": true,
+                    "environment_profile": "noncanonical_exploratory"
+                }
+            }
+        }
+    },
+    {
+        "fold_id": "fold_07",
+        "model_name": "ExternalEncoderAdapter",
+        "accuracy": 0.0,
+        "precision_macro": 0.0,
+        "recall_macro": 0.0,
+        "f1_macro": 0.0,
+        "f1_weighted": 0.0,
+        "per_class": {
+            "0": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "support": 20
+            },
+            "1": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "support": 0
+            },
+            "2": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "support": 0
+            },
+            "3": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "support": 0
+            }
+        },
+        "confusion_matrix": [
+            [
+                0,
+                18,
+                1,
+                1
+            ],
+            [
+                0,
+                0,
+                0,
+                0
+            ],
+            [
+                0,
+                0,
+                0,
+                0
+            ],
+            [
+                0,
+                0,
+                0,
+                0
+            ]
+        ],
+        "sample_count": 20,
+        "observed_classes": [
+            0
+        ],
+        "expected_classes": [
+            0,
+            1,
+            2,
+            3
+        ],
+        "class_coverage_complete": false,
+        "task_evaluated": "exercise_classification",
+        "task_omitted": null,
+        "completion_accuracy": 0.45,
+        "completion_precision_macro": 0.4494949494949495,
+        "completion_recall_macro": 0.45,
+        "completion_f1_macro": 0.4486215538847118,
+        "completion_sample_count": 20,
+        "completion_observed_classes": [
+            0,
+            1
+        ],
+        "completion_confusion_matrix": [
+            [
+                5,
+                5
+            ],
+            [
+                6,
+                4
+            ]
+        ],
+        "metadata": {
+            "model_id": "ExternalEncoderAdapter",
+            "fold_id": "fold_07",
+            "protocol_version": "1.1",
+            "provenance_hash": "23c2471bad1c6f4a5272cc8ffd370b0b0155de32b8d370f19f63584e3d6acbcd",
+            "train_manifest_hash": "fd27d05d85014527fb88e851db843417528019b153dce2dbded0eb9a73e92600",
+            "normalization_hash": "8a176043911925f44b68bac6002715f623c971347d93be7688e107ca9e65c8a4",
+            "class_mapping": {
+                "0": "Exercise_1",
+                "1": "Exercise_2",
+                "2": "Exercise_3",
+                "3": "Exercise_4"
+            },
+            "model_config": {
+                "num_exercises": 4,
+                "adapter_dim": 64,
+                "adapter_dropout": 0.2
+            },
+            "architecture_signature": "external_encoder_adapter_v1",
+            "checkpoint_role": "supervised_model",
+            "training_inputs": {
+                "external_encoder": {
+                    "artifact_sha256": "2461c26f98498ef356131cafdf2fbc765815c6c5f2266f00fb037e214817f0fe",
+                    "manifest_sha256": "964977a241f906e488da0536cdeca5849f905caeeb8c4db5353b86d39e5d8d5e",
+                    "architecture_signature": "external_multisource_encoder_v1",
+                    "source_datasets": [
+                        "MobiPhysio"
+                    ],
+                    "ontology_mapping_to_product": null
+                },
+                "runtime": {
+                    "python": "3.11.9",
+                    "torch": "2.5.1+cu121",
+                    "torch_cuda_runtime": "12.1",
+                    "cuda_available": true,
+                    "cuda_device_index": 0,
+                    "cuda_device_name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+                    "gpu_vram_bytes": 8585216000,
+                    "cudnn_version": 90100,
+                    "amp_enabled": true,
+                    "environment_profile": "noncanonical_exploratory"
+                }
+            }
+        }
+    },
+    {
+        "fold_id": "fold_08",
+        "model_name": "ExternalEncoderAdapter",
+        "accuracy": 0.45,
+        "precision_macro": 0.25,
+        "recall_macro": 0.1125,
+        "f1_macro": 0.15517241379310345,
+        "f1_weighted": 0.6206896551724138,
+        "per_class": {
+            "0": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "support": 0
+            },
+            "1": {
+                "precision": 1.0,
+                "recall": 0.45,
+                "f1": 0.6206896551724138,
+                "support": 20
+            },
+            "2": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "support": 0
+            },
+            "3": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "support": 0
+            }
+        },
+        "confusion_matrix": [
+            [
+                0,
+                0,
+                0,
+                0
+            ],
+            [
+                9,
+                9,
+                0,
+                2
+            ],
+            [
+                0,
+                0,
+                0,
+                0
+            ],
+            [
+                0,
+                0,
+                0,
+                0
+            ]
+        ],
+        "sample_count": 20,
+        "observed_classes": [
+            1
+        ],
+        "expected_classes": [
+            0,
+            1,
+            2,
+            3
+        ],
+        "class_coverage_complete": false,
+        "task_evaluated": "exercise_classification",
+        "task_omitted": null,
+        "completion_accuracy": 0.6,
+        "completion_precision_macro": 0.6041666666666667,
+        "completion_recall_macro": 0.6,
+        "completion_f1_macro": 0.595959595959596,
+        "completion_sample_count": 20,
+        "completion_observed_classes": [
+            0,
+            1
+        ],
+        "completion_confusion_matrix": [
+            [
+                7,
+                3
+            ],
+            [
+                5,
+                5
+            ]
+        ],
+        "metadata": {
+            "model_id": "ExternalEncoderAdapter",
+            "fold_id": "fold_08",
+            "protocol_version": "1.1",
+            "provenance_hash": "23c2471bad1c6f4a5272cc8ffd370b0b0155de32b8d370f19f63584e3d6acbcd",
+            "train_manifest_hash": "a9b402d0f8da8ebc90537556e2bfec22a86fa1ee68c7fba1b44da9df5721f7f4",
+            "normalization_hash": "4632c661c822c133e31721ef6e8a5d7e8bc3c57793f65b6cab64f814c4ddebd1",
+            "class_mapping": {
+                "0": "Exercise_1",
+                "1": "Exercise_2",
+                "2": "Exercise_3",
+                "3": "Exercise_4"
+            },
+            "model_config": {
+                "num_exercises": 4,
+                "adapter_dim": 64,
+                "adapter_dropout": 0.2
+            },
+            "architecture_signature": "external_encoder_adapter_v1",
+            "checkpoint_role": "supervised_model",
+            "training_inputs": {
+                "external_encoder": {
+                    "artifact_sha256": "2461c26f98498ef356131cafdf2fbc765815c6c5f2266f00fb037e214817f0fe",
+                    "manifest_sha256": "964977a241f906e488da0536cdeca5849f905caeeb8c4db5353b86d39e5d8d5e",
+                    "architecture_signature": "external_multisource_encoder_v1",
+                    "source_datasets": [
+                        "MobiPhysio"
+                    ],
+                    "ontology_mapping_to_product": null
+                },
+                "runtime": {
+                    "python": "3.11.9",
+                    "torch": "2.5.1+cu121",
+                    "torch_cuda_runtime": "12.1",
+                    "cuda_available": true,
+                    "cuda_device_index": 0,
+                    "cuda_device_name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+                    "gpu_vram_bytes": 8585216000,
+                    "cudnn_version": 90100,
+                    "amp_enabled": true,
+                    "environment_profile": "noncanonical_exploratory"
+                }
+            }
+        }
+    },
+    {
+        "fold_id": "fold_09",
+        "model_name": "ExternalEncoderAdapter",
+        "accuracy": 0.0,
+        "precision_macro": 0.0,
+        "recall_macro": 0.0,
+        "f1_macro": 0.0,
+        "f1_weighted": 0.0,
+        "per_class": {
+            "0": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "support": 0
+            },
+            "1": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "support": 0
+            },
+            "2": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "support": 0
+            },
+            "3": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "support": 16
+            }
+        },
+        "confusion_matrix": [
+            [
+                0,
+                0,
+                0,
+                0
+            ],
+            [
+                0,
+                0,
+                0,
+                0
+            ],
+            [
+                0,
+                0,
+                0,
+                0
+            ],
+            [
+                3,
+                4,
+                9,
+                0
+            ]
+        ],
+        "sample_count": 16,
+        "observed_classes": [
+            3
+        ],
+        "expected_classes": [
+            0,
+            1,
+            2,
+            3
+        ],
+        "class_coverage_complete": false,
+        "task_evaluated": "exercise_classification",
+        "task_omitted": null,
+        "completion_accuracy": 0.25,
+        "completion_precision_macro": 0.26666666666666666,
+        "completion_recall_macro": 0.26666666666666666,
+        "completion_f1_macro": 0.25,
+        "completion_sample_count": 16,
+        "completion_observed_classes": [
+            0,
+            1
+        ],
+        "completion_confusion_matrix": [
+            [
+                2,
+                8
+            ],
+            [
+                4,
+                2
+            ]
+        ],
+        "metadata": {
+            "model_id": "ExternalEncoderAdapter",
+            "fold_id": "fold_09",
+            "protocol_version": "1.1",
+            "provenance_hash": "23c2471bad1c6f4a5272cc8ffd370b0b0155de32b8d370f19f63584e3d6acbcd",
+            "train_manifest_hash": "944499c25ee30afd68ecbab3e0dd2b742a318e16531f2f21317215bf20ba3ba2",
+            "normalization_hash": "073f10e443d82d5da7a5cd8c046c7dfc17d176cd691cbe1c88a9667f3b791294",
+            "class_mapping": {
+                "0": "Exercise_1",
+                "1": "Exercise_2",
+                "2": "Exercise_3",
+                "3": "Exercise_4"
+            },
+            "model_config": {
+                "num_exercises": 4,
+                "adapter_dim": 64,
+                "adapter_dropout": 0.2
+            },
+            "architecture_signature": "external_encoder_adapter_v1",
+            "checkpoint_role": "supervised_model",
+            "training_inputs": {
+                "external_encoder": {
+                    "artifact_sha256": "2461c26f98498ef356131cafdf2fbc765815c6c5f2266f00fb037e214817f0fe",
+                    "manifest_sha256": "964977a241f906e488da0536cdeca5849f905caeeb8c4db5353b86d39e5d8d5e",
+                    "architecture_signature": "external_multisource_encoder_v1",
+                    "source_datasets": [
+                        "MobiPhysio"
+                    ],
+                    "ontology_mapping_to_product": null
+                },
+                "runtime": {
+                    "python": "3.11.9",
+                    "torch": "2.5.1+cu121",
+                    "torch_cuda_runtime": "12.1",
+                    "cuda_available": true,
+                    "cuda_device_index": 0,
+                    "cuda_device_name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+                    "gpu_vram_bytes": 8585216000,
+                    "cudnn_version": 90100,
+                    "amp_enabled": true,
+                    "environment_profile": "noncanonical_exploratory"
+                }
+            }
+        }
+    },
+    {
+        "fold_id": "fold_10",
+        "model_name": "ExternalEncoderAdapter",
+        "accuracy": 0.7,
+        "precision_macro": 0.25,
+        "recall_macro": 0.175,
+        "f1_macro": 0.20588235294117646,
+        "f1_weighted": 0.8235294117647058,
+        "per_class": {
+            "0": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "support": 0
+            },
+            "1": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "support": 0
+            },
+            "2": {
+                "precision": 1.0,
+                "recall": 0.7,
+                "f1": 0.8235294117647058,
+                "support": 20
+            },
+            "3": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "support": 0
+            }
+        },
+        "confusion_matrix": [
+            [
+                0,
+                0,
+                0,
+                0
+            ],
+            [
+                0,
+                0,
+                0,
+                0
+            ],
+            [
+                0,
+                0,
+                14,
+                6
+            ],
+            [
+                0,
+                0,
+                0,
+                0
+            ]
+        ],
+        "sample_count": 20,
+        "observed_classes": [
+            2
+        ],
+        "expected_classes": [
+            0,
+            1,
+            2,
+            3
+        ],
+        "class_coverage_complete": false,
+        "task_evaluated": "exercise_classification",
+        "task_omitted": null,
+        "completion_accuracy": 0.5,
+        "completion_precision_macro": 0.25,
+        "completion_recall_macro": 0.5,
+        "completion_f1_macro": 0.3333333333333333,
+        "completion_sample_count": 20,
+        "completion_observed_classes": [
+            0,
+            1
+        ],
+        "completion_confusion_matrix": [
+            [
+                0,
+                10
+            ],
+            [
+                0,
+                10
+            ]
+        ],
+        "metadata": {
+            "model_id": "ExternalEncoderAdapter",
+            "fold_id": "fold_10",
+            "protocol_version": "1.1",
+            "provenance_hash": "23c2471bad1c6f4a5272cc8ffd370b0b0155de32b8d370f19f63584e3d6acbcd",
+            "train_manifest_hash": "31b3edbdd79f9e037fc9c63927f04ecb2722236369971b7fab4674e87b8d31d9",
+            "normalization_hash": "edbfbd71e7722c34999767b8b44fe5ce9d6ca3170167639729e36caaa7f29b3d",
+            "class_mapping": {
+                "0": "Exercise_1",
+                "1": "Exercise_2",
+                "2": "Exercise_3",
+                "3": "Exercise_4"
+            },
+            "model_config": {
+                "num_exercises": 4,
+                "adapter_dim": 64,
+                "adapter_dropout": 0.2
+            },
+            "architecture_signature": "external_encoder_adapter_v1",
+            "checkpoint_role": "supervised_model",
+            "training_inputs": {
+                "external_encoder": {
+                    "artifact_sha256": "2461c26f98498ef356131cafdf2fbc765815c6c5f2266f00fb037e214817f0fe",
+                    "manifest_sha256": "964977a241f906e488da0536cdeca5849f905caeeb8c4db5353b86d39e5d8d5e",
+                    "architecture_signature": "external_multisource_encoder_v1",
+                    "source_datasets": [
+                        "MobiPhysio"
+                    ],
+                    "ontology_mapping_to_product": null
+                },
+                "runtime": {
+                    "python": "3.11.9",
+                    "torch": "2.5.1+cu121",
+                    "torch_cuda_runtime": "12.1",
+                    "cuda_available": true,
+                    "cuda_device_index": 0,
+                    "cuda_device_name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+                    "gpu_vram_bytes": 8585216000,
+                    "cudnn_version": 90100,
+                    "amp_enabled": true,
+                    "environment_profile": "noncanonical_exploratory"
+                }
+            }
+        }
+    }
+]

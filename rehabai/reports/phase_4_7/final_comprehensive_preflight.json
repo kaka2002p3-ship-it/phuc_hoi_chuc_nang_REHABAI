@@ -1,0 +1,123 @@
+{
+  "generated_at": "2026-09-20T05:45:52.247150+00:00",
+  "status": "PASS",
+  "paths": {
+    "index_csv": "D:\\PhucHoiChucNangTay\\rehabai\\data\\indexes\\upper_limb_master.csv",
+    "source_root": "D:\\PhucHoiChucNangTay\\RehabAI_Datasets_FULL_VERIFIED\\01_Upper_Limb_Stroke",
+    "work_root": "D:\\PhucHoiChucNangTay\\rehabai\\data\\stage3_real"
+  },
+  "checks": [
+    {
+      "name": "source_root_exists",
+      "passed": true,
+      "detail": "D:\\PhucHoiChucNangTay\\RehabAI_Datasets_FULL_VERIFIED\\01_Upper_Limb_Stroke"
+    },
+    {
+      "name": "index_exists",
+      "passed": true,
+      "detail": "D:\\PhucHoiChucNangTay\\rehabai\\data\\indexes\\upper_limb_master.csv"
+    },
+    {
+      "name": "required_columns",
+      "passed": true,
+      "detail": "missing=[]"
+    },
+    {
+      "name": "expected_video_count",
+      "passed": true,
+      "detail": "expected=491, actual=491"
+    },
+    {
+      "name": "expected_subject_count",
+      "passed": true,
+      "detail": "expected=10, actual=10, ids=['01', '02', '03', '04', '05', '06', '07', '08', '09', '10']"
+    },
+    {
+      "name": "exercise_ids",
+      "passed": true,
+      "detail": "actual=[1, 2, 3, 4]"
+    },
+    {
+      "name": "completion_labels",
+      "passed": true,
+      "detail": "actual=['complete', 'incomplete']"
+    },
+    {
+      "name": "unique_source_files",
+      "passed": true,
+      "detail": "duplicates=0"
+    },
+    {
+      "name": "unique_relative_paths",
+      "passed": true,
+      "detail": "duplicates=0"
+    },
+    {
+      "name": "all_source_files_exist",
+      "passed": true,
+      "detail": "missing=0; examples=[]"
+    },
+    {
+      "name": "all_sources_within_root",
+      "passed": true,
+      "detail": "outside=0; examples=[]"
+    },
+    {
+      "name": "relative_paths_match",
+      "passed": true,
+      "detail": "mismatches=0; examples=[]"
+    },
+    {
+      "name": "mp4_only",
+      "passed": true,
+      "detail": "wrong=0; examples=[]"
+    },
+    {
+      "name": "isolated_stage3_work_root",
+      "passed": true,
+      "detail": "required=D:\\PhucHoiChucNangTay\\rehabai\\data\\stage3_real, actual=D:\\PhucHoiChucNangTay\\rehabai\\data\\stage3_real"
+    },
+    {
+      "name": "free_disk_space",
+      "passed": true,
+      "detail": "free_gib=99.34, conservative_required_gib=5.00"
+    },
+    {
+      "name": "python_dependencies",
+      "passed": true,
+      "detail": "python=3.11.9"
+    }
+  ],
+  "inventory": {
+    "index_rows": 491,
+    "subjects": {
+      "01": 51,
+      "02": 86,
+      "03": 65,
+      "04": 84,
+      "05": 81,
+      "06": 44,
+      "07": 20,
+      "08": 20,
+      "09": 20,
+      "10": 20
+    },
+    "exercises": {
+      "1": 123,
+      "2": 127,
+      "3": 121,
+      "4": 120
+    },
+    "completion_labels": {
+      "complete": 242,
+      "incomplete": 249
+    },
+    "source_bytes": 1253293461,
+    "source_gib": 1.167,
+    "free_disk_gib": 99.341,
+    "cv2_version": "4.11.0",
+    "mediapipe_version": "0.10.9",
+    "numpy_version": "1.26.4",
+    "pandas_version": "2.2.0"
+  }
+}

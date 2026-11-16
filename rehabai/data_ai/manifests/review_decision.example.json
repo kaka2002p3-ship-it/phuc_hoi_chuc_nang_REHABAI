@@ -1,0 +1,8 @@
+{
+  "reviewer_name": "Tên người duyệt",
+  "reviewer_role": "Vai trò/chuyên môn phù hợp",
+  "approved_sample_ids": [
+    "CONV_ID_CẦN_DUYỆT"
+  ],
+  "notes": "Chỉ liệt kê sample đã đọc và xác nhận. Nội dung y tế/dinh dưỡng cần reviewer phù hợp."
+}

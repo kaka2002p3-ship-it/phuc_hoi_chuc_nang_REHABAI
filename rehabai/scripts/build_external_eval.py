@@ -1,0 +1,39 @@
+"""Build strict data-01 LOSO evaluation jobs for external-pretrained models."""
+from __future__ import annotations
+import argparse
+import json
+from pathlib import Path
+
+ROOT = Path(__file__).resolve().parents[1]
+EXP = ROOT / "experiments/external_pretraining_v1"
+MAPPING = {"0": "Exercise_1", "1": "Exercise_2", "2": "Exercise_3", "3": "Exercise_4"}
+CONFIG = {"use_hand": True, "use_kinematic": True, "use_contrastive": True, "use_mstcn": True, "use_attention": True, "upper_limb_only": True}
+
+
+def main():
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--experiment", default="external_pretraining_v1")
+    parser.add_argument("--report-name", default="loso_external_pretraining_v1.json")
+    args = parser.parse_args()
+    experiment = ROOT / "experiments" / args.experiment
+    jobs = []
+    for i in range(1, 11):
+        fold = f"fold_{i:02d}"
+        fd = ROOT / f"data/stage3_upper_limb/loso/{fold}"
+        jobs.append({
+            "fold_id": fold, "model_name": "RehabMotionNet",
+            "data_dir": str(ROOT / "data/stage3_upper_limb/processed/keypoints"),
+            "source_dir": str(ROOT.parent / "RehabAI_Datasets_FULL_VERIFIED/01_Upper_Limb_Stroke"),
+            "split_manifest": str(fd / "test_manifest.csv"), "normalization_json": str(fd / "normalization.json"),
+            "checkpoint_path": str(experiment / f"checkpoints/{fold}/RehabMotionNet_{fold}_supervised_model.pth"),
+            "fold_metadata_path": str(fd / "metadata.json"), "expected_model_config": CONFIG,
+            "expected_architecture_signature": "rehab_motionnet_upper_limb_v2", "expected_class_mapping": MAPPING,
+        })
+    output = ROOT / "reports/evaluation" / args.report_name
+    experiment.mkdir(parents=True, exist_ok=True)
+    (experiment / "eval_config.json").write_text(json.dumps({"jobs": jobs, "output_file": str(output)}, indent=2), encoding="utf-8")
+    print(experiment / "eval_config.json")
+
+
+if __name__ == "__main__":
+    main()

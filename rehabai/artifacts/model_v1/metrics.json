@@ -1,0 +1,15 @@
+{
+    "params": 452614,
+    "latency_ms": 8.439437000001817,
+    "memory_mb": 13.36376953125,
+    "accuracy": 1.0,
+    "macro_precision": 1.0,
+    "macro_recall": 1.0,
+    "macro_f1": 1.0,
+    "per_class_f1": {
+        "0": 1.0
+    },
+    "auroc": 0.0,
+    "completion_mae": 0.7993863821029663,
+    "completion_rmse": 0.8168041110038757
+}

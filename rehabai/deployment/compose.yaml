@@ -1,0 +1,105 @@
+
+
+services:
+  postgres:
+    image: postgres:16-alpine
+    container_name: rehabai_postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: ${POSTGRES_DB:-rehabai}
+      POSTGRES_USER: ${POSTGRES_USER:-rehabai}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-change-this-password}
+    volumes:
+      - postgres-data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER:-rehabai} -d ${POSTGRES_DB:-rehabai}"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  backend:
+    build:
+      context: ../
+      dockerfile: backend/Dockerfile
+    container_name: rehabai_backend
+    restart: always
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    volumes:
+      # Mount model folder as read-only
+      - ../artifacts/model_v2:/app/artifacts/model_v2:ro
+      # Bind mount runtime data for persistent SQLite db
+      - ./runtime-data:/app/data
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/api/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+    # Exposing port is optional since Nginx will reverse proxy, but useful for debugging
+    ports:
+      - "8000:8000"
+    environment:
+      - APP_ENV=production
+      - REHABAI_AUTO_CREATE_SCHEMA=0
+      - ARTIFACTS_DIR=/app/artifacts/model_v2
+      - DATABASE_URL=${DATABASE_URL:-postgresql+psycopg://rehabai:change-this-password@postgres:5432/rehabai}
+      - JWT_SECRET=${JWT_SECRET:?JWT_SECRET must be set in deployment/.env}
+      - CORS_ORIGINS=${CORS_ORIGINS:-http://localhost}
+      - OLLAMA_ENABLED=${OLLAMA_ENABLED:-1}
+      - OLLAMA_BASE_URL=${OLLAMA_BASE_URL:-http://host.docker.internal:11434}
+      - OLLAMA_MODEL=${OLLAMA_MODEL:-qwen2.5:7b}
+      - CHAT_REQUEST_TIMEOUT_SECONDS=${CHAT_REQUEST_TIMEOUT_SECONDS:-120}
+      - CHAT_MAX_CONCURRENT_REQUESTS=${CHAT_MAX_CONCURRENT_REQUESTS:-1}
+      - CHAT_CONTEXT_LIMIT=${CHAT_CONTEXT_LIMIT:-12}
+      - CHAT_CLOUD_FALLBACK_ENABLED=false
+      - CHAT_STORE_SENSITIVE_DEBUG_CONTENT=false
+      - REHABAI_BREATH_INHALE_SECONDS=${REHABAI_BREATH_INHALE_SECONDS:-4}
+      - REHABAI_BREATH_HOLD_SECONDS=${REHABAI_BREATH_HOLD_SECONDS:-0}
+      - REHABAI_BREATH_EXHALE_SECONDS=${REHABAI_BREATH_EXHALE_SECONDS:-6}
+      - REHABAI_BREATH_REST_SECONDS=${REHABAI_BREATH_REST_SECONDS:-0}
+      - REHABAI_BREATH_TARGET_CYCLES=${REHABAI_BREATH_TARGET_CYCLES:-6}
+      - REHABAI_BREATH_CALIBRATION_SECONDS=${REHABAI_BREATH_CALIBRATION_SECONDS:-2}
+      - REHABAI_BREATH_MIN_LANDMARK_VISIBILITY=${REHABAI_BREATH_MIN_LANDMARK_VISIBILITY:-0.60}
+      - REHABAI_BREATH_MIN_GOOD_FRAMES_RATIO=${REHABAI_BREATH_MIN_GOOD_FRAMES_RATIO:-0.70}
+      - REHABAI_BREATH_EMA_ALPHA=${REHABAI_BREATH_EMA_ALPHA:-0.20}
+      - REHABAI_BREATH_RISE_THRESHOLD=${REHABAI_BREATH_RISE_THRESHOLD:-0.010}
+      - REHABAI_BREATH_FALL_THRESHOLD=${REHABAI_BREATH_FALL_THRESHOLD:--0.010}
+      - REHABAI_BREATH_NEUTRAL_THRESHOLD=${REHABAI_BREATH_NEUTRAL_THRESHOLD:-0.004}
+      - REHABAI_BREATH_MIN_PHASE_FRAMES=${REHABAI_BREATH_MIN_PHASE_FRAMES:-5}
+      - REHABAI_BREATH_SHORT_GAP_FRAMES=${REHABAI_BREATH_SHORT_GAP_FRAMES:-3}
+      - REHABAI_BREATH_LONG_GAP_FRAMES=${REHABAI_BREATH_LONG_GAP_FRAMES:-15}
+      - REHABAI_BREATH_MAX_NORMALIZED_JUMP=${REHABAI_BREATH_MAX_NORMALIZED_JUMP:-0.08}
+      - REHABAI_BREATH_MIN_CYCLE_SECONDS=${REHABAI_BREATH_MIN_CYCLE_SECONDS:-4}
+      - REHABAI_BREATH_MAX_CYCLE_SECONDS=${REHABAI_BREATH_MAX_CYCLE_SECONDS:-20}
+      - REHABAI_BREATH_COUNT_COOLDOWN_SECONDS=${REHABAI_BREATH_COUNT_COOLDOWN_SECONDS:-1}
+      - REHABAI_BREATH_BODY_MOTION_THRESHOLD=${REHABAI_BREATH_BODY_MOTION_THRESHOLD:-0.12}
+    depends_on:
+      postgres:
+        condition: service_healthy
+
+  frontend:
+    build:
+      context: ../frontend
+      dockerfile: Dockerfile
+    container_name: rehabai_frontend
+    restart: always
+    ports:
+      - "8080:80"
+    depends_on:
+      backend:
+        condition: service_healthy
+
+  nginx:
+    build:
+      context: ./nginx
+      dockerfile: Dockerfile
+    container_name: rehabai_nginx
+    restart: unless-stopped
+    ports:
+      - "80:80"
+    depends_on:
+      - frontend
+      - backend
+
+volumes:
+  postgres-data:

@@ -1,0 +1,20 @@
+ratios:
+  test: 0.15
+  train: 0.7
+  val: 0.15
+seed: 42
+split_strategy: subject_wise
+test_subjects:
+- 09
+- '10'
+total_samples: 491
+train_subjects:
+- '06'
+- '02'
+- '05'
+- '03'
+- '01'
+- '04'
+val_subjects:
+- '07'
+- 08

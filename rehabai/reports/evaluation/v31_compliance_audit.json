@@ -1,0 +1,15 @@
+{
+  "checks": {
+    "registry": true,
+    "upper_limb_loso": true,
+    "model_v2_artifact": true,
+    "backend": true,
+    "frontend": true,
+    "compose": true,
+    "release": true,
+    "reproducibility_manifest": true
+  },
+  "pass_count": 8,
+  "total": 8,
+  "status": "pass"
+}

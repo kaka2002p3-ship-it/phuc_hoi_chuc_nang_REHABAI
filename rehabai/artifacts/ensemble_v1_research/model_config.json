@@ -1,0 +1,27 @@
+{
+  "model_name": "RehabMotionNet+CTR-GCN Ensemble",
+  "version": "1.0-research",
+  "model_type": "ensemble",
+  "input_dim": 237,
+  "temporal_frames": 96,
+  "architecture_signature": "ensemble_v1_research",
+  "class_mapping": {
+    "0": "Exercise_1",
+    "1": "Exercise_2",
+    "2": "Exercise_3",
+    "3": "Exercise_4"
+  },
+  "components": [
+    "rehab_motionnet_upper_limb_v2",
+    "upper_limb_ctr_gcn_v1"
+  ],
+  "blend": {
+    "alpha_v2": 0.8,
+    "selection": "fold_04 validation",
+    "research_only": true
+  },
+  "provenance": {
+    "fold_id": "fold_04",
+    "source_artifact": "model_v2 + CTR-GCN fold_04"
+  }
+}

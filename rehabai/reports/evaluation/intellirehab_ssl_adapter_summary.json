@@ -1,0 +1,55 @@
+{
+  "protocol": "strict ten-fold subject-wise LOSO, seed 42, validation-only checkpoint selection",
+  "candidate": "Optimized-v1 + frozen IntelliRehabDS SSL encoder (fold 0 predeclared)",
+  "candidate_metrics": {
+    "exercise_macro_f1": {
+      "mean": 0.35986512921153047,
+      "std": 0.3386986268626997,
+      "min": 0.0,
+      "max": 0.875
+    },
+    "accuracy": {
+      "mean": 0.4529112440892067,
+      "std": 0.335767269061932,
+      "min": 0.0,
+      "max": 0.8636363636363636
+    }
+  },
+  "optimized_v1_reference": {
+    "exercise_macro_f1": {
+      "mean": 0.39447345363584396,
+      "std": 0.3477952098186064,
+      "min": 0.0,
+      "max": 0.9365079365079365
+    },
+    "accuracy": {
+      "mean": 0.48365566377813085,
+      "std": 0.33056392958185055,
+      "min": 0.0,
+      "max": 0.9318181818181818
+    }
+  },
+  "paired_vs_optimized_v1": {
+    "mean_delta": -0.03460832442431352,
+    "median_delta": 0.0,
+    "wins": 4,
+    "ties": 2,
+    "losses": 4,
+    "per_fold_delta": {
+      "fold_01": 0.010000000000000009,
+      "fold_02": -0.007684704431455525,
+      "fold_03": -0.06150793650793651,
+      "fold_04": -0.17968056784413416,
+      "fold_05": 0.022103053412303342,
+      "fold_06": -0.160427807486631,
+      "fold_07": 0.021645021645021648,
+      "fold_08": 0.0,
+      "fold_09": 0.0,
+      "fold_10": 0.009469696969697017
+    }
+  },
+  "selection_status": "predeclared_exploratory_pilot",
+  "promotion_allowed": false,
+  "production_changed": false,
+  "recommendation": "keep Optimized-v1 until fresh-subject validation and additional predeclared seeds"
+}

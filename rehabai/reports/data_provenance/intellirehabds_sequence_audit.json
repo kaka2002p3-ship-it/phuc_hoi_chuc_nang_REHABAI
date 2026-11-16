@@ -1,0 +1,75 @@
+{
+  "dataset": "IntelliRehabDS",
+  "audit_status": "FAIL_SEQUENCE_VALIDATION",
+  "raw_sequence_count": 2589,
+  "simplified_sequence_count": 2589,
+  "valid_sequence_count": 2544,
+  "invalid_sequence_count": 45,
+  "subject_count_from_filename": 30,
+  "subject_counts": {
+    "101": 107,
+    "102": 110,
+    "103": 109,
+    "104": 57,
+    "105": 115,
+    "106": 107,
+    "107": 109,
+    "201": 111,
+    "202": 111,
+    "203": 50,
+    "204": 177,
+    "205": 21,
+    "206": 140,
+    "207": 89,
+    "209": 53,
+    "210": 34,
+    "211": 51,
+    "212": 52,
+    "213": 54,
+    "214": 52,
+    "215": 73,
+    "216": 54,
+    "217": 61,
+    "301": 108,
+    "302": 110,
+    "303": 107,
+    "304": 55,
+    "305": 96,
+    "306": 109,
+    "307": 107
+  },
+  "gesture_source_counts": {
+    "0": 258,
+    "1": 279,
+    "2": 376,
+    "3": 318,
+    "4": 277,
+    "5": 257,
+    "6": 260,
+    "7": 274,
+    "8": 290
+  },
+  "correctness_source_counts": {
+    "1": 2047,
+    "2": 530,
+    "3": 12
+  },
+  "frame_count": {
+    "min": 13,
+    "max": 4736,
+    "mean": 88.18115102356123
+  },
+  "joint_schema": {
+    "joints": 25,
+    "xyz_coordinates_per_joint": 3,
+    "coordinate_format": "3D"
+  },
+  "product_registry_mapping": "FORBIDDEN",
+  "admission_status": "AUXILIARY_ONLY_PENDING_PREDECLARED_SSL_OR_ADAPTER_PROTOCOL",
+  "notes": [
+    "Gesture labels 0--8 are source ontology and are not Exercise_1--Exercise_4.",
+    "CorrectLabel 1/2 is source correctness and is not the Upper Limb completion head.",
+    "Filename-derived subject IDs are suitable for this source audit; no product split is created.",
+    "The source README reports 15 patients and 14 healthy participants; subject prefixes are retained verbatim."
+  ]
+}

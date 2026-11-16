@@ -1,0 +1,64 @@
+# RehabAI root .gitignore — repo root is rehabai/
+# Keep this list current before running `git init` so heavy artifacts and
+# live secrets are never tracked. .env.example files stay tracked; .env do not.
+
+# --- Secrets & credentials (never track) ---
+.env
+.env.local
+.env.*.local
+*.env
+!*.env.example
+.secrets/
+deployment/.env
+release/.env
+
+# --- Databases & user data ---
+*.db
+*.db-journal
+*.sqlite
+*.sqlite3
+backend/data/
+release/runtime-data/
+deployment/runtime-data/
+data/rehabai_sessions.db
+
+# --- Large raw/experimental data (regenerable from pipeline) ---
+data/
+experiments/
+results/
+research/
+logs/
+
+# --- Heavy generated artifacts; small manifests/model cards stay tracked ---
+training/checkpoints/
+training/runs/
+*.ckpt
+*.pt
+*.pth
+best_model.pth
+!artifacts/model_v2/model.pt
+
+# --- Runtime state & caches ---
+.runtime/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+*.log
+*.err
+
+# --- Node / frontend build ---
+frontend/node_modules/
+frontend/dist/
+frontend/dist-ssr/
+moblieapp/build/
+moblieapp/.dart_tool/
+
+# --- Backups & editor/OS noise ---
+backups/
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp

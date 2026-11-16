@@ -1,0 +1,89 @@
+{
+  "protocol": "strict subject-wise 10-fold LOSO; alpha selected on validation only",
+  "folds": [
+    {
+      "fold_id": "fold_01",
+      "alpha_v2": 0.5,
+      "validation_f1": 0.815040650406504,
+      "test_f1_macro": 0.4306661080854629,
+      "test_accuracy": 0.5952380952380952,
+      "sample_count": 42
+    },
+    {
+      "fold_id": "fold_02",
+      "alpha_v2": 0.5,
+      "validation_f1": 0.8725718725718725,
+      "test_f1_macro": 0.5571678321678322,
+      "test_accuracy": 0.5882352941176471,
+      "sample_count": 51
+    },
+    {
+      "fold_id": "fold_03",
+      "alpha_v2": 0.3,
+      "validation_f1": 0.7989789065600292,
+      "test_f1_macro": 0.8882936507936507,
+      "test_accuracy": 0.8636363636363636,
+      "sample_count": 44
+    },
+    {
+      "fold_id": "fold_04",
+      "alpha_v2": 0.8,
+      "validation_f1": 0.7469291125541124,
+      "test_f1_macro": 0.7542390405293631,
+      "test_accuracy": 0.7627118644067796,
+      "sample_count": 59
+    },
+    {
+      "fold_id": "fold_05",
+      "alpha_v2": 0.0,
+      "validation_f1": 0.9365079365079365,
+      "test_f1_macro": 0.6925752508361204,
+      "test_accuracy": 0.6901408450704225,
+      "sample_count": 71
+    },
+    {
+      "fold_id": "fold_06",
+      "alpha_v2": 0.0,
+      "validation_f1": 0.7267073170731707,
+      "test_f1_macro": 0.19686907020872868,
+      "test_accuracy": 0.29545454545454547,
+      "sample_count": 44
+    },
+    {
+      "fold_id": "fold_07",
+      "alpha_v2": 0.65,
+      "validation_f1": 0.7432812952917305,
+      "test_f1_macro": 0.023809523809523808,
+      "test_accuracy": 0.05,
+      "sample_count": 20
+    },
+    {
+      "fold_id": "fold_08",
+      "alpha_v2": 0.6,
+      "validation_f1": 0.8695220680170044,
+      "test_f1_macro": 0.0,
+      "test_accuracy": 0.0,
+      "sample_count": 20
+    },
+    {
+      "fold_id": "fold_09",
+      "alpha_v2": 0.45,
+      "validation_f1": 0.8244364375461937,
+      "test_f1_macro": 0.1,
+      "test_accuracy": 0.25,
+      "sample_count": 16
+    },
+    {
+      "fold_id": "fold_10",
+      "alpha_v2": 0.0,
+      "validation_f1": 0.9782214156079856,
+      "test_f1_macro": 0.1,
+      "test_accuracy": 0.25,
+      "sample_count": 20
+    }
+  ],
+  "mean_test_f1_macro": 0.3743620476430682,
+  "std_test_f1_macro": 0.3318913485698361,
+  "mean_test_accuracy": 0.43454170079238535,
+  "mean_alpha_v2": 0.38
+}

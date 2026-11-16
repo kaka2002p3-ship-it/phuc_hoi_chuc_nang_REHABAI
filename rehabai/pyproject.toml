@@ -1,0 +1,102 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "rehabai"
+version = "0.1.0"
+description = "AI-powered rehabilitation exercise tracking system for stroke patients"
+readme = "README.md"
+requires-python = ">=3.9"
+license = {text = "MIT"}
+authors = [
+    {name = "RehabAI Team", email = "contact@rehabai.local"}
+]
+keywords = ["rehabilitation", "ai", "motion-recognition", "stroke", "healthcare"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Healthcare Industry",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+]
+
+dependencies = [
+    "torch>=2.0.0",
+    "numpy>=1.24.0",
+    "pytorch-lightning>=2.0.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0.0",
+    "pytest-asyncio>=0.21.0",
+    "pytest-cov>=4.0.0",
+    "black>=23.0.0",
+    "ruff>=0.1.0",
+]
+backend = [
+    "fastapi>=0.100.0",
+    "uvicorn[standard]>=0.23.0",
+    "sqlalchemy>=2.0.0",
+    "alembic>=1.12.0",
+    "mediapipe>=0.10.0",
+    "opencv-python-headless>=4.8.0",
+    "websockets>=11.0",
+    "python-multipart>=0.0.6",
+    "python-jose[cryptography]>=3.3.0",
+    "passlib[bcrypt]>=1.7.4",
+]
+all = [
+    "rehabai[dev,backend]",
+]
+
+[project.urls]
+Homepage = "https://github.com/rehabai/rehabai"
+Documentation = "https://rehabai.docs.local"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["shared*", "training*", "backend*", "scripts*"]
+exclude = ["tests*", "experiments*", "data*"]
+
+[tool.pytest.ini_options]
+minversion = "7.0"
+testpaths = ["tests", "shared/tests"]
+pythonpath = ["."]
+addopts = "-v --tb=short"
+asyncio_mode = "auto"
+markers = [
+    "slow: marks tests as slow (deselect with '-m \"not slow\"')",
+    "integration: marks tests as integration tests",
+    "unit: marks tests as unit tests",
+]
+
+[tool.black]
+line-length = 100
+target-version = ["py39", "py310", "py311"]
+include = '\.pyi?$'
+exclude = '''
+/(
+    \.git
+  | \.venv
+  | __pycache__
+  | \.pytest_cache
+  | data/
+  | experiments/
+  | artifacts/
+)/
+'''
+
+[tool.ruff]
+line-length = 100
+target-version = "py39"
+select = ["E", "F", "W", "I", "N", "UP", "B"]
+ignore = ["E501"]
+
+[tool.mypy]
+python_version = "3.9"
+warn_return_any = true
+warn_unused_configs = true
+ignore_missing_imports = true

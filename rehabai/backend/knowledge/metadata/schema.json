@@ -1,0 +1,23 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "RehabAI approved knowledge metadata",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["document_id", "title", "source", "language", "version", "scope", "review_date", "approval_status", "content_hash"],
+  "properties": {
+    "document_id": {"type": "string", "minLength": 1},
+    "title": {"type": "string", "minLength": 1},
+    "source": {"type": "string", "minLength": 1},
+    "language": {"enum": ["vi", "en", "vi-en"]},
+    "version": {"type": "string", "minLength": 1},
+    "scope": {"type": "array", "items": {"enum": ["HAND_OPENING", "ELBOW_EXTENSION", "NUTRITION_GENERAL", "PRODUCT_HELP", "SAFETY"]}, "minItems": 1},
+    "review_date": {"type": ["string", "null"], "format": "date"},
+    "approval_status": {"enum": ["draft", "approved", "rejected", "expired"]},
+    "review_status": {"enum": ["draft", "approved", "rejected", "expired"]},
+    "reviewer_name": {"type": ["string", "null"]},
+    "reviewer_role": {"type": ["string", "null"]},
+    "reviewed_at": {"type": ["string", "null"], "format": "date-time"},
+    "expires_at": {"type": ["string", "null"], "format": "date-time"},
+    "content_hash": {"type": "string", "pattern": "^[a-f0-9]{64}$"}
+  }
+}

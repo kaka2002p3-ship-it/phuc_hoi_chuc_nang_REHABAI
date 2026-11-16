@@ -1,0 +1,1277 @@
+[
+    {
+        "fold_id": "fold_01",
+        "model_name": "lstm",
+        "accuracy": 0.40476190476190477,
+        "precision_macro": 0.241025641025641,
+        "recall_macro": 0.3782051282051282,
+        "f1_macro": 0.28214285714285714,
+        "f1_weighted": 0.3166666666666666,
+        "per_class": {
+            "0": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "support": 20
+            },
+            "1": {
+                "precision": 0.7333333333333333,
+                "recall": 0.8461538461538461,
+                "f1": 0.7857142857142856,
+                "support": 13
+            },
+            "2": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "support": 0
+            },
+            "3": {
+                "precision": 0.23076923076923078,
+                "recall": 0.6666666666666666,
+                "f1": 0.3428571428571429,
+                "support": 9
+            }
+        },
+        "confusion_matrix": [
+            [
+                0,
+                1,
+                1,
+                18
+            ],
+            [
+                0,
+                11,
+                0,
+                2
+            ],
+            [
+                0,
+                0,
+                0,
+                0
+            ],
+            [
+                0,
+                3,
+                0,
+                6
+            ]
+        ],
+        "sample_count": 42,
+        "observed_classes": [
+            0,
+            1,
+            3
+        ],
+        "expected_classes": [
+            0,
+            1,
+            2,
+            3
+        ],
+        "class_coverage_complete": false,
+        "task_evaluated": "exercise_classification",
+        "task_omitted": null,
+        "completion_accuracy": 0.5952380952380952,
+        "completion_precision_macro": 0.6416666666666666,
+        "completion_recall_macro": 0.6167048054919908,
+        "completion_f1_macro": 0.5836734693877552,
+        "completion_sample_count": 42,
+        "completion_observed_classes": [
+            0,
+            1
+        ],
+        "completion_confusion_matrix": [
+            [
+                9,
+                14
+            ],
+            [
+                3,
+                16
+            ]
+        ],
+        "metadata": {
+            "model_id": "lstm",
+            "fold_id": "fold_01",
+            "protocol_version": "1.1",
+            "provenance_hash": "23c2471bad1c6f4a5272cc8ffd370b0b0155de32b8d370f19f63584e3d6acbcd",
+            "train_manifest_hash": "40fdb6115a208392711bb80283184b96df3e6577d7335bc30414a86554dbec6c",
+            "normalization_hash": "78e2c50fe45643ff4515b575b0281be4bb5f37a0a690495f8c195a385da5dc9d",
+            "class_mapping": {
+                "0": "Exercise_1",
+                "1": "Exercise_2",
+                "2": "Exercise_3",
+                "3": "Exercise_4"
+            },
+            "model_config": {
+                "input_dim": 237,
+                "num_exercises": 4,
+                "hidden_size": 64,
+                "num_layers": 1,
+                "bidirectional": false
+            },
+            "architecture_signature": "baseline_lstm_v1",
+            "checkpoint_role": "supervised_model",
+            "training_inputs": {
+                "seed": 42,
+                "runtime": {
+                    "python": "3.11.9",
+                    "torch": "2.5.1+cu121",
+                    "torch_cuda_runtime": "12.1",
+                    "cuda_device_name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+                    "environment_profile": "noncanonical_exploratory"
+                }
+            }
+        }
+    },
+    {
+        "fold_id": "fold_02",
+        "model_name": "lstm",
+        "accuracy": 0.7647058823529411,
+        "precision_macro": 0.6240942028985508,
+        "recall_macro": 0.6536690433749257,
+        "f1_macro": 0.5839826839826839,
+        "f1_weighted": 0.7418046006281299,
+        "per_class": {
+            "0": {
+                "precision": 0.9130434782608695,
+                "recall": 0.9545454545454546,
+                "f1": 0.9333333333333332,
+                "support": 22
+            },
+            "1": {
+                "precision": 0.8333333333333334,
+                "recall": 0.8823529411764706,
+                "f1": 0.8571428571428571,
+                "support": 17
+            },
+            "2": {
+                "precision": 0.25,
+                "recall": 0.6666666666666666,
+                "f1": 0.36363636363636365,
+                "support": 3
+            },
+            "3": {
+                "precision": 0.5,
+                "recall": 0.1111111111111111,
+                "f1": 0.1818181818181818,
+                "support": 9
+            }
+        },
+        "confusion_matrix": [
+            [
+                21,
+                0,
+                1,
+                0
+            ],
+            [
+                2,
+                15,
+                0,
+                0
+            ],
+            [
+                0,
+                0,
+                2,
+                1
+            ],
+            [
+                0,
+                3,
+                5,
+                1
+            ]
+        ],
+        "sample_count": 51,
+        "observed_classes": [
+            0,
+            1,
+            2,
+            3
+        ],
+        "expected_classes": [
+            0,
+            1,
+            2,
+            3
+        ],
+        "class_coverage_complete": true,
+        "task_evaluated": "exercise_classification",
+        "task_omitted": null,
+        "completion_accuracy": 0.49019607843137253,
+        "completion_precision_macro": 0.6090909090909091,
+        "completion_recall_macro": 0.5808080808080808,
+        "completion_f1_macro": 0.4804075235109718,
+        "completion_sample_count": 51,
+        "completion_observed_classes": [
+            0,
+            1
+        ],
+        "completion_confusion_matrix": [
+            [
+                9,
+                24
+            ],
+            [
+                2,
+                16
+            ]
+        ],
+        "metadata": {
+            "model_id": "lstm",
+            "fold_id": "fold_02",
+            "protocol_version": "1.1",
+            "provenance_hash": "23c2471bad1c6f4a5272cc8ffd370b0b0155de32b8d370f19f63584e3d6acbcd",
+            "train_manifest_hash": "98f6752776cfebdadda989dedcf8fa9e14b37a7a1b957fb2c3555071b58815a8",
+            "normalization_hash": "97721444cef7f81de6e7e838c984933733915940ba4c9d31ec3a2da04e300867",
+            "class_mapping": {
+                "0": "Exercise_1",
+                "1": "Exercise_2",
+                "2": "Exercise_3",
+                "3": "Exercise_4"
+            },
+            "model_config": {
+                "input_dim": 237,
+                "num_exercises": 4,
+                "hidden_size": 64,
+                "num_layers": 1,
+                "bidirectional": false
+            },
+            "architecture_signature": "baseline_lstm_v1",
+            "checkpoint_role": "supervised_model",
+            "training_inputs": {
+                "seed": 42,
+                "runtime": {
+                    "python": "3.11.9",
+                    "torch": "2.5.1+cu121",
+                    "torch_cuda_runtime": "12.1",
+                    "cuda_device_name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+                    "environment_profile": "noncanonical_exploratory"
+                }
+            }
+        }
+    },
+    {
+        "fold_id": "fold_03",
+        "model_name": "lstm",
+        "accuracy": 0.9318181818181818,
+        "precision_macro": 0.9375,
+        "recall_macro": 0.9605263157894737,
+        "f1_macro": 0.9428571428571428,
+        "f1_weighted": 0.9337662337662337,
+        "per_class": {
+            "0": {
+                "precision": 1.0,
+                "recall": 0.8421052631578947,
+                "f1": 0.9142857142857143,
+                "support": 19
+            },
+            "1": {
+                "precision": 1.0,
+                "recall": 1.0,
+                "f1": 1.0,
+                "support": 1
+            },
+            "2": {
+                "precision": 1.0,
+                "recall": 1.0,
+                "f1": 1.0,
+                "support": 15
+            },
+            "3": {
+                "precision": 0.75,
+                "recall": 1.0,
+                "f1": 0.8571428571428571,
+                "support": 9
+            }
+        },
+        "confusion_matrix": [
+            [
+                16,
+                0,
+                0,
+                3
+            ],
+            [
+                0,
+                1,
+                0,
+                0
+            ],
+            [
+                0,
+                0,
+                15,
+                0
+            ],
+            [
+                0,
+                0,
+                0,
+                9
+            ]
+        ],
+        "sample_count": 44,
+        "observed_classes": [
+            0,
+            1,
+            2,
+            3
+        ],
+        "expected_classes": [
+            0,
+            1,
+            2,
+            3
+        ],
+        "class_coverage_complete": true,
+        "task_evaluated": "exercise_classification",
+        "task_omitted": null,
+        "completion_accuracy": 0.5454545454545454,
+        "completion_precision_macro": 0.49891067538126366,
+        "completion_recall_macro": 0.49875930521091816,
+        "completion_f1_macro": 0.49425287356321845,
+        "completion_sample_count": 44,
+        "completion_observed_classes": [
+            0,
+            1
+        ],
+        "completion_confusion_matrix": [
+            [
+                5,
+                8
+            ],
+            [
+                12,
+                19
+            ]
+        ],
+        "metadata": {
+            "model_id": "lstm",
+            "fold_id": "fold_03",
+            "protocol_version": "1.1",
+            "provenance_hash": "23c2471bad1c6f4a5272cc8ffd370b0b0155de32b8d370f19f63584e3d6acbcd",
+            "train_manifest_hash": "01b10f7a4c76487122e6e0725dbba188b3a213f47aca09c5e0effbddb2fa5d01",
+            "normalization_hash": "92d28a5e3ba3926d581e3a43be47e04f160930c8133e4359a46548042efec90a",
+            "class_mapping": {
+                "0": "Exercise_1",
+                "1": "Exercise_2",
+                "2": "Exercise_3",
+                "3": "Exercise_4"
+            },
+            "model_config": {
+                "input_dim": 237,
+                "num_exercises": 4,
+                "hidden_size": 64,
+                "num_layers": 1,
+                "bidirectional": false
+            },
+            "architecture_signature": "baseline_lstm_v1",
+            "checkpoint_role": "supervised_model",
+            "training_inputs": {
+                "seed": 42,
+                "runtime": {
+                    "python": "3.11.9",
+                    "torch": "2.5.1+cu121",
+                    "torch_cuda_runtime": "12.1",
+                    "cuda_device_name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+                    "environment_profile": "noncanonical_exploratory"
+                }
+            }
+        }
+    },
+    {
+        "fold_id": "fold_04",
+        "model_name": "lstm",
+        "accuracy": 0.4406779661016949,
+        "precision_macro": 0.4763888888888889,
+        "recall_macro": 0.5418956043956044,
+        "f1_macro": 0.46072974644403214,
+        "f1_weighted": 0.40298523107239814,
+        "per_class": {
+            "0": {
+                "precision": 1.0,
+                "recall": 0.5714285714285714,
+                "f1": 0.7272727272727273,
+                "support": 21
+            },
+            "1": {
+                "precision": 0.6,
+                "recall": 0.75,
+                "f1": 0.6666666666666665,
+                "support": 4
+            },
+            "2": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "support": 21
+            },
+            "3": {
+                "precision": 0.3055555555555556,
+                "recall": 0.8461538461538461,
+                "f1": 0.44897959183673475,
+                "support": 13
+            }
+        },
+        "confusion_matrix": [
+            [
+                12,
+                0,
+                5,
+                4
+            ],
+            [
+                0,
+                3,
+                0,
+                1
+            ],
+            [
+                0,
+                1,
+                0,
+                20
+            ],
+            [
+                0,
+                1,
+                1,
+                11
+            ]
+        ],
+        "sample_count": 59,
+        "observed_classes": [
+            0,
+            1,
+            2,
+            3
+        ],
+        "expected_classes": [
+            0,
+            1,
+            2,
+            3
+        ],
+        "class_coverage_complete": true,
+        "task_evaluated": "exercise_classification",
+        "task_omitted": null,
+        "completion_accuracy": 0.5932203389830508,
+        "completion_precision_macro": 0.5916666666666667,
+        "completion_recall_macro": 0.5887096774193548,
+        "completion_f1_macro": 0.5874125874125874,
+        "completion_sample_count": 59,
+        "completion_observed_classes": [
+            0,
+            1
+        ],
+        "completion_confusion_matrix": [
+            [
+                14,
+                14
+            ],
+            [
+                10,
+                21
+            ]
+        ],
+        "metadata": {
+            "model_id": "lstm",
+            "fold_id": "fold_04",
+            "protocol_version": "1.1",
+            "provenance_hash": "23c2471bad1c6f4a5272cc8ffd370b0b0155de32b8d370f19f63584e3d6acbcd",
+            "train_manifest_hash": "98f6752776cfebdadda989dedcf8fa9e14b37a7a1b957fb2c3555071b58815a8",
+            "normalization_hash": "6a2b3e14c4f5f89df7ef734f947268af77c2de2adb573b8dc9724cec2adc514d",
+            "class_mapping": {
+                "0": "Exercise_1",
+                "1": "Exercise_2",
+                "2": "Exercise_3",
+                "3": "Exercise_4"
+            },
+            "model_config": {
+                "input_dim": 237,
+                "num_exercises": 4,
+                "hidden_size": 64,
+                "num_layers": 1,
+                "bidirectional": false
+            },
+            "architecture_signature": "baseline_lstm_v1",
+            "checkpoint_role": "supervised_model",
+            "training_inputs": {
+                "seed": 42,
+                "runtime": {
+                    "python": "3.11.9",
+                    "torch": "2.5.1+cu121",
+                    "torch_cuda_runtime": "12.1",
+                    "cuda_device_name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+                    "environment_profile": "noncanonical_exploratory"
+                }
+            }
+        }
+    },
+    {
+        "fold_id": "fold_05",
+        "model_name": "lstm",
+        "accuracy": 0.7464788732394366,
+        "precision_macro": 0.7895471464019851,
+        "recall_macro": 0.775,
+        "f1_macro": 0.7209448160535117,
+        "f1_weighted": 0.6828630646756796,
+        "per_class": {
+            "0": {
+                "precision": 0.6774193548387096,
+                "recall": 1.0,
+                "f1": 0.8076923076923077,
+                "support": 21
+            },
+            "1": {
+                "precision": 1.0,
+                "recall": 1.0,
+                "f1": 1.0,
+                "support": 10
+            },
+            "2": {
+                "precision": 0.7307692307692307,
+                "recall": 0.95,
+                "f1": 0.8260869565217392,
+                "support": 20
+            },
+            "3": {
+                "precision": 0.75,
+                "recall": 0.15,
+                "f1": 0.24999999999999997,
+                "support": 20
+            }
+        },
+        "confusion_matrix": [
+            [
+                21,
+                0,
+                0,
+                0
+            ],
+            [
+                0,
+                10,
+                0,
+                0
+            ],
+            [
+                0,
+                0,
+                19,
+                1
+            ],
+            [
+                10,
+                0,
+                7,
+                3
+            ]
+        ],
+        "sample_count": 71,
+        "observed_classes": [
+            0,
+            1,
+            2,
+            3
+        ],
+        "expected_classes": [
+            0,
+            1,
+            2,
+            3
+        ],
+        "class_coverage_complete": true,
+        "task_evaluated": "exercise_classification",
+        "task_omitted": null,
+        "completion_accuracy": 0.647887323943662,
+        "completion_precision_macro": 0.6948051948051948,
+        "completion_recall_macro": 0.6682692307692308,
+        "completion_f1_macro": 0.6407609795587937,
+        "completion_sample_count": 71,
+        "completion_observed_classes": [
+            0,
+            1
+        ],
+        "completion_confusion_matrix": [
+            [
+                18,
+                21
+            ],
+            [
+                4,
+                28
+            ]
+        ],
+        "metadata": {
+            "model_id": "lstm",
+            "fold_id": "fold_05",
+            "protocol_version": "1.1",
+            "provenance_hash": "23c2471bad1c6f4a5272cc8ffd370b0b0155de32b8d370f19f63584e3d6acbcd",
+            "train_manifest_hash": "01b10f7a4c76487122e6e0725dbba188b3a213f47aca09c5e0effbddb2fa5d01",
+            "normalization_hash": "cdc237203fee6902085d1ac0f131a940b4b5854bed26899e0224b23f62336e4f",
+            "class_mapping": {
+                "0": "Exercise_1",
+                "1": "Exercise_2",
+                "2": "Exercise_3",
+                "3": "Exercise_4"
+            },
+            "model_config": {
+                "input_dim": 237,
+                "num_exercises": 4,
+                "hidden_size": 64,
+                "num_layers": 1,
+                "bidirectional": false
+            },
+            "architecture_signature": "baseline_lstm_v1",
+            "checkpoint_role": "supervised_model",
+            "training_inputs": {
+                "seed": 42,
+                "runtime": {
+                    "python": "3.11.9",
+                    "torch": "2.5.1+cu121",
+                    "torch_cuda_runtime": "12.1",
+                    "cuda_device_name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+                    "environment_profile": "noncanonical_exploratory"
+                }
+            }
+        }
+    },
+    {
+        "fold_id": "fold_06",
+        "model_name": "lstm",
+        "accuracy": 0.045454545454545456,
+        "precision_macro": 0.25,
+        "recall_macro": 0.02,
+        "f1_macro": 0.037037037037037035,
+        "f1_weighted": 0.08417508417508417,
+        "per_class": {
+            "0": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "support": 0
+            },
+            "1": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "support": 0
+            },
+            "2": {
+                "precision": 1.0,
+                "recall": 0.08,
+                "f1": 0.14814814814814814,
+                "support": 25
+            },
+            "3": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "support": 19
+            }
+        },
+        "confusion_matrix": [
+            [
+                0,
+                0,
+                0,
+                0
+            ],
+            [
+                0,
+                0,
+                0,
+                0
+            ],
+            [
+                20,
+                0,
+                2,
+                3
+            ],
+            [
+                19,
+                0,
+                0,
+                0
+            ]
+        ],
+        "sample_count": 44,
+        "observed_classes": [
+            2,
+            3
+        ],
+        "expected_classes": [
+            0,
+            1,
+            2,
+            3
+        ],
+        "class_coverage_complete": false,
+        "task_evaluated": "exercise_classification",
+        "task_omitted": null,
+        "completion_accuracy": 0.6818181818181818,
+        "completion_precision_macro": 0.703125,
+        "completion_recall_macro": 0.6625,
+        "completion_f1_macro": 0.65625,
+        "completion_sample_count": 44,
+        "completion_observed_classes": [
+            0,
+            1
+        ],
+        "completion_confusion_matrix": [
+            [
+                21,
+                3
+            ],
+            [
+                11,
+                9
+            ]
+        ],
+        "metadata": {
+            "model_id": "lstm",
+            "fold_id": "fold_06",
+            "protocol_version": "1.1",
+            "provenance_hash": "23c2471bad1c6f4a5272cc8ffd370b0b0155de32b8d370f19f63584e3d6acbcd",
+            "train_manifest_hash": "30e47be7fae301013667f6c22f9357aefe04ea0cb313cb38fe9fe859abdfba82",
+            "normalization_hash": "424f67988146bb66451634145d4a535551af02042c08cefbd037e24e365d78be",
+            "class_mapping": {
+                "0": "Exercise_1",
+                "1": "Exercise_2",
+                "2": "Exercise_3",
+                "3": "Exercise_4"
+            },
+            "model_config": {
+                "input_dim": 237,
+                "num_exercises": 4,
+                "hidden_size": 64,
+                "num_layers": 1,
+                "bidirectional": false
+            },
+            "architecture_signature": "baseline_lstm_v1",
+            "checkpoint_role": "supervised_model",
+            "training_inputs": {
+                "seed": 42,
+                "runtime": {
+                    "python": "3.11.9",
+                    "torch": "2.5.1+cu121",
+                    "torch_cuda_runtime": "12.1",
+                    "cuda_device_name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+                    "environment_profile": "noncanonical_exploratory"
+                }
+            }
+        }
+    },
+    {
+        "fold_id": "fold_07",
+        "model_name": "lstm",
+        "accuracy": 0.0,
+        "precision_macro": 0.0,
+        "recall_macro": 0.0,
+        "f1_macro": 0.0,
+        "f1_weighted": 0.0,
+        "per_class": {
+            "0": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "support": 20
+            },
+            "1": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "support": 0
+            },
+            "2": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "support": 0
+            },
+            "3": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "support": 0
+            }
+        },
+        "confusion_matrix": [
+            [
+                0,
+                8,
+                0,
+                12
+            ],
+            [
+                0,
+                0,
+                0,
+                0
+            ],
+            [
+                0,
+                0,
+                0,
+                0
+            ],
+            [
+                0,
+                0,
+                0,
+                0
+            ]
+        ],
+        "sample_count": 20,
+        "observed_classes": [
+            0
+        ],
+        "expected_classes": [
+            0,
+            1,
+            2,
+            3
+        ],
+        "class_coverage_complete": false,
+        "task_evaluated": "exercise_classification",
+        "task_omitted": null,
+        "completion_accuracy": 0.5,
+        "completion_precision_macro": 0.25,
+        "completion_recall_macro": 0.5,
+        "completion_f1_macro": 0.3333333333333333,
+        "completion_sample_count": 20,
+        "completion_observed_classes": [
+            0,
+            1
+        ],
+        "completion_confusion_matrix": [
+            [
+                10,
+                0
+            ],
+            [
+                10,
+                0
+            ]
+        ],
+        "metadata": {
+            "model_id": "lstm",
+            "fold_id": "fold_07",
+            "protocol_version": "1.1",
+            "provenance_hash": "23c2471bad1c6f4a5272cc8ffd370b0b0155de32b8d370f19f63584e3d6acbcd",
+            "train_manifest_hash": "fd27d05d85014527fb88e851db843417528019b153dce2dbded0eb9a73e92600",
+            "normalization_hash": "8a176043911925f44b68bac6002715f623c971347d93be7688e107ca9e65c8a4",
+            "class_mapping": {
+                "0": "Exercise_1",
+                "1": "Exercise_2",
+                "2": "Exercise_3",
+                "3": "Exercise_4"
+            },
+            "model_config": {
+                "input_dim": 237,
+                "num_exercises": 4,
+                "hidden_size": 64,
+                "num_layers": 1,
+                "bidirectional": false
+            },
+            "architecture_signature": "baseline_lstm_v1",
+            "checkpoint_role": "supervised_model",
+            "training_inputs": {
+                "seed": 42,
+                "runtime": {
+                    "python": "3.11.9",
+                    "torch": "2.5.1+cu121",
+                    "torch_cuda_runtime": "12.1",
+                    "cuda_device_name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+                    "environment_profile": "noncanonical_exploratory"
+                }
+            }
+        }
+    },
+    {
+        "fold_id": "fold_08",
+        "model_name": "lstm",
+        "accuracy": 0.0,
+        "precision_macro": 0.0,
+        "recall_macro": 0.0,
+        "f1_macro": 0.0,
+        "f1_weighted": 0.0,
+        "per_class": {
+            "0": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "support": 0
+            },
+            "1": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "support": 20
+            },
+            "2": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "support": 0
+            },
+            "3": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "support": 0
+            }
+        },
+        "confusion_matrix": [
+            [
+                0,
+                0,
+                0,
+                0
+            ],
+            [
+                9,
+                0,
+                0,
+                11
+            ],
+            [
+                0,
+                0,
+                0,
+                0
+            ],
+            [
+                0,
+                0,
+                0,
+                0
+            ]
+        ],
+        "sample_count": 20,
+        "observed_classes": [
+            1
+        ],
+        "expected_classes": [
+            0,
+            1,
+            2,
+            3
+        ],
+        "class_coverage_complete": false,
+        "task_evaluated": "exercise_classification",
+        "task_omitted": null,
+        "completion_accuracy": 0.45,
+        "completion_precision_macro": 0.4019607843137255,
+        "completion_recall_macro": 0.45,
+        "completion_f1_macro": 0.37321937321937326,
+        "completion_sample_count": 20,
+        "completion_observed_classes": [
+            0,
+            1
+        ],
+        "completion_confusion_matrix": [
+            [
+                8,
+                2
+            ],
+            [
+                9,
+                1
+            ]
+        ],
+        "metadata": {
+            "model_id": "lstm",
+            "fold_id": "fold_08",
+            "protocol_version": "1.1",
+            "provenance_hash": "23c2471bad1c6f4a5272cc8ffd370b0b0155de32b8d370f19f63584e3d6acbcd",
+            "train_manifest_hash": "a9b402d0f8da8ebc90537556e2bfec22a86fa1ee68c7fba1b44da9df5721f7f4",
+            "normalization_hash": "4632c661c822c133e31721ef6e8a5d7e8bc3c57793f65b6cab64f814c4ddebd1",
+            "class_mapping": {
+                "0": "Exercise_1",
+                "1": "Exercise_2",
+                "2": "Exercise_3",
+                "3": "Exercise_4"
+            },
+            "model_config": {
+                "input_dim": 237,
+                "num_exercises": 4,
+                "hidden_size": 64,
+                "num_layers": 1,
+                "bidirectional": false
+            },
+            "architecture_signature": "baseline_lstm_v1",
+            "checkpoint_role": "supervised_model",
+            "training_inputs": {
+                "seed": 42,
+                "runtime": {
+                    "python": "3.11.9",
+                    "torch": "2.5.1+cu121",
+                    "torch_cuda_runtime": "12.1",
+                    "cuda_device_name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+                    "environment_profile": "noncanonical_exploratory"
+                }
+            }
+        }
+    },
+    {
+        "fold_id": "fold_09",
+        "model_name": "lstm",
+        "accuracy": 0.0625,
+        "precision_macro": 0.25,
+        "recall_macro": 0.015625,
+        "f1_macro": 0.029411764705882353,
+        "f1_weighted": 0.11764705882352941,
+        "per_class": {
+            "0": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "support": 0
+            },
+            "1": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "support": 0
+            },
+            "2": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "support": 0
+            },
+            "3": {
+                "precision": 1.0,
+                "recall": 0.0625,
+                "f1": 0.11764705882352941,
+                "support": 16
+            }
+        },
+        "confusion_matrix": [
+            [
+                0,
+                0,
+                0,
+                0
+            ],
+            [
+                0,
+                0,
+                0,
+                0
+            ],
+            [
+                0,
+                0,
+                0,
+                0
+            ],
+            [
+                9,
+                4,
+                2,
+                1
+            ]
+        ],
+        "sample_count": 16,
+        "observed_classes": [
+            3
+        ],
+        "expected_classes": [
+            0,
+            1,
+            2,
+            3
+        ],
+        "class_coverage_complete": false,
+        "task_evaluated": "exercise_classification",
+        "task_omitted": null,
+        "completion_accuracy": 0.6875,
+        "completion_precision_macro": 0.7727272727272727,
+        "completion_recall_macro": 0.75,
+        "completion_f1_macro": 0.6862745098039216,
+        "completion_sample_count": 16,
+        "completion_observed_classes": [
+            0,
+            1
+        ],
+        "completion_confusion_matrix": [
+            [
+                5,
+                5
+            ],
+            [
+                0,
+                6
+            ]
+        ],
+        "metadata": {
+            "model_id": "lstm",
+            "fold_id": "fold_09",
+            "protocol_version": "1.1",
+            "provenance_hash": "23c2471bad1c6f4a5272cc8ffd370b0b0155de32b8d370f19f63584e3d6acbcd",
+            "train_manifest_hash": "944499c25ee30afd68ecbab3e0dd2b742a318e16531f2f21317215bf20ba3ba2",
+            "normalization_hash": "073f10e443d82d5da7a5cd8c046c7dfc17d176cd691cbe1c88a9667f3b791294",
+            "class_mapping": {
+                "0": "Exercise_1",
+                "1": "Exercise_2",
+                "2": "Exercise_3",
+                "3": "Exercise_4"
+            },
+            "model_config": {
+                "input_dim": 237,
+                "num_exercises": 4,
+                "hidden_size": 64,
+                "num_layers": 1,
+                "bidirectional": false
+            },
+            "architecture_signature": "baseline_lstm_v1",
+            "checkpoint_role": "supervised_model",
+            "training_inputs": {
+                "seed": 42,
+                "runtime": {
+                    "python": "3.11.9",
+                    "torch": "2.5.1+cu121",
+                    "torch_cuda_runtime": "12.1",
+                    "cuda_device_name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+                    "environment_profile": "noncanonical_exploratory"
+                }
+            }
+        }
+    },
+    {
+        "fold_id": "fold_10",
+        "model_name": "lstm",
+        "accuracy": 0.6,
+        "precision_macro": 0.25,
+        "recall_macro": 0.15,
+        "f1_macro": 0.18749999999999997,
+        "f1_weighted": 0.7499999999999999,
+        "per_class": {
+            "0": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "support": 0
+            },
+            "1": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "support": 0
+            },
+            "2": {
+                "precision": 1.0,
+                "recall": 0.6,
+                "f1": 0.7499999999999999,
+                "support": 20
+            },
+            "3": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "support": 0
+            }
+        },
+        "confusion_matrix": [
+            [
+                0,
+                0,
+                0,
+                0
+            ],
+            [
+                0,
+                0,
+                0,
+                0
+            ],
+            [
+                3,
+                0,
+                12,
+                5
+            ],
+            [
+                0,
+                0,
+                0,
+                0
+            ]
+        ],
+        "sample_count": 20,
+        "observed_classes": [
+            2
+        ],
+        "expected_classes": [
+            0,
+            1,
+            2,
+            3
+        ],
+        "class_coverage_complete": false,
+        "task_evaluated": "exercise_classification",
+        "task_omitted": null,
+        "completion_accuracy": 0.55,
+        "completion_precision_macro": 0.5505050505050505,
+        "completion_recall_macro": 0.55,
+        "completion_f1_macro": 0.5488721804511277,
+        "completion_sample_count": 20,
+        "completion_observed_classes": [
+            0,
+            1
+        ],
+        "completion_confusion_matrix": [
+            [
+                5,
+                5
+            ],
+            [
+                4,
+                6
+            ]
+        ],
+        "metadata": {
+            "model_id": "lstm",
+            "fold_id": "fold_10",
+            "protocol_version": "1.1",
+            "provenance_hash": "23c2471bad1c6f4a5272cc8ffd370b0b0155de32b8d370f19f63584e3d6acbcd",
+            "train_manifest_hash": "31b3edbdd79f9e037fc9c63927f04ecb2722236369971b7fab4674e87b8d31d9",
+            "normalization_hash": "edbfbd71e7722c34999767b8b44fe5ce9d6ca3170167639729e36caaa7f29b3d",
+            "class_mapping": {
+                "0": "Exercise_1",
+                "1": "Exercise_2",
+                "2": "Exercise_3",
+                "3": "Exercise_4"
+            },
+            "model_config": {
+                "input_dim": 237,
+                "num_exercises": 4,
+                "hidden_size": 64,
+                "num_layers": 1,
+                "bidirectional": false
+            },
+            "architecture_signature": "baseline_lstm_v1",
+            "checkpoint_role": "supervised_model",
+            "training_inputs": {
+                "seed": 42,
+                "runtime": {
+                    "python": "3.11.9",
+                    "torch": "2.5.1+cu121",
+                    "torch_cuda_runtime": "12.1",
+                    "cuda_device_name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+                    "environment_profile": "noncanonical_exploratory"
+                }
+            }
+        }
+    }
+]

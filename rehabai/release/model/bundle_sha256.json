@@ -1,0 +1,13 @@
+{
+  "class_mapping.json": "cede5d7c3ca430326b330fa2a2d9b91cc59bdd9a9425c6ad2b1058463a7bdbd0",
+  "exercise_registry.json": "15aed6590bd590dee2e45273ec2ddaa63b992c0fc056e5c1aca1fd83b99f5d72",
+  "feature_schema.json": "d08f6d4e43e505c56e85a50383b7cabb4e7b28ccdf74a6f5d864a9765e4e298b",
+  "fold_metadata.json": "f83493cc4da6b07f41eaa4c015aa475b1fb2b2dfda3e746d77bc5a68aacb6b9d",
+  "metrics.json": "9404de28d1ef4f54010d54eb15fd4dd65743e98ac374e9a865f891ce9de30229",
+  "model.pt": "29350df8777e42e7bcb8f29600173cec3b706fdf8c40c6e305d76f4072c1c5de",
+  "model_card.md": "b7a4b42695de1dc0f60190ef559eb17895c7f46c7b7a46c069a34138ff1168a2",
+  "model_config.json": "4dd205791e4487e79b70738f6ac4cbe998556c9f38edf86e531540f43ba46790",
+  "normalization.json": "6a2b3e14c4f5f89df7ef734f947268af77c2de2adb573b8dc9724cec2adc514d",
+  "registry_sha256.txt": "34939a368354f5728bf9849a13728716275319d736731fdd8b19687daeb4aa04",
+  "training_model_config.json": "e502bc81909cbbdde8f195069d09be54aa6a8630a68a4d98625030bb760df3ac"
+}

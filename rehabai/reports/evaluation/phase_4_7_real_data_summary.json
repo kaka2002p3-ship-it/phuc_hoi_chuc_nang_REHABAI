@@ -1,0 +1,89 @@
+{
+  "status": "PASS",
+  "decision": "E_DATASET_TOO_SMALL_OR_INSUFFICIENT_FOR_STRONG_CONCLUSION",
+  "source_video_inventory": 491,
+  "verified_quality_gate_samples": 387,
+  "verified_subjects": 10,
+  "extraction_status_counts": {
+    "success": 387
+  },
+  "exercise_counts": {
+    "1": 123,
+    "2": 65,
+    "3": 104,
+    "4": 95
+  },
+  "completion_counts": {
+    "incomplete": 200,
+    "complete": 187
+  },
+  "strict_loso_folds": 10,
+  "exercise_macro_f1": {
+    "mean": 0.35439626628948495,
+    "std": 0.2704338173418803,
+    "min": 0.023809523809523808,
+    "max": 0.7392452412104841
+  },
+  "exercise_accuracy": {
+    "mean": 0.4379407539834007,
+    "std": 0.2334719063429783,
+    "min": 0.05,
+    "max": 0.7457627118644068
+  },
+  "exercise_weighted_f1": {
+    "mean": 0.4985297147002721,
+    "std": 0.2230061252994272,
+    "min": 0.09523809523809523,
+    "max": 0.787878787878788
+  },
+  "completion_macro_f1": {
+    "mean": 0.4828134089667702,
+    "std": 0.10828638433024639,
+    "min": 0.29292929292929293,
+    "max": 0.6636155606407322
+  },
+  "completion_accuracy": {
+    "mean": 0.5024325609386097,
+    "std": 0.10323768562608149,
+    "min": 0.3,
+    "max": 0.6666666666666666
+  },
+  "production_model_changed": false,
+  "aggregate_confusion_matrix": [
+    [
+      57,
+      12,
+      14,
+      40
+    ],
+    [
+      28,
+      36,
+      1,
+      0
+    ],
+    [
+      12,
+      0,
+      69,
+      23
+    ],
+    [
+      26,
+      6,
+      27,
+      36
+    ]
+  ],
+  "generalization_gap": {
+    "fold_count": 10,
+    "mean_final_gap": 0.36846165699906547,
+    "warning_folds": [
+      "fold_03",
+      "fold_06",
+      "fold_08"
+    ]
+  },
+  "protocol_status": "PASS",
+  "baseline_evaluation_complete": true
+}

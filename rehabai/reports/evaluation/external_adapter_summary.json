@@ -1,0 +1,216 @@
+{
+  "protocol": "exploratory paired strict ten-fold subject-wise LOSO",
+  "models": {
+    "rehab24_adapter": {
+      "label": "Frozen REHAB24-6 encoder + adapter",
+      "exercise_macro_f1": {
+        "mean": 0.28319712266334734,
+        "std": 0.24945053597216393,
+        "min": 0.0,
+        "max": 0.6433823529411765
+      },
+      "accuracy": {
+        "mean": 0.3661718207216045,
+        "std": 0.31812164675952936,
+        "min": 0.0,
+        "max": 0.9
+      },
+      "weighted_f1": {
+        "mean": 0.3711900078251801,
+        "std": 0.3052938062323836,
+        "min": 0.0,
+        "max": 0.9473684210526316
+      },
+      "completion_macro_f1": {
+        "mean": 0.47713548777026465,
+        "std": 0.17375229976889284,
+        "min": 0.21725067385444743,
+        "max": 0.7442455242966751
+      },
+      "completion_accuracy": {
+        "mean": 0.5340168128928258,
+        "std": 0.14903640765950113,
+        "min": 0.25,
+        "max": 0.75
+      }
+    },
+    "mobiphysio_adapter": {
+      "label": "Frozen MobiPhysio encoder + adapter",
+      "exercise_macro_f1": {
+        "mean": 0.31059931690633463,
+        "std": 0.24018550084758236,
+        "min": 0.0,
+        "max": 0.5927409988385598
+      },
+      "accuracy": {
+        "mean": 0.41991915206152775,
+        "std": 0.2728484141915446,
+        "min": 0.0,
+        "max": 0.7254901960784313
+      },
+      "weighted_f1": {
+        "mean": 0.4500279836041509,
+        "std": 0.2860915975215554,
+        "min": 0.0,
+        "max": 0.8235294117647058
+      },
+      "completion_macro_f1": {
+        "mean": 0.47533218416000594,
+        "std": 0.13577477003471117,
+        "min": 0.25,
+        "max": 0.6502384737678855
+      },
+      "completion_accuracy": {
+        "mean": 0.5036478419141697,
+        "std": 0.12642847798270818,
+        "min": 0.25,
+        "max": 0.6590909090909091
+      }
+    },
+    "combined_adapter": {
+      "label": "Frozen 02+03 encoder + adapter",
+      "exercise_macro_f1": {
+        "mean": 0.24943656783926674,
+        "std": 0.1826802250781473,
+        "min": 0.0,
+        "max": 0.5754032258064516
+      },
+      "accuracy": {
+        "mean": 0.3990443096659658,
+        "std": 0.2775065802597135,
+        "min": 0.0,
+        "max": 1.0
+      },
+      "weighted_f1": {
+        "mean": 0.4187808204121589,
+        "std": 0.2636253431588563,
+        "min": 0.0,
+        "max": 1.0
+      },
+      "completion_macro_f1": {
+        "mean": 0.5508595920387918,
+        "std": 0.12892837543193209,
+        "min": 0.3405684754521964,
+        "max": 0.7701528318849264
+      },
+      "completion_accuracy": {
+        "mean": 0.5667056378422808,
+        "std": 0.1297809798450568,
+        "min": 0.3409090909090909,
+        "max": 0.7796610169491526
+      }
+    },
+    "v2": {
+      "label": "Existing RehabMotionNet v2",
+      "exercise_macro_f1": {
+        "mean": 0.35439626628948495,
+        "std": 0.2704338173418803,
+        "min": 0.023809523809523808,
+        "max": 0.7392452412104841
+      },
+      "accuracy": {
+        "mean": 0.4379407539834007,
+        "std": 0.2334719063429783,
+        "min": 0.05,
+        "max": 0.7457627118644068
+      },
+      "weighted_f1": {
+        "mean": 0.4985297147002721,
+        "std": 0.2230061252994272,
+        "min": 0.09523809523809523,
+        "max": 0.787878787878788
+      },
+      "completion_macro_f1": {
+        "mean": 0.4828134089667702,
+        "std": 0.10828638433024639,
+        "min": 0.29292929292929293,
+        "max": 0.6636155606407322
+      },
+      "completion_accuracy": {
+        "mean": 0.5024325609386097,
+        "std": 0.10323768562608149,
+        "min": 0.3,
+        "max": 0.6666666666666666
+      }
+    },
+    "ensemble": {
+      "label": "Existing validation-selected ensemble",
+      "exercise_macro_f1": {
+        "mean": 0.3743620476430682,
+        "std": 0.3318913485698361,
+        "min": 0.0,
+        "max": 0.8882936507936507
+      },
+      "accuracy": {
+        "mean": 0.43454170079238535,
+        "std": 0.3038181446485412,
+        "min": 0.0,
+        "max": 0.8636363636363636
+      },
+      "weighted_f1": null,
+      "completion_macro_f1": null,
+      "completion_accuracy": null
+    }
+  },
+  "paired_vs_ensemble": {
+    "rehab24_adapter": {
+      "mean_f1_delta_vs_ensemble": -0.09116492497972084,
+      "fold_wins": 3,
+      "fold_ties": 0,
+      "fold_losses": 7,
+      "per_fold_delta": {
+        "fold_01": -0.06596830588766067,
+        "fold_02": 0.08621452077334435,
+        "fold_03": -0.3118275804945633,
+        "fold_04": -0.2640162947593909,
+        "fold_05": -0.2668442566840735,
+        "fold_06": -0.19686907020872868,
+        "fold_07": -0.023809523809523808,
+        "fold_08": 0.06521739130434782,
+        "fold_09": -0.07058823529411765,
+        "fold_10": 0.1368421052631579
+      }
+    },
+    "mobiphysio_adapter": {
+      "mean_f1_delta_vs_ensemble": -0.06376273073673352,
+      "fold_wins": 4,
+      "fold_ties": 0,
+      "fold_losses": 6,
+      "per_fold_delta": {
+        "fold_01": -0.26598356840292325,
+        "fold_02": 0.03557316667072763,
+        "fold_03": -0.31171398046398047,
+        "fold_04": -0.21869009873042133,
+        "fold_05": -0.1196315278923974,
+        "fold_06": 0.10557345852690347,
+        "fold_07": -0.023809523809523808,
+        "fold_08": 0.15517241379310345,
+        "fold_09": -0.1,
+        "fold_10": 0.10588235294117646
+      }
+    },
+    "combined_adapter": {
+      "mean_f1_delta_vs_ensemble": -0.12492547980380143,
+      "fold_wins": 3,
+      "fold_ties": 0,
+      "fold_losses": 7,
+      "per_fold_delta": {
+        "fold_01": -0.25158264674393704,
+        "fold_02": -0.10181068931068932,
+        "fold_03": -0.3128904249871991,
+        "fold_04": -0.5135228601580103,
+        "fold_05": -0.26415419820454145,
+        "fold_06": -0.03020240354206205,
+        "fold_07": 0.059523809523809534,
+        "fold_08": 0.11538461538461538,
+        "fold_09": -0.1,
+        "fold_10": 0.15
+      }
+    }
+  },
+  "best_adapter_by_mean_macro_f1": "mobiphysio_adapter",
+  "passes_predeclared_research_gate": false,
+  "production_changed": false,
+  "recommendation": "keep_existing_model; do_not_promote_external_adapter",
+  "selection_note": "Three adapter sources shared the LOSO test protocol; selecting the best is exploratory and requires independent confirmation."
+}

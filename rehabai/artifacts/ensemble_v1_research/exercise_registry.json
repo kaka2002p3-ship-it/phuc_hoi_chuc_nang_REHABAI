@@ -1,0 +1,34 @@
+[
+  {
+    "display_order": 1,
+    "exercise_id": 1,
+    "region_id": 1,
+    "region_vi": "Vai",
+    "exercise_vi": "Vai - Nâng vật",
+    "slug": "vai_nang_vat"
+  },
+  {
+    "display_order": 2,
+    "exercise_id": 2,
+    "region_id": 2,
+    "region_vi": "Khuỷu tay",
+    "exercise_vi": "Khuỷu tay - Duỗi khuỷu tay",
+    "slug": "khuyu_tay_duoi"
+  },
+  {
+    "display_order": 3,
+    "exercise_id": 3,
+    "region_id": 3,
+    "region_vi": "Cổ tay",
+    "exercise_vi": "Cổ tay - Nâng cổ tay",
+    "slug": "co_tay_nang"
+  },
+  {
+    "display_order": 4,
+    "exercise_id": 4,
+    "region_id": 4,
+    "region_vi": "Bàn tay",
+    "exercise_vi": "Bàn tay - Mở bàn tay",
+    "slug": "ban_tay_mo"
+  }
+]

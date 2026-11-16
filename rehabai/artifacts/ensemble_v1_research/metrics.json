@@ -1,0 +1,11 @@
+{
+  "evaluation_protocol": "strict subject-wise 10-fold LOSO (research)",
+  "exercise": {
+    "macro_f1_mean": 0.3743620476430682,
+    "accuracy_mean": 0.43454170079238535
+  },
+  "research_only": true,
+  "fold_id": "fold_04",
+  "alpha_v2": 0.8,
+  "note": "Per-fold LOSO weights differ; this fixed-weight bundle is for demo/research only."
+}

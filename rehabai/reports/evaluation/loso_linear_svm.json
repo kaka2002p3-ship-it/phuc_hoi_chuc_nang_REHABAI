@@ -1,0 +1,1327 @@
+[
+  {
+    "fold_id": "fold_01",
+    "model_name": "LinearSVMKinematics",
+    "accuracy": 0.42857142857142855,
+    "precision_macro": 0.37083333333333335,
+    "recall_macro": 0.3301282051282051,
+    "f1_macro": 0.3288690476190476,
+    "f1_weighted": 0.463718820861678,
+    "per_class": {
+      "0": {
+        "precision": 0.8333333333333334,
+        "recall": 0.5,
+        "f1": 0.625,
+        "support": 20
+      },
+      "1": {
+        "precision": 0.25,
+        "recall": 0.15384615384615385,
+        "f1": 0.1904761904761905,
+        "support": 13
+      },
+      "2": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 0
+      },
+      "3": {
+        "precision": 0.4,
+        "recall": 0.6666666666666666,
+        "f1": 0.5,
+        "support": 9
+      }
+    },
+    "confusion_matrix": [
+      [
+        10,
+        3,
+        6,
+        1
+      ],
+      [
+        2,
+        2,
+        1,
+        8
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        3,
+        0,
+        6
+      ]
+    ],
+    "sample_count": 42,
+    "observed_classes": [
+      0,
+      1,
+      3
+    ],
+    "class_coverage_complete": false,
+    "completion_accuracy": 0.5,
+    "completion_precision_macro": 0.5178571428571428,
+    "completion_recall_macro": 0.5160183066361557,
+    "completion_f1_macro": 0.49281196089706725,
+    "completion_f1_weighted": 0.48706152961472104,
+    "completion_per_class": {
+      "0": {
+        "precision": 0.5714285714285714,
+        "recall": 0.34782608695652173,
+        "f1": 0.4324324324324324,
+        "support": 23
+      },
+      "1": {
+        "precision": 0.4642857142857143,
+        "recall": 0.6842105263157895,
+        "f1": 0.5531914893617021,
+        "support": 19
+      }
+    },
+    "completion_confusion_matrix": [
+      [
+        8,
+        15
+      ],
+      [
+        6,
+        13
+      ]
+    ],
+    "completion_sample_count": 42,
+    "completion_observed_classes": [
+      0,
+      1
+    ],
+    "metadata": {
+      "protocol_version": "1.1",
+      "seed": 42,
+      "test_subject": "01",
+      "validation_subjects": [
+        "02"
+      ],
+      "train_subjects": [
+        "03",
+        "04",
+        "05",
+        "06",
+        "07",
+        "08",
+        "09",
+        "10"
+      ],
+      "canonical_train_manifest_hash": "40fdb6115a208392711bb80283184b96df3e6577d7335bc30414a86554dbec6c",
+      "canonical_test_manifest_hash": "5cd0ec074328ec078808bb2eb11bd6ea4c678348622523866bfbf7ce15384a73",
+      "normalization_scope": "fold_train_only",
+      "augmentation": false,
+      "feature_contract": "48-D mean/std/min/max of fold-normalized 12-D kinematics",
+      "test_set_tuning": false,
+      "model_details": {
+        "solver": "full_batch_multiclass_hinge_numpy",
+        "epochs": 1200,
+        "learning_rate": 0.03,
+        "reg_strength": 0.001,
+        "seed": 42
+      }
+    }
+  },
+  {
+    "fold_id": "fold_02",
+    "model_name": "LinearSVMKinematics",
+    "accuracy": 0.5490196078431373,
+    "precision_macro": 0.47619047619047616,
+    "recall_macro": 0.48863636363636365,
+    "f1_macro": 0.45251937984496127,
+    "f1_weighted": 0.5585955312357501,
+    "per_class": {
+      "0": {
+        "precision": 1.0,
+        "recall": 0.9545454545454546,
+        "f1": 0.9767441860465117,
+        "support": 22
+      },
+      "1": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 17
+      },
+      "2": {
+        "precision": 0.047619047619047616,
+        "recall": 0.3333333333333333,
+        "f1": 0.08333333333333333,
+        "support": 3
+      },
+      "3": {
+        "precision": 0.8571428571428571,
+        "recall": 0.6666666666666666,
+        "f1": 0.75,
+        "support": 9
+      }
+    },
+    "confusion_matrix": [
+      [
+        21,
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        17,
+        0
+      ],
+      [
+        0,
+        1,
+        1,
+        1
+      ],
+      [
+        0,
+        1,
+        2,
+        6
+      ]
+    ],
+    "sample_count": 51,
+    "observed_classes": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "class_coverage_complete": true,
+    "completion_accuracy": 0.43137254901960786,
+    "completion_precision_macro": 0.42846153846153845,
+    "completion_recall_macro": 0.4217171717171717,
+    "completion_f1_macro": 0.41702798581001177,
+    "completion_f1_weighted": 0.44392404182800427,
+    "completion_per_class": {
+      "0": {
+        "precision": 0.5769230769230769,
+        "recall": 0.45454545454545453,
+        "f1": 0.5084745762711863,
+        "support": 33
+      },
+      "1": {
+        "precision": 0.28,
+        "recall": 0.3888888888888889,
+        "f1": 0.32558139534883723,
+        "support": 18
+      }
+    },
+    "completion_confusion_matrix": [
+      [
+        15,
+        18
+      ],
+      [
+        11,
+        7
+      ]
+    ],
+    "completion_sample_count": 51,
+    "completion_observed_classes": [
+      0,
+      1
+    ],
+    "metadata": {
+      "protocol_version": "1.1",
+      "seed": 42,
+      "test_subject": "02",
+      "validation_subjects": [
+        "04"
+      ],
+      "train_subjects": [
+        "01",
+        "03",
+        "05",
+        "06",
+        "07",
+        "08",
+        "09",
+        "10"
+      ],
+      "canonical_train_manifest_hash": "98f6752776cfebdadda989dedcf8fa9e14b37a7a1b957fb2c3555071b58815a8",
+      "canonical_test_manifest_hash": "59dca6aaed86ee798a28f78ea29d6cdbb3612ad6cc1cc43e3b4e250f0dd3959f",
+      "normalization_scope": "fold_train_only",
+      "augmentation": false,
+      "feature_contract": "48-D mean/std/min/max of fold-normalized 12-D kinematics",
+      "test_set_tuning": false,
+      "model_details": {
+        "solver": "full_batch_multiclass_hinge_numpy",
+        "epochs": 1200,
+        "learning_rate": 0.03,
+        "reg_strength": 0.001,
+        "seed": 42
+      }
+    }
+  },
+  {
+    "fold_id": "fold_03",
+    "model_name": "LinearSVMKinematics",
+    "accuracy": 0.5454545454545454,
+    "precision_macro": 0.5359848484848485,
+    "recall_macro": 0.6391812865497075,
+    "f1_macro": 0.4886080586080586,
+    "f1_weighted": 0.5984049284049283,
+    "per_class": {
+      "0": {
+        "precision": 1.0,
+        "recall": 0.5789473684210527,
+        "f1": 0.7333333333333334,
+        "support": 19
+      },
+      "1": {
+        "precision": 0.16666666666666666,
+        "recall": 1.0,
+        "f1": 0.2857142857142857,
+        "support": 1
+      },
+      "2": {
+        "precision": 0.7272727272727273,
+        "recall": 0.5333333333333333,
+        "f1": 0.6153846153846153,
+        "support": 15
+      },
+      "3": {
+        "precision": 0.25,
+        "recall": 0.4444444444444444,
+        "f1": 0.32,
+        "support": 9
+      }
+    },
+    "confusion_matrix": [
+      [
+        11,
+        1,
+        0,
+        7
+      ],
+      [
+        0,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        2,
+        8,
+        5
+      ],
+      [
+        0,
+        2,
+        3,
+        4
+      ]
+    ],
+    "sample_count": 44,
+    "observed_classes": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "class_coverage_complete": true,
+    "completion_accuracy": 0.6363636363636364,
+    "completion_precision_macro": 0.6273291925465838,
+    "completion_recall_macro": 0.652605459057072,
+    "completion_f1_macro": 0.616557734204793,
+    "completion_f1_weighted": 0.6522083580907111,
+    "completion_per_class": {
+      "0": {
+        "precision": 0.42857142857142855,
+        "recall": 0.6923076923076923,
+        "f1": 0.5294117647058824,
+        "support": 13
+      },
+      "1": {
+        "precision": 0.8260869565217391,
+        "recall": 0.6129032258064516,
+        "f1": 0.7037037037037037,
+        "support": 31
+      }
+    },
+    "completion_confusion_matrix": [
+      [
+        9,
+        4
+      ],
+      [
+        12,
+        19
+      ]
+    ],
+    "completion_sample_count": 44,
+    "completion_observed_classes": [
+      0,
+      1
+    ],
+    "metadata": {
+      "protocol_version": "1.1",
+      "seed": 42,
+      "test_subject": "03",
+      "validation_subjects": [
+        "05"
+      ],
+      "train_subjects": [
+        "01",
+        "02",
+        "04",
+        "06",
+        "07",
+        "08",
+        "09",
+        "10"
+      ],
+      "canonical_train_manifest_hash": "01b10f7a4c76487122e6e0725dbba188b3a213f47aca09c5e0effbddb2fa5d01",
+      "canonical_test_manifest_hash": "9226c861baba470b895e642901a228c85401820c1bb6f9879601963622cd32e1",
+      "normalization_scope": "fold_train_only",
+      "augmentation": false,
+      "feature_contract": "48-D mean/std/min/max of fold-normalized 12-D kinematics",
+      "test_set_tuning": false,
+      "model_details": {
+        "solver": "full_batch_multiclass_hinge_numpy",
+        "epochs": 1200,
+        "learning_rate": 0.03,
+        "reg_strength": 0.001,
+        "seed": 42
+      }
+    }
+  },
+  {
+    "fold_id": "fold_04",
+    "model_name": "LinearSVMKinematics",
+    "accuracy": 0.6440677966101694,
+    "precision_macro": 0.606439393939394,
+    "recall_macro": 0.6195054945054945,
+    "f1_macro": 0.5926019779678315,
+    "f1_weighted": 0.6459105911772303,
+    "per_class": {
+      "0": {
+        "precision": 0.95,
+        "recall": 0.9047619047619048,
+        "f1": 0.9268292682926829,
+        "support": 21
+      },
+      "1": {
+        "precision": 0.4,
+        "recall": 0.5,
+        "f1": 0.4444444444444445,
+        "support": 4
+      },
+      "2": {
+        "precision": 0.6666666666666666,
+        "recall": 0.38095238095238093,
+        "f1": 0.4848484848484849,
+        "support": 21
+      },
+      "3": {
+        "precision": 0.4090909090909091,
+        "recall": 0.6923076923076923,
+        "f1": 0.5142857142857142,
+        "support": 13
+      }
+    },
+    "confusion_matrix": [
+      [
+        19,
+        0,
+        1,
+        1
+      ],
+      [
+        0,
+        2,
+        2,
+        0
+      ],
+      [
+        1,
+        0,
+        8,
+        12
+      ],
+      [
+        0,
+        3,
+        1,
+        9
+      ]
+    ],
+    "sample_count": 59,
+    "observed_classes": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "class_coverage_complete": true,
+    "completion_accuracy": 0.4406779661016949,
+    "completion_precision_macro": 0.44345238095238093,
+    "completion_recall_macro": 0.44527649769585254,
+    "completion_f1_macro": 0.4380952380952381,
+    "completion_f1_weighted": 0.4361581920903954,
+    "completion_per_class": {
+      "0": {
+        "precision": 0.42857142857142855,
+        "recall": 0.5357142857142857,
+        "f1": 0.47619047619047616,
+        "support": 28
+      },
+      "1": {
+        "precision": 0.4583333333333333,
+        "recall": 0.3548387096774194,
+        "f1": 0.39999999999999997,
+        "support": 31
+      }
+    },
+    "completion_confusion_matrix": [
+      [
+        15,
+        13
+      ],
+      [
+        20,
+        11
+      ]
+    ],
+    "completion_sample_count": 59,
+    "completion_observed_classes": [
+      0,
+      1
+    ],
+    "metadata": {
+      "protocol_version": "1.1",
+      "seed": 42,
+      "test_subject": "04",
+      "validation_subjects": [
+        "02"
+      ],
+      "train_subjects": [
+        "01",
+        "03",
+        "05",
+        "06",
+        "07",
+        "08",
+        "09",
+        "10"
+      ],
+      "canonical_train_manifest_hash": "98f6752776cfebdadda989dedcf8fa9e14b37a7a1b957fb2c3555071b58815a8",
+      "canonical_test_manifest_hash": "170656693671e8ca0b6bab49cdaedba89ce89f95d70d85ea20ba805af0272066",
+      "normalization_scope": "fold_train_only",
+      "augmentation": false,
+      "feature_contract": "48-D mean/std/min/max of fold-normalized 12-D kinematics",
+      "test_set_tuning": false,
+      "model_details": {
+        "solver": "full_batch_multiclass_hinge_numpy",
+        "epochs": 1200,
+        "learning_rate": 0.03,
+        "reg_strength": 0.001,
+        "seed": 42
+      }
+    }
+  },
+  {
+    "fold_id": "fold_05",
+    "model_name": "LinearSVMKinematics",
+    "accuracy": 0.676056338028169,
+    "precision_macro": 0.6322403230297967,
+    "recall_macro": 0.713095238095238,
+    "f1_macro": 0.6175357443229605,
+    "f1_weighted": 0.610417481056792,
+    "per_class": {
+      "0": {
+        "precision": 0.7407407407407407,
+        "recall": 0.9523809523809523,
+        "f1": 0.8333333333333334,
+        "support": 21
+      },
+      "1": {
+        "precision": 0.5263157894736842,
+        "recall": 1.0,
+        "f1": 0.6896551724137931,
+        "support": 10
+      },
+      "2": {
+        "precision": 0.5,
+        "recall": 0.1,
+        "f1": 0.16666666666666669,
+        "support": 20
+      },
+      "3": {
+        "precision": 0.7619047619047619,
+        "recall": 0.8,
+        "f1": 0.7804878048780488,
+        "support": 20
+      }
+    },
+    "confusion_matrix": [
+      [
+        20,
+        0,
+        0,
+        1
+      ],
+      [
+        0,
+        10,
+        0,
+        0
+      ],
+      [
+        5,
+        9,
+        2,
+        4
+      ],
+      [
+        2,
+        0,
+        2,
+        16
+      ]
+    ],
+    "sample_count": 71,
+    "observed_classes": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "class_coverage_complete": true,
+    "completion_accuracy": 0.5633802816901409,
+    "completion_precision_macro": 0.5824786324786324,
+    "completion_recall_macro": 0.577323717948718,
+    "completion_f1_macro": 0.5602397602397602,
+    "completion_f1_weighted": 0.5565758185476495,
+    "completion_per_class": {
+      "0": {
+        "precision": 0.6538461538461539,
+        "recall": 0.4358974358974359,
+        "f1": 0.523076923076923,
+        "support": 39
+      },
+      "1": {
+        "precision": 0.5111111111111111,
+        "recall": 0.71875,
+        "f1": 0.5974025974025974,
+        "support": 32
+      }
+    },
+    "completion_confusion_matrix": [
+      [
+        17,
+        22
+      ],
+      [
+        9,
+        23
+      ]
+    ],
+    "completion_sample_count": 71,
+    "completion_observed_classes": [
+      0,
+      1
+    ],
+    "metadata": {
+      "protocol_version": "1.1",
+      "seed": 42,
+      "test_subject": "05",
+      "validation_subjects": [
+        "03"
+      ],
+      "train_subjects": [
+        "01",
+        "02",
+        "04",
+        "06",
+        "07",
+        "08",
+        "09",
+        "10"
+      ],
+      "canonical_train_manifest_hash": "01b10f7a4c76487122e6e0725dbba188b3a213f47aca09c5e0effbddb2fa5d01",
+      "canonical_test_manifest_hash": "ce82d2ad3b4ba50daa39281ff6edd24041c81ca389ee60d17d68ccabd8091b5a",
+      "normalization_scope": "fold_train_only",
+      "augmentation": false,
+      "feature_contract": "48-D mean/std/min/max of fold-normalized 12-D kinematics",
+      "test_set_tuning": false,
+      "model_details": {
+        "solver": "full_batch_multiclass_hinge_numpy",
+        "epochs": 1200,
+        "learning_rate": 0.03,
+        "reg_strength": 0.001,
+        "seed": 42
+      }
+    }
+  },
+  {
+    "fold_id": "fold_06",
+    "model_name": "LinearSVMKinematics",
+    "accuracy": 0.5454545454545454,
+    "precision_macro": 0.2915601023017903,
+    "recall_macro": 0.26526315789473687,
+    "f1_macro": 0.2777777777777778,
+    "f1_weighted": 0.5707070707070706,
+    "per_class": {
+      "0": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 0
+      },
+      "1": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 0
+      },
+      "2": {
+        "precision": 0.6956521739130435,
+        "recall": 0.64,
+        "f1": 0.6666666666666666,
+        "support": 25
+      },
+      "3": {
+        "precision": 0.47058823529411764,
+        "recall": 0.42105263157894735,
+        "f1": 0.4444444444444444,
+        "support": 19
+      }
+    },
+    "confusion_matrix": [
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        16,
+        9
+      ],
+      [
+        4,
+        0,
+        7,
+        8
+      ]
+    ],
+    "sample_count": 44,
+    "observed_classes": [
+      2,
+      3
+    ],
+    "class_coverage_complete": false,
+    "completion_accuracy": 0.3409090909090909,
+    "completion_precision_macro": 0.3431372549019608,
+    "completion_recall_macro": 0.35,
+    "completion_f1_macro": 0.33783082511676177,
+    "completion_f1_weighted": 0.33372647072698963,
+    "completion_per_class": {
+      "0": {
+        "precision": 0.35294117647058826,
+        "recall": 0.25,
+        "f1": 0.2926829268292683,
+        "support": 24
+      },
+      "1": {
+        "precision": 0.3333333333333333,
+        "recall": 0.45,
+        "f1": 0.3829787234042553,
+        "support": 20
+      }
+    },
+    "completion_confusion_matrix": [
+      [
+        6,
+        18
+      ],
+      [
+        11,
+        9
+      ]
+    ],
+    "completion_sample_count": 44,
+    "completion_observed_classes": [
+      0,
+      1
+    ],
+    "metadata": {
+      "protocol_version": "1.1",
+      "seed": 42,
+      "test_subject": "06",
+      "validation_subjects": [
+        "03"
+      ],
+      "train_subjects": [
+        "01",
+        "02",
+        "04",
+        "05",
+        "07",
+        "08",
+        "09",
+        "10"
+      ],
+      "canonical_train_manifest_hash": "30e47be7fae301013667f6c22f9357aefe04ea0cb313cb38fe9fe859abdfba82",
+      "canonical_test_manifest_hash": "8389706808871b6bde601e6474885b60aed62c4d0d8ad8e6ebf0eebb245bf959",
+      "normalization_scope": "fold_train_only",
+      "augmentation": false,
+      "feature_contract": "48-D mean/std/min/max of fold-normalized 12-D kinematics",
+      "test_set_tuning": false,
+      "model_details": {
+        "solver": "full_batch_multiclass_hinge_numpy",
+        "epochs": 1200,
+        "learning_rate": 0.03,
+        "reg_strength": 0.001,
+        "seed": 42
+      }
+    }
+  },
+  {
+    "fold_id": "fold_07",
+    "model_name": "LinearSVMKinematics",
+    "accuracy": 0.05,
+    "precision_macro": 0.25,
+    "recall_macro": 0.0125,
+    "f1_macro": 0.023809523809523808,
+    "f1_weighted": 0.09523809523809523,
+    "per_class": {
+      "0": {
+        "precision": 1.0,
+        "recall": 0.05,
+        "f1": 0.09523809523809523,
+        "support": 20
+      },
+      "1": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 0
+      },
+      "2": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 0
+      },
+      "3": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 0
+      }
+    },
+    "confusion_matrix": [
+      [
+        1,
+        1,
+        1,
+        17
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ]
+    ],
+    "sample_count": 20,
+    "observed_classes": [
+      0
+    ],
+    "class_coverage_complete": false,
+    "completion_accuracy": 0.7,
+    "completion_precision_macro": 0.8125,
+    "completion_recall_macro": 0.7,
+    "completion_f1_macro": 0.6703296703296704,
+    "completion_f1_weighted": 0.6703296703296704,
+    "completion_per_class": {
+      "0": {
+        "precision": 1.0,
+        "recall": 0.4,
+        "f1": 0.5714285714285715,
+        "support": 10
+      },
+      "1": {
+        "precision": 0.625,
+        "recall": 1.0,
+        "f1": 0.7692307692307693,
+        "support": 10
+      }
+    },
+    "completion_confusion_matrix": [
+      [
+        4,
+        6
+      ],
+      [
+        0,
+        10
+      ]
+    ],
+    "completion_sample_count": 20,
+    "completion_observed_classes": [
+      0,
+      1
+    ],
+    "metadata": {
+      "protocol_version": "1.1",
+      "seed": 42,
+      "test_subject": "07",
+      "validation_subjects": [
+        "04"
+      ],
+      "train_subjects": [
+        "01",
+        "02",
+        "03",
+        "05",
+        "06",
+        "08",
+        "09",
+        "10"
+      ],
+      "canonical_train_manifest_hash": "fd27d05d85014527fb88e851db843417528019b153dce2dbded0eb9a73e92600",
+      "canonical_test_manifest_hash": "83976c7a280891c191cbf0d3cbfc65e136ced583d9c1c7f8a9166183d86e1759",
+      "normalization_scope": "fold_train_only",
+      "augmentation": false,
+      "feature_contract": "48-D mean/std/min/max of fold-normalized 12-D kinematics",
+      "test_set_tuning": false,
+      "model_details": {
+        "solver": "full_batch_multiclass_hinge_numpy",
+        "epochs": 1200,
+        "learning_rate": 0.03,
+        "reg_strength": 0.001,
+        "seed": 42
+      }
+    }
+  },
+  {
+    "fold_id": "fold_08",
+    "model_name": "LinearSVMKinematics",
+    "accuracy": 0.1,
+    "precision_macro": 0.25,
+    "recall_macro": 0.025,
+    "f1_macro": 0.045454545454545456,
+    "f1_weighted": 0.18181818181818182,
+    "per_class": {
+      "0": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 0
+      },
+      "1": {
+        "precision": 1.0,
+        "recall": 0.1,
+        "f1": 0.18181818181818182,
+        "support": 20
+      },
+      "2": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 0
+      },
+      "3": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 0
+      }
+    },
+    "confusion_matrix": [
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        2,
+        2,
+        8,
+        8
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ]
+    ],
+    "sample_count": 20,
+    "observed_classes": [
+      1
+    ],
+    "class_coverage_complete": false,
+    "completion_accuracy": 0.5,
+    "completion_precision_macro": 0.25,
+    "completion_recall_macro": 0.5,
+    "completion_f1_macro": 0.3333333333333333,
+    "completion_f1_weighted": 0.3333333333333333,
+    "completion_per_class": {
+      "0": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 10
+      },
+      "1": {
+        "precision": 0.5,
+        "recall": 1.0,
+        "f1": 0.6666666666666666,
+        "support": 10
+      }
+    },
+    "completion_confusion_matrix": [
+      [
+        0,
+        10
+      ],
+      [
+        0,
+        10
+      ]
+    ],
+    "completion_sample_count": 20,
+    "completion_observed_classes": [
+      0,
+      1
+    ],
+    "metadata": {
+      "protocol_version": "1.1",
+      "seed": 42,
+      "test_subject": "08",
+      "validation_subjects": [
+        "05"
+      ],
+      "train_subjects": [
+        "01",
+        "02",
+        "03",
+        "04",
+        "06",
+        "07",
+        "09",
+        "10"
+      ],
+      "canonical_train_manifest_hash": "a9b402d0f8da8ebc90537556e2bfec22a86fa1ee68c7fba1b44da9df5721f7f4",
+      "canonical_test_manifest_hash": "2efdb99573955a078ccc30c2262afeddfdff10f20d150dd0474ba0d881f54c34",
+      "normalization_scope": "fold_train_only",
+      "augmentation": false,
+      "feature_contract": "48-D mean/std/min/max of fold-normalized 12-D kinematics",
+      "test_set_tuning": false,
+      "model_details": {
+        "solver": "full_batch_multiclass_hinge_numpy",
+        "epochs": 1200,
+        "learning_rate": 0.03,
+        "reg_strength": 0.001,
+        "seed": 42
+      }
+    }
+  },
+  {
+    "fold_id": "fold_09",
+    "model_name": "LinearSVMKinematics",
+    "accuracy": 0.0625,
+    "precision_macro": 0.25,
+    "recall_macro": 0.015625,
+    "f1_macro": 0.029411764705882353,
+    "f1_weighted": 0.11764705882352941,
+    "per_class": {
+      "0": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 0
+      },
+      "1": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 0
+      },
+      "2": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 0
+      },
+      "3": {
+        "precision": 1.0,
+        "recall": 0.0625,
+        "f1": 0.11764705882352941,
+        "support": 16
+      }
+    },
+    "confusion_matrix": [
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        9,
+        1,
+        5,
+        1
+      ]
+    ],
+    "sample_count": 16,
+    "observed_classes": [
+      3
+    ],
+    "class_coverage_complete": false,
+    "completion_accuracy": 0.375,
+    "completion_precision_macro": 0.3333333333333333,
+    "completion_recall_macro": 0.3333333333333333,
+    "completion_f1_macro": 0.3333333333333333,
+    "completion_f1_weighted": 0.375,
+    "completion_per_class": {
+      "0": {
+        "precision": 0.5,
+        "recall": 0.5,
+        "f1": 0.5,
+        "support": 10
+      },
+      "1": {
+        "precision": 0.16666666666666666,
+        "recall": 0.16666666666666666,
+        "f1": 0.16666666666666666,
+        "support": 6
+      }
+    },
+    "completion_confusion_matrix": [
+      [
+        5,
+        5
+      ],
+      [
+        5,
+        1
+      ]
+    ],
+    "completion_sample_count": 16,
+    "completion_observed_classes": [
+      0,
+      1
+    ],
+    "metadata": {
+      "protocol_version": "1.1",
+      "seed": 42,
+      "test_subject": "09",
+      "validation_subjects": [
+        "02"
+      ],
+      "train_subjects": [
+        "01",
+        "03",
+        "04",
+        "05",
+        "06",
+        "07",
+        "08",
+        "10"
+      ],
+      "canonical_train_manifest_hash": "944499c25ee30afd68ecbab3e0dd2b742a318e16531f2f21317215bf20ba3ba2",
+      "canonical_test_manifest_hash": "132a9ff96be33ce59c1594a3a3713aa7a820495d352271fb5ddf1a616b5b275a",
+      "normalization_scope": "fold_train_only",
+      "augmentation": false,
+      "feature_contract": "48-D mean/std/min/max of fold-normalized 12-D kinematics",
+      "test_set_tuning": false,
+      "model_details": {
+        "solver": "full_batch_multiclass_hinge_numpy",
+        "epochs": 1200,
+        "learning_rate": 0.03,
+        "reg_strength": 0.001,
+        "seed": 42
+      }
+    }
+  },
+  {
+    "fold_id": "fold_10",
+    "model_name": "LinearSVMKinematics",
+    "accuracy": 0.05,
+    "precision_macro": 0.25,
+    "recall_macro": 0.0125,
+    "f1_macro": 0.023809523809523808,
+    "f1_weighted": 0.09523809523809523,
+    "per_class": {
+      "0": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 0
+      },
+      "1": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 0
+      },
+      "2": {
+        "precision": 1.0,
+        "recall": 0.05,
+        "f1": 0.09523809523809523,
+        "support": 20
+      },
+      "3": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 0
+      }
+    },
+    "confusion_matrix": [
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        8,
+        6,
+        1,
+        5
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ]
+    ],
+    "sample_count": 20,
+    "observed_classes": [
+      2
+    ],
+    "class_coverage_complete": false,
+    "completion_accuracy": 0.2,
+    "completion_precision_macro": 0.1875,
+    "completion_recall_macro": 0.2,
+    "completion_f1_macro": 0.1919191919191919,
+    "completion_f1_weighted": 0.1919191919191919,
+    "completion_per_class": {
+      "0": {
+        "precision": 0.25,
+        "recall": 0.3,
+        "f1": 0.2727272727272727,
+        "support": 10
+      },
+      "1": {
+        "precision": 0.125,
+        "recall": 0.1,
+        "f1": 0.11111111111111112,
+        "support": 10
+      }
+    },
+    "completion_confusion_matrix": [
+      [
+        3,
+        7
+      ],
+      [
+        9,
+        1
+      ]
+    ],
+    "completion_sample_count": 20,
+    "completion_observed_classes": [
+      0,
+      1
+    ],
+    "metadata": {
+      "protocol_version": "1.1",
+      "seed": 42,
+      "test_subject": "10",
+      "validation_subjects": [
+        "03"
+      ],
+      "train_subjects": [
+        "01",
+        "02",
+        "04",
+        "05",
+        "06",
+        "07",
+        "08",
+        "09"
+      ],
+      "canonical_train_manifest_hash": "31b3edbdd79f9e037fc9c63927f04ecb2722236369971b7fab4674e87b8d31d9",
+      "canonical_test_manifest_hash": "db4c23fc24d12a4d93dab1e0b75a1c846fef713f5cd1bf9f63ff9842df283374",
+      "normalization_scope": "fold_train_only",
+      "augmentation": false,
+      "feature_contract": "48-D mean/std/min/max of fold-normalized 12-D kinematics",
+      "test_set_tuning": false,
+      "model_details": {
+        "solver": "full_batch_multiclass_hinge_numpy",
+        "epochs": 1200,
+        "learning_rate": 0.03,
+        "reg_strength": 0.001,
+        "seed": 42
+      }
+    }
+  }
+]

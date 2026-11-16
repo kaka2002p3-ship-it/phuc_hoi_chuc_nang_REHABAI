@@ -1,0 +1,36 @@
+services:
+  backend:
+    build:
+      context: ../
+      dockerfile: backend/Dockerfile
+    volumes:
+      - ./model:/app/artifacts/model_v2:ro
+      - ./runtime-data:/app/data
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    environment:
+      ARTIFACTS_DIR: /app/artifacts/model_v2
+      REHABAI_DB_PATH: /app/data/rehabai_sessions.db
+      OLLAMA_ENABLED: ${OLLAMA_ENABLED:-1}
+      OLLAMA_BASE_URL: ${OLLAMA_BASE_URL:-http://host.docker.internal:11434}
+      OLLAMA_MODEL: ${OLLAMA_MODEL:-qwen2.5:7b}
+      CHAT_REQUEST_TIMEOUT_SECONDS: ${CHAT_REQUEST_TIMEOUT_SECONDS:-120}
+      CHAT_MAX_CONCURRENT_REQUESTS: ${CHAT_MAX_CONCURRENT_REQUESTS:-1}
+      CHAT_CONTEXT_LIMIT: ${CHAT_CONTEXT_LIMIT:-12}
+      CHAT_CLOUD_FALLBACK_ENABLED: "false"
+    ports:
+      - "8000:8000"
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/api/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+  frontend:
+    build:
+      context: ../frontend
+      dockerfile: Dockerfile
+    ports:
+      - "8080:80"
+    depends_on:
+      backend:
+        condition: service_healthy

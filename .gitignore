@@ -1,0 +1,85 @@
+# ==============================================================================
+# RehabAI Root .gitignore
+# ==============================================================================
+# Ngăn chặn commit các tệp dữ liệu cực lớn (>170GB), secrets, cache và artifacts
+# trước khi thực hiện `git init` và đẩy lên GitHub.
+# ==============================================================================
+
+# --- Dữ liệu lớn (Datasets) ---
+RehabAI_Datasets_FULL_VERIFIED/
+datanew/
+data/
+*.npz
+*.npy
+*.h5
+*.hdf5
+*.tar.gz
+*.zip
+*.7z
+*.rar
+*.csv.gz
+
+# --- Trọng số mô hình nặng (Heavy Weights & Checkpoints) ---
+*.ckpt
+training/checkpoints/
+rehabai/training/checkpoints/
+rehabai/training/runs/
+checkpoints/
+runs/
+*.pt
+*.pth
+# Cho phép giữ lại mô hình triển khai nhẹ trong artifacts của rehabai
+!rehabai/artifacts/**/model.pt
+
+# --- Môi trường & Bí mật (Secrets & Credentials) ---
+.env
+.env.local
+.env.*.local
+*.env
+!*.env.example
+.secrets/
+rehabai/deployment/.env
+rehabai/release/.env
+
+# --- Cơ sở dữ liệu & Dữ liệu người dùng (Databases) ---
+*.db
+*.db-journal
+*.sqlite
+*.sqlite3
+rehabai/backend/data/
+rehabai/release/runtime-data/
+rehabai/deployment/runtime-data/
+
+# --- Caching, Logs & Runtime State ---
+__pycache__/
+**/__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+**/.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+*.log
+*.err
+.runtime/
+
+# --- Node.js & Giao diện Web (Frontend Dependencies & Builds) ---
+node_modules/
+**/node_modules/
+dist/
+**/dist/
+dist-ssr/
+**/dist-ssr/
+.dart_tool/
+moblieapp/build/
+
+# --- IDE & Hệ điều hành (Editor & OS Noise) ---
+.vscode/
+.idea/
+.agents/
+.claude/
+.DS_Store
+Thumbs.db
+desktop.ini
+*.swp
+*.swo

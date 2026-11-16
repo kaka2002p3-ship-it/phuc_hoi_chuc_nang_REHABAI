@@ -1,0 +1,8 @@
+{
+  "use_hand": true,
+  "use_kinematic": true,
+  "use_contrastive": true,
+  "use_mstcn": true,
+  "use_attention": true,
+  "upper_limb_only": true
+}

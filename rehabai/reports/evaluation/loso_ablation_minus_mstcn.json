@@ -1,0 +1,1327 @@
+[
+    {
+        "fold_id": "fold_01",
+        "model_name": "RehabMotionNet",
+        "accuracy": 0.40476190476190477,
+        "precision_macro": 0.419047619047619,
+        "recall_macro": 0.3170940170940171,
+        "f1_macro": 0.31990683229813666,
+        "f1_weighted": 0.4328453120378586,
+        "per_class": {
+            "0": {
+                "precision": 0.8,
+                "recall": 0.2,
+                "f1": 0.32000000000000006,
+                "support": 20
+            },
+            "1": {
+                "precision": 0.7333333333333333,
+                "recall": 0.8461538461538461,
+                "f1": 0.7857142857142856,
+                "support": 13
+            },
+            "2": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "support": 0
+            },
+            "3": {
+                "precision": 0.14285714285714285,
+                "recall": 0.2222222222222222,
+                "f1": 0.17391304347826086,
+                "support": 9
+            }
+        },
+        "confusion_matrix": [
+            [
+                4,
+                2,
+                4,
+                10
+            ],
+            [
+                0,
+                11,
+                0,
+                2
+            ],
+            [
+                0,
+                0,
+                0,
+                0
+            ],
+            [
+                1,
+                2,
+                4,
+                2
+            ]
+        ],
+        "sample_count": 42,
+        "observed_classes": [
+            0,
+            1,
+            3
+        ],
+        "expected_classes": [
+            0,
+            1,
+            2,
+            3
+        ],
+        "class_coverage_complete": false,
+        "task_evaluated": "exercise_classification",
+        "task_omitted": null,
+        "completion_accuracy": 0.4523809523809524,
+        "completion_precision_macro": 0.45833333333333337,
+        "completion_recall_macro": 0.4588100686498856,
+        "completion_f1_macro": 0.452070334656835,
+        "completion_sample_count": 42,
+        "completion_observed_classes": [
+            0,
+            1
+        ],
+        "completion_confusion_matrix": [
+            [
+                9,
+                14
+            ],
+            [
+                9,
+                10
+            ]
+        ],
+        "metadata": {
+            "model_id": "RehabMotionNet",
+            "fold_id": "fold_01",
+            "protocol_version": "1.1",
+            "provenance_hash": "23c2471bad1c6f4a5272cc8ffd370b0b0155de32b8d370f19f63584e3d6acbcd",
+            "train_manifest_hash": "40fdb6115a208392711bb80283184b96df3e6577d7335bc30414a86554dbec6c",
+            "normalization_hash": "78e2c50fe45643ff4515b575b0281be4bb5f37a0a690495f8c195a385da5dc9d",
+            "class_mapping": {
+                "0": "Exercise_1",
+                "1": "Exercise_2",
+                "2": "Exercise_3",
+                "3": "Exercise_4"
+            },
+            "model_config": {
+                "use_hand": true,
+                "use_kinematic": true,
+                "use_contrastive": true,
+                "use_mstcn": false,
+                "use_attention": true,
+                "upper_limb_only": true
+            },
+            "architecture_signature": "rehab_motionnet_upper_limb_v2",
+            "checkpoint_role": "supervised_model",
+            "training_inputs": {
+                "runtime": {
+                    "python": "3.11.9",
+                    "torch": "2.5.1+cu121",
+                    "torch_cuda_runtime": "12.1",
+                    "cuda_available": true,
+                    "cuda_device_index": 0,
+                    "cuda_device_name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+                    "gpu_vram_bytes": 8585216000,
+                    "cudnn_version": 90100,
+                    "amp_enabled": true,
+                    "environment_profile": "noncanonical_exploratory"
+                }
+            }
+        }
+    },
+    {
+        "fold_id": "fold_02",
+        "model_name": "RehabMotionNet",
+        "accuracy": 0.803921568627451,
+        "precision_macro": 0.6972222222222222,
+        "recall_macro": 0.7453951277480688,
+        "f1_macro": 0.7067099567099566,
+        "f1_weighted": 0.8171632289279349,
+        "per_class": {
+            "0": {
+                "precision": 0.9,
+                "recall": 0.8181818181818182,
+                "f1": 0.8571428571428572,
+                "support": 22
+            },
+            "1": {
+                "precision": 1.0,
+                "recall": 0.9411764705882353,
+                "f1": 0.9696969696969697,
+                "support": 17
+            },
+            "2": {
+                "precision": 0.3333333333333333,
+                "recall": 0.6666666666666666,
+                "f1": 0.4444444444444444,
+                "support": 3
+            },
+            "3": {
+                "precision": 0.5555555555555556,
+                "recall": 0.5555555555555556,
+                "f1": 0.5555555555555556,
+                "support": 9
+            }
+        },
+        "confusion_matrix": [
+            [
+                18,
+                0,
+                0,
+                4
+            ],
+            [
+                1,
+                16,
+                0,
+                0
+            ],
+            [
+                1,
+                0,
+                2,
+                0
+            ],
+            [
+                0,
+                0,
+                4,
+                5
+            ]
+        ],
+        "sample_count": 51,
+        "observed_classes": [
+            0,
+            1,
+            2,
+            3
+        ],
+        "expected_classes": [
+            0,
+            1,
+            2,
+            3
+        ],
+        "class_coverage_complete": true,
+        "task_evaluated": "exercise_classification",
+        "task_omitted": null,
+        "completion_accuracy": 0.5882352941176471,
+        "completion_precision_macro": 0.6258064516129033,
+        "completion_recall_macro": 0.6313131313131313,
+        "completion_f1_macro": 0.5876010781671159,
+        "completion_sample_count": 51,
+        "completion_observed_classes": [
+            0,
+            1
+        ],
+        "completion_confusion_matrix": [
+            [
+                16,
+                17
+            ],
+            [
+                4,
+                14
+            ]
+        ],
+        "metadata": {
+            "model_id": "RehabMotionNet",
+            "fold_id": "fold_02",
+            "protocol_version": "1.1",
+            "provenance_hash": "23c2471bad1c6f4a5272cc8ffd370b0b0155de32b8d370f19f63584e3d6acbcd",
+            "train_manifest_hash": "98f6752776cfebdadda989dedcf8fa9e14b37a7a1b957fb2c3555071b58815a8",
+            "normalization_hash": "97721444cef7f81de6e7e838c984933733915940ba4c9d31ec3a2da04e300867",
+            "class_mapping": {
+                "0": "Exercise_1",
+                "1": "Exercise_2",
+                "2": "Exercise_3",
+                "3": "Exercise_4"
+            },
+            "model_config": {
+                "use_hand": true,
+                "use_kinematic": true,
+                "use_contrastive": true,
+                "use_mstcn": false,
+                "use_attention": true,
+                "upper_limb_only": true
+            },
+            "architecture_signature": "rehab_motionnet_upper_limb_v2",
+            "checkpoint_role": "supervised_model",
+            "training_inputs": {
+                "runtime": {
+                    "python": "3.11.9",
+                    "torch": "2.5.1+cu121",
+                    "torch_cuda_runtime": "12.1",
+                    "cuda_available": true,
+                    "cuda_device_index": 0,
+                    "cuda_device_name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+                    "gpu_vram_bytes": 8585216000,
+                    "cudnn_version": 90100,
+                    "amp_enabled": true,
+                    "environment_profile": "noncanonical_exploratory"
+                }
+            }
+        }
+    },
+    {
+        "fold_id": "fold_03",
+        "model_name": "RehabMotionNet",
+        "accuracy": 0.6818181818181818,
+        "precision_macro": 0.7574786324786325,
+        "recall_macro": 0.7321637426900585,
+        "f1_macro": 0.7388069888069888,
+        "f1_weighted": 0.7035775444866355,
+        "per_class": {
+            "0": {
+                "precision": 0.7222222222222222,
+                "recall": 0.6842105263157895,
+                "f1": 0.7027027027027027,
+                "support": 19
+            },
+            "1": {
+                "precision": 1.0,
+                "recall": 1.0,
+                "f1": 1.0,
+                "support": 1
+            },
+            "2": {
+                "precision": 1.0,
+                "recall": 0.8,
+                "f1": 0.888888888888889,
+                "support": 15
+            },
+            "3": {
+                "precision": 0.3076923076923077,
+                "recall": 0.4444444444444444,
+                "f1": 0.3636363636363637,
+                "support": 9
+            }
+        },
+        "confusion_matrix": [
+            [
+                13,
+                0,
+                0,
+                6
+            ],
+            [
+                0,
+                1,
+                0,
+                0
+            ],
+            [
+                0,
+                0,
+                12,
+                3
+            ],
+            [
+                5,
+                0,
+                0,
+                4
+            ]
+        ],
+        "sample_count": 44,
+        "observed_classes": [
+            0,
+            1,
+            2,
+            3
+        ],
+        "expected_classes": [
+            0,
+            1,
+            2,
+            3
+        ],
+        "class_coverage_complete": true,
+        "task_evaluated": "exercise_classification",
+        "task_omitted": null,
+        "completion_accuracy": 0.45454545454545453,
+        "completion_precision_macro": 0.30303030303030304,
+        "completion_recall_macro": 0.3225806451612903,
+        "completion_f1_macro": 0.3125,
+        "completion_sample_count": 44,
+        "completion_observed_classes": [
+            0,
+            1
+        ],
+        "completion_confusion_matrix": [
+            [
+                0,
+                13
+            ],
+            [
+                11,
+                20
+            ]
+        ],
+        "metadata": {
+            "model_id": "RehabMotionNet",
+            "fold_id": "fold_03",
+            "protocol_version": "1.1",
+            "provenance_hash": "23c2471bad1c6f4a5272cc8ffd370b0b0155de32b8d370f19f63584e3d6acbcd",
+            "train_manifest_hash": "01b10f7a4c76487122e6e0725dbba188b3a213f47aca09c5e0effbddb2fa5d01",
+            "normalization_hash": "92d28a5e3ba3926d581e3a43be47e04f160930c8133e4359a46548042efec90a",
+            "class_mapping": {
+                "0": "Exercise_1",
+                "1": "Exercise_2",
+                "2": "Exercise_3",
+                "3": "Exercise_4"
+            },
+            "model_config": {
+                "use_hand": true,
+                "use_kinematic": true,
+                "use_contrastive": true,
+                "use_mstcn": false,
+                "use_attention": true,
+                "upper_limb_only": true
+            },
+            "architecture_signature": "rehab_motionnet_upper_limb_v2",
+            "checkpoint_role": "supervised_model",
+            "training_inputs": {
+                "runtime": {
+                    "python": "3.11.9",
+                    "torch": "2.5.1+cu121",
+                    "torch_cuda_runtime": "12.1",
+                    "cuda_available": true,
+                    "cuda_device_index": 0,
+                    "cuda_device_name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+                    "gpu_vram_bytes": 8585216000,
+                    "cudnn_version": 90100,
+                    "amp_enabled": true,
+                    "environment_profile": "noncanonical_exploratory"
+                }
+            }
+        }
+    },
+    {
+        "fold_id": "fold_04",
+        "model_name": "RehabMotionNet",
+        "accuracy": 0.559322033898305,
+        "precision_macro": 0.643845785440613,
+        "recall_macro": 0.6684981684981685,
+        "f1_macro": 0.6137923637923638,
+        "f1_weighted": 0.5531851464054853,
+        "per_class": {
+            "0": {
+                "precision": 0.875,
+                "recall": 0.6666666666666666,
+                "f1": 0.7567567567567567,
+                "support": 21
+            },
+            "1": {
+                "precision": 0.8,
+                "recall": 1.0,
+                "f1": 0.888888888888889,
+                "support": 4
+            },
+            "2": {
+                "precision": 0.5555555555555556,
+                "recall": 0.23809523809523808,
+                "f1": 0.33333333333333326,
+                "support": 21
+            },
+            "3": {
+                "precision": 0.3448275862068966,
+                "recall": 0.7692307692307693,
+                "f1": 0.47619047619047616,
+                "support": 13
+            }
+        },
+        "confusion_matrix": [
+            [
+                14,
+                0,
+                4,
+                3
+            ],
+            [
+                0,
+                4,
+                0,
+                0
+            ],
+            [
+                0,
+                0,
+                5,
+                16
+            ],
+            [
+                2,
+                1,
+                0,
+                10
+            ]
+        ],
+        "sample_count": 59,
+        "observed_classes": [
+            0,
+            1,
+            2,
+            3
+        ],
+        "expected_classes": [
+            0,
+            1,
+            2,
+            3
+        ],
+        "class_coverage_complete": true,
+        "task_evaluated": "exercise_classification",
+        "task_omitted": null,
+        "completion_accuracy": 0.6610169491525424,
+        "completion_precision_macro": 0.6835839598997493,
+        "completion_recall_macro": 0.668778801843318,
+        "completion_f1_macro": 0.6561771561771561,
+        "completion_sample_count": 59,
+        "completion_observed_classes": [
+            0,
+            1
+        ],
+        "completion_confusion_matrix": [
+            [
+                23,
+                5
+            ],
+            [
+                15,
+                16
+            ]
+        ],
+        "metadata": {
+            "model_id": "RehabMotionNet",
+            "fold_id": "fold_04",
+            "protocol_version": "1.1",
+            "provenance_hash": "23c2471bad1c6f4a5272cc8ffd370b0b0155de32b8d370f19f63584e3d6acbcd",
+            "train_manifest_hash": "98f6752776cfebdadda989dedcf8fa9e14b37a7a1b957fb2c3555071b58815a8",
+            "normalization_hash": "6a2b3e14c4f5f89df7ef734f947268af77c2de2adb573b8dc9724cec2adc514d",
+            "class_mapping": {
+                "0": "Exercise_1",
+                "1": "Exercise_2",
+                "2": "Exercise_3",
+                "3": "Exercise_4"
+            },
+            "model_config": {
+                "use_hand": true,
+                "use_kinematic": true,
+                "use_contrastive": true,
+                "use_mstcn": false,
+                "use_attention": true,
+                "upper_limb_only": true
+            },
+            "architecture_signature": "rehab_motionnet_upper_limb_v2",
+            "checkpoint_role": "supervised_model",
+            "training_inputs": {
+                "runtime": {
+                    "python": "3.11.9",
+                    "torch": "2.5.1+cu121",
+                    "torch_cuda_runtime": "12.1",
+                    "cuda_available": true,
+                    "cuda_device_index": 0,
+                    "cuda_device_name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+                    "gpu_vram_bytes": 8585216000,
+                    "cudnn_version": 90100,
+                    "amp_enabled": true,
+                    "environment_profile": "noncanonical_exploratory"
+                }
+            }
+        }
+    },
+    {
+        "fold_id": "fold_05",
+        "model_name": "RehabMotionNet",
+        "accuracy": 0.5774647887323944,
+        "precision_macro": 0.5236175115207373,
+        "recall_macro": 0.6142857142857143,
+        "f1_macro": 0.5577704766116973,
+        "f1_weighted": 0.5053894055769083,
+        "per_class": {
+            "0": {
+                "precision": 0.6428571428571429,
+                "recall": 0.8571428571428571,
+                "f1": 0.7346938775510204,
+                "support": 21
+            },
+            "1": {
+                "precision": 1.0,
+                "recall": 0.9,
+                "f1": 0.9473684210526316,
+                "support": 10
+            },
+            "2": {
+                "precision": 0.45161290322580644,
+                "recall": 0.7,
+                "f1": 0.5490196078431372,
+                "support": 20
+            },
+            "3": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "support": 20
+            }
+        },
+        "confusion_matrix": [
+            [
+                18,
+                0,
+                3,
+                0
+            ],
+            [
+                1,
+                9,
+                0,
+                0
+            ],
+            [
+                3,
+                0,
+                14,
+                3
+            ],
+            [
+                6,
+                0,
+                14,
+                0
+            ]
+        ],
+        "sample_count": 71,
+        "observed_classes": [
+            0,
+            1,
+            2,
+            3
+        ],
+        "expected_classes": [
+            0,
+            1,
+            2,
+            3
+        ],
+        "class_coverage_complete": true,
+        "task_evaluated": "exercise_classification",
+        "task_omitted": null,
+        "completion_accuracy": 0.5915492957746479,
+        "completion_precision_macro": 0.5853858784893268,
+        "completion_recall_macro": 0.5833333333333333,
+        "completion_f1_macro": 0.5832827362882008,
+        "completion_sample_count": 71,
+        "completion_observed_classes": [
+            0,
+            1
+        ],
+        "completion_confusion_matrix": [
+            [
+                26,
+                13
+            ],
+            [
+                16,
+                16
+            ]
+        ],
+        "metadata": {
+            "model_id": "RehabMotionNet",
+            "fold_id": "fold_05",
+            "protocol_version": "1.1",
+            "provenance_hash": "23c2471bad1c6f4a5272cc8ffd370b0b0155de32b8d370f19f63584e3d6acbcd",
+            "train_manifest_hash": "01b10f7a4c76487122e6e0725dbba188b3a213f47aca09c5e0effbddb2fa5d01",
+            "normalization_hash": "cdc237203fee6902085d1ac0f131a940b4b5854bed26899e0224b23f62336e4f",
+            "class_mapping": {
+                "0": "Exercise_1",
+                "1": "Exercise_2",
+                "2": "Exercise_3",
+                "3": "Exercise_4"
+            },
+            "model_config": {
+                "use_hand": true,
+                "use_kinematic": true,
+                "use_contrastive": true,
+                "use_mstcn": false,
+                "use_attention": true,
+                "upper_limb_only": true
+            },
+            "architecture_signature": "rehab_motionnet_upper_limb_v2",
+            "checkpoint_role": "supervised_model",
+            "training_inputs": {
+                "runtime": {
+                    "python": "3.11.9",
+                    "torch": "2.5.1+cu121",
+                    "torch_cuda_runtime": "12.1",
+                    "cuda_available": true,
+                    "cuda_device_index": 0,
+                    "cuda_device_name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+                    "gpu_vram_bytes": 8585216000,
+                    "cudnn_version": 90100,
+                    "amp_enabled": true,
+                    "environment_profile": "noncanonical_exploratory"
+                }
+            }
+        }
+    },
+    {
+        "fold_id": "fold_06",
+        "model_name": "RehabMotionNet",
+        "accuracy": 0.38636363636363635,
+        "precision_macro": 0.3125,
+        "recall_macro": 0.1763157894736842,
+        "f1_macro": 0.224537037037037,
+        "f1_weighted": 0.4901094276094275,
+        "per_class": {
+            "0": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "support": 0
+            },
+            "1": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "support": 0
+            },
+            "2": {
+                "precision": 1.0,
+                "recall": 0.6,
+                "f1": 0.7499999999999999,
+                "support": 25
+            },
+            "3": {
+                "precision": 0.25,
+                "recall": 0.10526315789473684,
+                "f1": 0.14814814814814814,
+                "support": 19
+            }
+        },
+        "confusion_matrix": [
+            [
+                0,
+                0,
+                0,
+                0
+            ],
+            [
+                0,
+                0,
+                0,
+                0
+            ],
+            [
+                4,
+                0,
+                15,
+                6
+            ],
+            [
+                17,
+                0,
+                0,
+                2
+            ]
+        ],
+        "sample_count": 44,
+        "observed_classes": [
+            2,
+            3
+        ],
+        "expected_classes": [
+            0,
+            1,
+            2,
+            3
+        ],
+        "class_coverage_complete": false,
+        "task_evaluated": "exercise_classification",
+        "task_omitted": null,
+        "completion_accuracy": 0.5454545454545454,
+        "completion_precision_macro": 0.2727272727272727,
+        "completion_recall_macro": 0.5,
+        "completion_f1_macro": 0.3529411764705882,
+        "completion_sample_count": 44,
+        "completion_observed_classes": [
+            0,
+            1
+        ],
+        "completion_confusion_matrix": [
+            [
+                24,
+                0
+            ],
+            [
+                20,
+                0
+            ]
+        ],
+        "metadata": {
+            "model_id": "RehabMotionNet",
+            "fold_id": "fold_06",
+            "protocol_version": "1.1",
+            "provenance_hash": "23c2471bad1c6f4a5272cc8ffd370b0b0155de32b8d370f19f63584e3d6acbcd",
+            "train_manifest_hash": "30e47be7fae301013667f6c22f9357aefe04ea0cb313cb38fe9fe859abdfba82",
+            "normalization_hash": "424f67988146bb66451634145d4a535551af02042c08cefbd037e24e365d78be",
+            "class_mapping": {
+                "0": "Exercise_1",
+                "1": "Exercise_2",
+                "2": "Exercise_3",
+                "3": "Exercise_4"
+            },
+            "model_config": {
+                "use_hand": true,
+                "use_kinematic": true,
+                "use_contrastive": true,
+                "use_mstcn": false,
+                "use_attention": true,
+                "upper_limb_only": true
+            },
+            "architecture_signature": "rehab_motionnet_upper_limb_v2",
+            "checkpoint_role": "supervised_model",
+            "training_inputs": {
+                "runtime": {
+                    "python": "3.11.9",
+                    "torch": "2.5.1+cu121",
+                    "torch_cuda_runtime": "12.1",
+                    "cuda_available": true,
+                    "cuda_device_index": 0,
+                    "cuda_device_name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+                    "gpu_vram_bytes": 8585216000,
+                    "cudnn_version": 90100,
+                    "amp_enabled": true,
+                    "environment_profile": "noncanonical_exploratory"
+                }
+            }
+        }
+    },
+    {
+        "fold_id": "fold_07",
+        "model_name": "RehabMotionNet",
+        "accuracy": 0.0,
+        "precision_macro": 0.0,
+        "recall_macro": 0.0,
+        "f1_macro": 0.0,
+        "f1_weighted": 0.0,
+        "per_class": {
+            "0": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "support": 20
+            },
+            "1": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "support": 0
+            },
+            "2": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "support": 0
+            },
+            "3": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "support": 0
+            }
+        },
+        "confusion_matrix": [
+            [
+                0,
+                18,
+                0,
+                2
+            ],
+            [
+                0,
+                0,
+                0,
+                0
+            ],
+            [
+                0,
+                0,
+                0,
+                0
+            ],
+            [
+                0,
+                0,
+                0,
+                0
+            ]
+        ],
+        "sample_count": 20,
+        "observed_classes": [
+            0
+        ],
+        "expected_classes": [
+            0,
+            1,
+            2,
+            3
+        ],
+        "class_coverage_complete": false,
+        "task_evaluated": "exercise_classification",
+        "task_omitted": null,
+        "completion_accuracy": 0.45,
+        "completion_precision_macro": 0.43333333333333335,
+        "completion_recall_macro": 0.44999999999999996,
+        "completion_f1_macro": 0.41333333333333333,
+        "completion_sample_count": 20,
+        "completion_observed_classes": [
+            0,
+            1
+        ],
+        "completion_confusion_matrix": [
+            [
+                2,
+                8
+            ],
+            [
+                3,
+                7
+            ]
+        ],
+        "metadata": {
+            "model_id": "RehabMotionNet",
+            "fold_id": "fold_07",
+            "protocol_version": "1.1",
+            "provenance_hash": "23c2471bad1c6f4a5272cc8ffd370b0b0155de32b8d370f19f63584e3d6acbcd",
+            "train_manifest_hash": "fd27d05d85014527fb88e851db843417528019b153dce2dbded0eb9a73e92600",
+            "normalization_hash": "8a176043911925f44b68bac6002715f623c971347d93be7688e107ca9e65c8a4",
+            "class_mapping": {
+                "0": "Exercise_1",
+                "1": "Exercise_2",
+                "2": "Exercise_3",
+                "3": "Exercise_4"
+            },
+            "model_config": {
+                "use_hand": true,
+                "use_kinematic": true,
+                "use_contrastive": true,
+                "use_mstcn": false,
+                "use_attention": true,
+                "upper_limb_only": true
+            },
+            "architecture_signature": "rehab_motionnet_upper_limb_v2",
+            "checkpoint_role": "supervised_model",
+            "training_inputs": {
+                "runtime": {
+                    "python": "3.11.9",
+                    "torch": "2.5.1+cu121",
+                    "torch_cuda_runtime": "12.1",
+                    "cuda_available": true,
+                    "cuda_device_index": 0,
+                    "cuda_device_name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+                    "gpu_vram_bytes": 8585216000,
+                    "cudnn_version": 90100,
+                    "amp_enabled": true,
+                    "environment_profile": "noncanonical_exploratory"
+                }
+            }
+        }
+    },
+    {
+        "fold_id": "fold_08",
+        "model_name": "RehabMotionNet",
+        "accuracy": 0.8,
+        "precision_macro": 0.25,
+        "recall_macro": 0.2,
+        "f1_macro": 0.22222222222222224,
+        "f1_weighted": 0.888888888888889,
+        "per_class": {
+            "0": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "support": 0
+            },
+            "1": {
+                "precision": 1.0,
+                "recall": 0.8,
+                "f1": 0.888888888888889,
+                "support": 20
+            },
+            "2": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "support": 0
+            },
+            "3": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "support": 0
+            }
+        },
+        "confusion_matrix": [
+            [
+                0,
+                0,
+                0,
+                0
+            ],
+            [
+                4,
+                16,
+                0,
+                0
+            ],
+            [
+                0,
+                0,
+                0,
+                0
+            ],
+            [
+                0,
+                0,
+                0,
+                0
+            ]
+        ],
+        "sample_count": 20,
+        "observed_classes": [
+            1
+        ],
+        "expected_classes": [
+            0,
+            1,
+            2,
+            3
+        ],
+        "class_coverage_complete": false,
+        "task_evaluated": "exercise_classification",
+        "task_omitted": null,
+        "completion_accuracy": 0.65,
+        "completion_precision_macro": 0.7941176470588236,
+        "completion_recall_macro": 0.65,
+        "completion_f1_macro": 0.6011396011396011,
+        "completion_sample_count": 20,
+        "completion_observed_classes": [
+            0,
+            1
+        ],
+        "completion_confusion_matrix": [
+            [
+                10,
+                0
+            ],
+            [
+                7,
+                3
+            ]
+        ],
+        "metadata": {
+            "model_id": "RehabMotionNet",
+            "fold_id": "fold_08",
+            "protocol_version": "1.1",
+            "provenance_hash": "23c2471bad1c6f4a5272cc8ffd370b0b0155de32b8d370f19f63584e3d6acbcd",
+            "train_manifest_hash": "a9b402d0f8da8ebc90537556e2bfec22a86fa1ee68c7fba1b44da9df5721f7f4",
+            "normalization_hash": "4632c661c822c133e31721ef6e8a5d7e8bc3c57793f65b6cab64f814c4ddebd1",
+            "class_mapping": {
+                "0": "Exercise_1",
+                "1": "Exercise_2",
+                "2": "Exercise_3",
+                "3": "Exercise_4"
+            },
+            "model_config": {
+                "use_hand": true,
+                "use_kinematic": true,
+                "use_contrastive": true,
+                "use_mstcn": false,
+                "use_attention": true,
+                "upper_limb_only": true
+            },
+            "architecture_signature": "rehab_motionnet_upper_limb_v2",
+            "checkpoint_role": "supervised_model",
+            "training_inputs": {
+                "runtime": {
+                    "python": "3.11.9",
+                    "torch": "2.5.1+cu121",
+                    "torch_cuda_runtime": "12.1",
+                    "cuda_available": true,
+                    "cuda_device_index": 0,
+                    "cuda_device_name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+                    "gpu_vram_bytes": 8585216000,
+                    "cudnn_version": 90100,
+                    "amp_enabled": true,
+                    "environment_profile": "noncanonical_exploratory"
+                }
+            }
+        }
+    },
+    {
+        "fold_id": "fold_09",
+        "model_name": "RehabMotionNet",
+        "accuracy": 0.25,
+        "precision_macro": 0.25,
+        "recall_macro": 0.0625,
+        "f1_macro": 0.1,
+        "f1_weighted": 0.4,
+        "per_class": {
+            "0": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "support": 0
+            },
+            "1": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "support": 0
+            },
+            "2": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "support": 0
+            },
+            "3": {
+                "precision": 1.0,
+                "recall": 0.25,
+                "f1": 0.4,
+                "support": 16
+            }
+        },
+        "confusion_matrix": [
+            [
+                0,
+                0,
+                0,
+                0
+            ],
+            [
+                0,
+                0,
+                0,
+                0
+            ],
+            [
+                0,
+                0,
+                0,
+                0
+            ],
+            [
+                2,
+                8,
+                2,
+                4
+            ]
+        ],
+        "sample_count": 16,
+        "observed_classes": [
+            3
+        ],
+        "expected_classes": [
+            0,
+            1,
+            2,
+            3
+        ],
+        "class_coverage_complete": false,
+        "task_evaluated": "exercise_classification",
+        "task_omitted": null,
+        "completion_accuracy": 0.625,
+        "completion_precision_macro": 0.6666666666666667,
+        "completion_recall_macro": 0.6666666666666667,
+        "completion_f1_macro": 0.625,
+        "completion_sample_count": 16,
+        "completion_observed_classes": [
+            0,
+            1
+        ],
+        "completion_confusion_matrix": [
+            [
+                5,
+                5
+            ],
+            [
+                1,
+                5
+            ]
+        ],
+        "metadata": {
+            "model_id": "RehabMotionNet",
+            "fold_id": "fold_09",
+            "protocol_version": "1.1",
+            "provenance_hash": "23c2471bad1c6f4a5272cc8ffd370b0b0155de32b8d370f19f63584e3d6acbcd",
+            "train_manifest_hash": "944499c25ee30afd68ecbab3e0dd2b742a318e16531f2f21317215bf20ba3ba2",
+            "normalization_hash": "073f10e443d82d5da7a5cd8c046c7dfc17d176cd691cbe1c88a9667f3b791294",
+            "class_mapping": {
+                "0": "Exercise_1",
+                "1": "Exercise_2",
+                "2": "Exercise_3",
+                "3": "Exercise_4"
+            },
+            "model_config": {
+                "use_hand": true,
+                "use_kinematic": true,
+                "use_contrastive": true,
+                "use_mstcn": false,
+                "use_attention": true,
+                "upper_limb_only": true
+            },
+            "architecture_signature": "rehab_motionnet_upper_limb_v2",
+            "checkpoint_role": "supervised_model",
+            "training_inputs": {
+                "runtime": {
+                    "python": "3.11.9",
+                    "torch": "2.5.1+cu121",
+                    "torch_cuda_runtime": "12.1",
+                    "cuda_available": true,
+                    "cuda_device_index": 0,
+                    "cuda_device_name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+                    "gpu_vram_bytes": 8585216000,
+                    "cudnn_version": 90100,
+                    "amp_enabled": true,
+                    "environment_profile": "noncanonical_exploratory"
+                }
+            }
+        }
+    },
+    {
+        "fold_id": "fold_10",
+        "model_name": "RehabMotionNet",
+        "accuracy": 0.4,
+        "precision_macro": 0.25,
+        "recall_macro": 0.1,
+        "f1_macro": 0.14285714285714288,
+        "f1_weighted": 0.5714285714285715,
+        "per_class": {
+            "0": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "support": 0
+            },
+            "1": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "support": 0
+            },
+            "2": {
+                "precision": 1.0,
+                "recall": 0.4,
+                "f1": 0.5714285714285715,
+                "support": 20
+            },
+            "3": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "support": 0
+            }
+        },
+        "confusion_matrix": [
+            [
+                0,
+                0,
+                0,
+                0
+            ],
+            [
+                0,
+                0,
+                0,
+                0
+            ],
+            [
+                1,
+                0,
+                8,
+                11
+            ],
+            [
+                0,
+                0,
+                0,
+                0
+            ]
+        ],
+        "sample_count": 20,
+        "observed_classes": [
+            2
+        ],
+        "expected_classes": [
+            0,
+            1,
+            2,
+            3
+        ],
+        "class_coverage_complete": false,
+        "task_evaluated": "exercise_classification",
+        "task_omitted": null,
+        "completion_accuracy": 0.45,
+        "completion_precision_macro": 0.44505494505494503,
+        "completion_recall_macro": 0.44999999999999996,
+        "completion_f1_macro": 0.4373401534526854,
+        "completion_sample_count": 20,
+        "completion_observed_classes": [
+            0,
+            1
+        ],
+        "completion_confusion_matrix": [
+            [
+                3,
+                7
+            ],
+            [
+                4,
+                6
+            ]
+        ],
+        "metadata": {
+            "model_id": "RehabMotionNet",
+            "fold_id": "fold_10",
+            "protocol_version": "1.1",
+            "provenance_hash": "23c2471bad1c6f4a5272cc8ffd370b0b0155de32b8d370f19f63584e3d6acbcd",
+            "train_manifest_hash": "31b3edbdd79f9e037fc9c63927f04ecb2722236369971b7fab4674e87b8d31d9",
+            "normalization_hash": "edbfbd71e7722c34999767b8b44fe5ce9d6ca3170167639729e36caaa7f29b3d",
+            "class_mapping": {
+                "0": "Exercise_1",
+                "1": "Exercise_2",
+                "2": "Exercise_3",
+                "3": "Exercise_4"
+            },
+            "model_config": {
+                "use_hand": true,
+                "use_kinematic": true,
+                "use_contrastive": true,
+                "use_mstcn": false,
+                "use_attention": true,
+                "upper_limb_only": true
+            },
+            "architecture_signature": "rehab_motionnet_upper_limb_v2",
+            "checkpoint_role": "supervised_model",
+            "training_inputs": {
+                "runtime": {
+                    "python": "3.11.9",
+                    "torch": "2.5.1+cu121",
+                    "torch_cuda_runtime": "12.1",
+                    "cuda_available": true,
+                    "cuda_device_index": 0,
+                    "cuda_device_name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+                    "gpu_vram_bytes": 8585216000,
+                    "cudnn_version": 90100,
+                    "amp_enabled": true,
+                    "environment_profile": "noncanonical_exploratory"
+                }
+            }
+        }
+    }
+]

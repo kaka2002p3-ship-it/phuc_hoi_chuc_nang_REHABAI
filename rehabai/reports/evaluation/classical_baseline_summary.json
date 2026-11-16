@@ -1,0 +1,63 @@
+{
+  "protocol": "strict ten-fold subject-wise LOSO on 387 REAL_VERIFIED samples",
+  "seed": 42,
+  "models": {
+    "majority": {
+      "exercise_macro_f1": {
+        "mean": 0.05468590170831088,
+        "std": 0.0713298393926711,
+        "min": 0.0,
+        "max": 0.15079365079365079
+      },
+      "accuracy": {
+        "mean": 0.1514897582114944,
+        "std": 0.1992285470144706,
+        "min": 0.0,
+        "max": 0.4318181818181818
+      },
+      "completion_macro_f1": {
+        "mean": 0.32344557123348905,
+        "std": 0.04565953808899093,
+        "min": 0.2280701754385965,
+        "max": 0.3928571428571429
+      },
+      "completion_accuracy": {
+        "mean": 0.48392209126537833,
+        "std": 0.09656044614863916,
+        "min": 0.29545454545454547,
+        "max": 0.6470588235294118
+      }
+    },
+    "linear_svm": {
+      "exercise_macro_f1": {
+        "mean": 0.2880397343920113,
+        "std": 0.24398327282290516,
+        "min": 0.023809523809523808,
+        "max": 0.6175357443229605
+      },
+      "accuracy": {
+        "mean": 0.3651124261961995,
+        "std": 0.26621800437645105,
+        "min": 0.05,
+        "max": 0.676056338028169
+      },
+      "completion_macro_f1": {
+        "mean": 0.4391479033279161,
+        "std": 0.1478487807616622,
+        "min": 0.1919191919191919,
+        "max": 0.6703296703296704
+      },
+      "completion_accuracy": {
+        "mean": 0.4687703524084171,
+        "std": 0.1460680741723456,
+        "min": 0.2,
+        "max": 0.7
+      }
+    }
+  },
+  "environment": {
+    "python": "3.11.9",
+    "implementation": "numpy"
+  },
+  "production_changed": false
+}

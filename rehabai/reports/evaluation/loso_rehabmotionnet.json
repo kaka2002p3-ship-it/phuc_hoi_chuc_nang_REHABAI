@@ -1,0 +1,453 @@
+[
+    {
+        "fold_id": "fold_01",
+        "model_name": "RehabMotionNet",
+        "accuracy": 0.2857142857142857,
+        "precision_macro": 0.1875,
+        "recall_macro": 0.16666666666666666,
+        "f1_macro": 0.17142857142857143,
+        "sample_count": 7,
+        "observed_classes": [
+            0,
+            1,
+            3
+        ],
+        "expected_classes": [
+            0,
+            1,
+            2,
+            3
+        ],
+        "class_coverage_complete": false,
+        "task_evaluated": "exercise_classification",
+        "task_omitted": "completion_task_not_evaluated_in_stage_2",
+        "metadata": {
+            "model_id": "RehabMotionNet",
+            "fold_id": "fold_01",
+            "protocol_version": "1.1",
+            "provenance_hash": "ea1916f78f9e676c855efcbf81b521a5f4f31145ffc4f377bea7fce52e8b8222",
+            "train_manifest_hash": "491be6bd3bdb5ee6d23b32ba54641b5d02b0cf25d679bf3165ce595f8d3bd0e9",
+            "normalization_hash": "aa157b97e00af1c4582a8b9e852bef6ce16a2ffe4178402defd7da2c55885d39",
+            "class_mapping": {
+                "0": "Exercise_1",
+                "1": "Exercise_2",
+                "2": "Exercise_3",
+                "3": "Exercise_4"
+            },
+            "model_config": {
+                "use_hand": true,
+                "use_kinematic": true,
+                "use_contrastive": true,
+                "use_mstcn": true,
+                "use_attention": true
+            },
+            "architecture_signature": "rehab_motionnet_v1",
+            "checkpoint_role": "supervised_model"
+        }
+    },
+    {
+        "fold_id": "fold_02",
+        "model_name": "RehabMotionNet",
+        "accuracy": 0.45454545454545453,
+        "precision_macro": 0.40625,
+        "recall_macro": 0.25213675213675213,
+        "f1_macro": 0.29411764705882354,
+        "sample_count": 22,
+        "observed_classes": [
+            0,
+            1
+        ],
+        "expected_classes": [
+            0,
+            1,
+            2,
+            3
+        ],
+        "class_coverage_complete": false,
+        "task_evaluated": "exercise_classification",
+        "task_omitted": "completion_task_not_evaluated_in_stage_2",
+        "metadata": {
+            "model_id": "RehabMotionNet",
+            "fold_id": "fold_02",
+            "protocol_version": "1.1",
+            "provenance_hash": "ea1916f78f9e676c855efcbf81b521a5f4f31145ffc4f377bea7fce52e8b8222",
+            "train_manifest_hash": "d005d63a5884a39dc4df16af826b4241306ce81ca662b3af5c4c53fb3d4efe42",
+            "normalization_hash": "4d754a68f3865778e26f166d3edbd4caf1b3cd0c3ddf9469725cbc4078b204e7",
+            "class_mapping": {
+                "0": "Exercise_1",
+                "1": "Exercise_2",
+                "2": "Exercise_3",
+                "3": "Exercise_4"
+            },
+            "model_config": {
+                "use_hand": true,
+                "use_kinematic": true,
+                "use_contrastive": true,
+                "use_mstcn": true,
+                "use_attention": true
+            },
+            "architecture_signature": "rehab_motionnet_v1",
+            "checkpoint_role": "supervised_model"
+        }
+    },
+    {
+        "fold_id": "fold_03",
+        "model_name": "RehabMotionNet",
+        "accuracy": 0.6666666666666666,
+        "precision_macro": 0.4752024291497976,
+        "recall_macro": 0.48202614379084974,
+        "f1_macro": 0.4609810479375697,
+        "sample_count": 36,
+        "observed_classes": [
+            0,
+            2,
+            3
+        ],
+        "expected_classes": [
+            0,
+            1,
+            2,
+            3
+        ],
+        "class_coverage_complete": false,
+        "task_evaluated": "exercise_classification",
+        "task_omitted": "completion_task_not_evaluated_in_stage_2",
+        "metadata": {
+            "model_id": "RehabMotionNet",
+            "fold_id": "fold_03",
+            "protocol_version": "1.1",
+            "provenance_hash": "ea1916f78f9e676c855efcbf81b521a5f4f31145ffc4f377bea7fce52e8b8222",
+            "train_manifest_hash": "d0c7b596a8c0091dbe51a685c1527bc616438289c6544a1d7a4c4ae09fcec5e3",
+            "normalization_hash": "276dd2c5ea5363884b8bd7c36be2cc943379fb079ada0b21987356b5bcefd74f",
+            "class_mapping": {
+                "0": "Exercise_1",
+                "1": "Exercise_2",
+                "2": "Exercise_3",
+                "3": "Exercise_4"
+            },
+            "model_config": {
+                "use_hand": true,
+                "use_kinematic": true,
+                "use_contrastive": true,
+                "use_mstcn": true,
+                "use_attention": true
+            },
+            "architecture_signature": "rehab_motionnet_v1",
+            "checkpoint_role": "supervised_model"
+        }
+    },
+    {
+        "fold_id": "fold_04",
+        "model_name": "RehabMotionNet",
+        "accuracy": 0.125,
+        "precision_macro": 0.08333333333333333,
+        "recall_macro": 0.25,
+        "f1_macro": 0.125,
+        "sample_count": 8,
+        "observed_classes": [
+            0,
+            2,
+            3
+        ],
+        "expected_classes": [
+            0,
+            1,
+            2,
+            3
+        ],
+        "class_coverage_complete": false,
+        "task_evaluated": "exercise_classification",
+        "task_omitted": "completion_task_not_evaluated_in_stage_2",
+        "metadata": {
+            "model_id": "RehabMotionNet",
+            "fold_id": "fold_04",
+            "protocol_version": "1.1",
+            "provenance_hash": "ea1916f78f9e676c855efcbf81b521a5f4f31145ffc4f377bea7fce52e8b8222",
+            "train_manifest_hash": "49e3d365619812808c17862f1201a9d93bbfd6ca8e2831d864b960e9496f436a",
+            "normalization_hash": "81f8215ef3aa1b1e709642dc6a4a28bc38cf6374a1bcc78cabd08d89bf1efeb2",
+            "class_mapping": {
+                "0": "Exercise_1",
+                "1": "Exercise_2",
+                "2": "Exercise_3",
+                "3": "Exercise_4"
+            },
+            "model_config": {
+                "use_hand": true,
+                "use_kinematic": true,
+                "use_contrastive": true,
+                "use_mstcn": true,
+                "use_attention": true
+            },
+            "architecture_signature": "rehab_motionnet_v1",
+            "checkpoint_role": "supervised_model"
+        }
+    },
+    {
+        "fold_id": "fold_05",
+        "model_name": "RehabMotionNet",
+        "accuracy": 0.9,
+        "precision_macro": 0.9182692307692308,
+        "recall_macro": 0.9182692307692308,
+        "f1_macro": 0.9182692307692308,
+        "sample_count": 20,
+        "observed_classes": [
+            0,
+            1,
+            2,
+            3
+        ],
+        "expected_classes": [
+            0,
+            1,
+            2,
+            3
+        ],
+        "class_coverage_complete": true,
+        "task_evaluated": "exercise_classification",
+        "task_omitted": "completion_task_not_evaluated_in_stage_2",
+        "metadata": {
+            "model_id": "RehabMotionNet",
+            "fold_id": "fold_05",
+            "protocol_version": "1.1",
+            "provenance_hash": "ea1916f78f9e676c855efcbf81b521a5f4f31145ffc4f377bea7fce52e8b8222",
+            "train_manifest_hash": "dd4d58f2a9d8ee5e23fc2657a0fd03b579060c4a9f568f1dc79e5b8671fd9b72",
+            "normalization_hash": "2da705a827f6f2586972d1b2deaed7a95de1908c2c6cc8d6d1f8d3e48a7ec1d5",
+            "class_mapping": {
+                "0": "Exercise_1",
+                "1": "Exercise_2",
+                "2": "Exercise_3",
+                "3": "Exercise_4"
+            },
+            "model_config": {
+                "use_hand": true,
+                "use_kinematic": true,
+                "use_contrastive": true,
+                "use_mstcn": true,
+                "use_attention": true
+            },
+            "architecture_signature": "rehab_motionnet_v1",
+            "checkpoint_role": "supervised_model"
+        }
+    },
+    {
+        "fold_id": "fold_06",
+        "model_name": "RehabMotionNet",
+        "accuracy": 0.5952380952380952,
+        "precision_macro": 0.5,
+        "recall_macro": 0.27860411899313503,
+        "f1_macro": 0.3126262626262626,
+        "sample_count": 42,
+        "observed_classes": [
+            2,
+            3
+        ],
+        "expected_classes": [
+            0,
+            1,
+            2,
+            3
+        ],
+        "class_coverage_complete": false,
+        "task_evaluated": "exercise_classification",
+        "task_omitted": "completion_task_not_evaluated_in_stage_2",
+        "metadata": {
+            "model_id": "RehabMotionNet",
+            "fold_id": "fold_06",
+            "protocol_version": "1.1",
+            "provenance_hash": "ea1916f78f9e676c855efcbf81b521a5f4f31145ffc4f377bea7fce52e8b8222",
+            "train_manifest_hash": "dd4d58f2a9d8ee5e23fc2657a0fd03b579060c4a9f568f1dc79e5b8671fd9b72",
+            "normalization_hash": "08b8b9fdf6c746126f9604bf926e969b7b94900d29f754f33e06a624d0fa36a6",
+            "class_mapping": {
+                "0": "Exercise_1",
+                "1": "Exercise_2",
+                "2": "Exercise_3",
+                "3": "Exercise_4"
+            },
+            "model_config": {
+                "use_hand": true,
+                "use_kinematic": true,
+                "use_contrastive": true,
+                "use_mstcn": true,
+                "use_attention": true
+            },
+            "architecture_signature": "rehab_motionnet_v1",
+            "checkpoint_role": "supervised_model"
+        }
+    },
+    {
+        "fold_id": "fold_07",
+        "model_name": "RehabMotionNet",
+        "accuracy": 0.0,
+        "precision_macro": 0.0,
+        "recall_macro": 0.0,
+        "f1_macro": 0.0,
+        "sample_count": 19,
+        "observed_classes": [
+            0
+        ],
+        "expected_classes": [
+            0,
+            1,
+            2,
+            3
+        ],
+        "class_coverage_complete": false,
+        "task_evaluated": "exercise_classification",
+        "task_omitted": "completion_task_not_evaluated_in_stage_2",
+        "metadata": {
+            "model_id": "RehabMotionNet",
+            "fold_id": "fold_07",
+            "protocol_version": "1.1",
+            "provenance_hash": "ea1916f78f9e676c855efcbf81b521a5f4f31145ffc4f377bea7fce52e8b8222",
+            "train_manifest_hash": "910ec6d8c57887c17b9c40d1b05263fa4be37c4a34f103a3f867e9a5cab58093",
+            "normalization_hash": "4e1a117b4361afec87d8cc898d5ad7108a33e5e9080ff136324abf5fc5898718",
+            "class_mapping": {
+                "0": "Exercise_1",
+                "1": "Exercise_2",
+                "2": "Exercise_3",
+                "3": "Exercise_4"
+            },
+            "model_config": {
+                "use_hand": true,
+                "use_kinematic": true,
+                "use_contrastive": true,
+                "use_mstcn": true,
+                "use_attention": true
+            },
+            "architecture_signature": "rehab_motionnet_v1",
+            "checkpoint_role": "supervised_model"
+        }
+    },
+    {
+        "fold_id": "fold_08",
+        "model_name": "RehabMotionNet",
+        "accuracy": 0.05263157894736842,
+        "precision_macro": 0.25,
+        "recall_macro": 0.013157894736842105,
+        "f1_macro": 0.025,
+        "sample_count": 19,
+        "observed_classes": [
+            1
+        ],
+        "expected_classes": [
+            0,
+            1,
+            2,
+            3
+        ],
+        "class_coverage_complete": false,
+        "task_evaluated": "exercise_classification",
+        "task_omitted": "completion_task_not_evaluated_in_stage_2",
+        "metadata": {
+            "model_id": "RehabMotionNet",
+            "fold_id": "fold_08",
+            "protocol_version": "1.1",
+            "provenance_hash": "ea1916f78f9e676c855efcbf81b521a5f4f31145ffc4f377bea7fce52e8b8222",
+            "train_manifest_hash": "657553cf34405d8425c6f5b183bf3aeac934f3f12a243d4e55f99a0ad633e2d2",
+            "normalization_hash": "592fe4ee8da1215ac1019e60b1f2aa9174d2b1168d64a10dca7b597976d6c10b",
+            "class_mapping": {
+                "0": "Exercise_1",
+                "1": "Exercise_2",
+                "2": "Exercise_3",
+                "3": "Exercise_4"
+            },
+            "model_config": {
+                "use_hand": true,
+                "use_kinematic": true,
+                "use_contrastive": true,
+                "use_mstcn": true,
+                "use_attention": true
+            },
+            "architecture_signature": "rehab_motionnet_v1",
+            "checkpoint_role": "supervised_model"
+        }
+    },
+    {
+        "fold_id": "fold_09",
+        "model_name": "RehabMotionNet",
+        "accuracy": 0.0,
+        "precision_macro": 0.0,
+        "recall_macro": 0.0,
+        "f1_macro": 0.0,
+        "sample_count": 14,
+        "observed_classes": [
+            3
+        ],
+        "expected_classes": [
+            0,
+            1,
+            2,
+            3
+        ],
+        "class_coverage_complete": false,
+        "task_evaluated": "exercise_classification",
+        "task_omitted": "completion_task_not_evaluated_in_stage_2",
+        "metadata": {
+            "model_id": "RehabMotionNet",
+            "fold_id": "fold_09",
+            "protocol_version": "1.1",
+            "provenance_hash": "ea1916f78f9e676c855efcbf81b521a5f4f31145ffc4f377bea7fce52e8b8222",
+            "train_manifest_hash": "d3048c807a5a6e27be2a18f84350eda8ccde15e04e7865be4c48adbb2e8a4544",
+            "normalization_hash": "31e963295f473aa08c36466aa8f1336d9bd675f7bcdb1adde8f7b6a890aa4955",
+            "class_mapping": {
+                "0": "Exercise_1",
+                "1": "Exercise_2",
+                "2": "Exercise_3",
+                "3": "Exercise_4"
+            },
+            "model_config": {
+                "use_hand": true,
+                "use_kinematic": true,
+                "use_contrastive": true,
+                "use_mstcn": true,
+                "use_attention": true
+            },
+            "architecture_signature": "rehab_motionnet_v1",
+            "checkpoint_role": "supervised_model"
+        }
+    },
+    {
+        "fold_id": "fold_10",
+        "model_name": "RehabMotionNet",
+        "accuracy": 0.6666666666666666,
+        "precision_macro": 0.25,
+        "recall_macro": 0.16666666666666666,
+        "f1_macro": 0.2,
+        "sample_count": 15,
+        "observed_classes": [
+            2
+        ],
+        "expected_classes": [
+            0,
+            1,
+            2,
+            3
+        ],
+        "class_coverage_complete": false,
+        "task_evaluated": "exercise_classification",
+        "task_omitted": "completion_task_not_evaluated_in_stage_2",
+        "metadata": {
+            "model_id": "RehabMotionNet",
+            "fold_id": "fold_10",
+            "protocol_version": "1.1",
+            "provenance_hash": "ea1916f78f9e676c855efcbf81b521a5f4f31145ffc4f377bea7fce52e8b8222",
+            "train_manifest_hash": "3588baba127b9aae97eb7e3ca8b980184f96dbeb2571cce043dbc0fe0098e0df",
+            "normalization_hash": "e5d39e32a8a7432ff1b93a62099ef1353f51b34091ae000f4ef747c77fa35580",
+            "class_mapping": {
+                "0": "Exercise_1",
+                "1": "Exercise_2",
+                "2": "Exercise_3",
+                "3": "Exercise_4"
+            },
+            "model_config": {
+                "use_hand": true,
+                "use_kinematic": true,
+                "use_contrastive": true,
+                "use_mstcn": true,
+                "use_attention": true
+            },
+            "architecture_signature": "rehab_motionnet_v1",
+            "checkpoint_role": "supervised_model"
+        }
+    }
+]

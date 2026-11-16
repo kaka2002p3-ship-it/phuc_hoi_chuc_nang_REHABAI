@@ -1,0 +1,89 @@
+{
+  "protocol": "strict ten-fold LOSO, seed 42, validation-only checkpoint selection",
+  "selection_status": "post_ablation_exploratory",
+  "models": {
+    "optimized_v1": {
+      "exercise_macro_f1": {
+        "mean": 0.39447345363584396,
+        "std": 0.3477952098186064,
+        "min": 0.0,
+        "max": 0.9365079365079365
+      },
+      "accuracy": {
+        "mean": 0.48365566377813085,
+        "std": 0.33056392958185055,
+        "min": 0.0,
+        "max": 0.9318181818181818
+      }
+    },
+    "full_v2": {
+      "exercise_macro_f1": {
+        "mean": 0.35439626628948495,
+        "std": 0.2704338173418803,
+        "min": 0.023809523809523808,
+        "max": 0.7392452412104841
+      },
+      "accuracy": {
+        "mean": 0.4379407539834007,
+        "std": 0.2334719063429783,
+        "min": 0.05,
+        "max": 0.7457627118644068
+      }
+    },
+    "ensemble_v1": {
+      "exercise_macro_f1": {
+        "mean": 0.3743620476430682,
+        "std": 0.3318913485698361,
+        "min": 0.0,
+        "max": 0.8882936507936507
+      },
+      "accuracy": {
+        "mean": 0.43454170079238535,
+        "std": 0.3038181446485412,
+        "min": 0.0,
+        "max": 0.8636363636363636
+      }
+    }
+  },
+  "paired_comparison": {
+    "full_v2": {
+      "mean_delta": 0.04007718734635903,
+      "wins": 4,
+      "ties": 1,
+      "losses": 5,
+      "per_fold_delta": {
+        "fold_01": 0.10085434173669466,
+        "fold_02": 0.18715426587776107,
+        "fold_03": 0.3414768806073154,
+        "fold_04": -0.09093396197248071,
+        "fold_05": 0.06253142163864667,
+        "fold_06": -0.10457135457135458,
+        "fold_07": 0.0,
+        "fold_08": -0.06521739130434782,
+        "fold_09": -0.02105263157894738,
+        "fold_10": -0.009469696969697017
+      }
+    },
+    "ensemble_v1": {
+      "mean_delta": 0.020111405992775798,
+      "wins": 5,
+      "ties": 2,
+      "losses": 3,
+      "per_fold_delta": {
+        "fold_01": -0.07233277475212957,
+        "fold_02": 0.19519622391971914,
+        "fold_03": 0.048214285714285765,
+        "fold_04": -0.10592776129135972,
+        "fold_05": 0.061840333579463946,
+        "fold_06": 0.00767638433672585,
+        "fold_07": 0.0,
+        "fold_08": 0.0,
+        "fold_09": -0.02105263157894738,
+        "fold_10": 0.08749999999999997
+      }
+    }
+  },
+  "promotion_allowed": false,
+  "production_changed": false,
+  "recommendation": "confirm architecture on additional predeclared seeds or fresh subjects"
+}

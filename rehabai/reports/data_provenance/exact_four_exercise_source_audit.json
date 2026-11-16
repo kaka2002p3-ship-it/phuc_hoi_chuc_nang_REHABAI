@@ -1,0 +1,42 @@
+{
+  "source": {
+    "dataset_id": "49h9dcwx5v",
+    "doi": "10.17632/49h9dcwx5v.1",
+    "version": 1,
+    "name": "An upper limb stroke rehabilitation exercise video dataset",
+    "publish_date": "2026-02-26T08:16:37.889Z",
+    "license": "CC BY 4.0",
+    "license_url": "http://creativecommons.org/licenses/by/4.0",
+    "remote_file_count": 491,
+    "remote_total_bytes": 1253293461
+  },
+  "exact_product_exercises": {
+    "1": "Lifting an Object",
+    "2": "Extending the Elbow",
+    "3": "Side-to-Side",
+    "4": "Reaching Forward"
+  },
+  "local_file_count": 491,
+  "local_unique_basenames": 481,
+  "local_counts": {
+    "1_Complete": 62,
+    "1_Incomplete": 61,
+    "2_Complete": 60,
+    "2_Incomplete": 67,
+    "3_Complete": 60,
+    "3_Incomplete": 61,
+    "4_Complete": 60,
+    "4_Incomplete": 60
+  },
+  "remote_hash_match_by_path_basename": true,
+  "hash_mismatch_count": 0,
+  "hash_mismatch_examples": [],
+  "new_exact_source_found": false,
+  "product_label_mapping_performed": false,
+  "decision": "use_existing_verified_source_only; no additional exact public source found",
+  "limitations": [
+    "The source has one public version and 491 videos; no larger exact mirror was found.",
+    "The API exposes duplicate basenames across exercise/status folders, so hashes were matched per basename set.",
+    "A source with similar reaching/elbow movements is not admitted as one of the four product labels."
+  ]
+}
