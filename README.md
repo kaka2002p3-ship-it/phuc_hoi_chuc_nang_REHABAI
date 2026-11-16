@@ -167,6 +167,6 @@ Các tài liệu chính thức theo đúng định dạng cuộc thi SIC đượ
 
 ## 👥 7. Bản Quyền & Tác Giả
 
-- **Dự Án**: RehabAI - Samsung Innovation Campus AI Capstone Project.
-- **Tác giả chính**: Nguyễn Đức Lương (Email: `kaka2002p3@gmail.com`).
+- **Dự Án**: RehabAI - Hệ Thống Hỗ Trợ Theo Dõi và Đánh Giá Bài Tập Phục Hồi Chức Năng Chi Trên
+- **Tác giả chính**: Đức Lương (Email: `kaka2002p3@gmail.com`).
 - **Giấy phép**: Phát hành theo giấy phép mã nguồn mở [MIT License](LICENSE).
